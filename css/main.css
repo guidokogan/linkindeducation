@@ -220,7 +220,8 @@ li {
 .botonesComplejo__instagram {
   background-color: #f94343;
   padding: 13px;
-  vertical-align: middle; }
+  width: 52px;
+  text-align: center; }
   .botonesComplejo__instagram .fa-instagram {
     color: #292929; }
 
