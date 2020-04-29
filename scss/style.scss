@@ -252,7 +252,8 @@ li {
 .botonesComplejo__instagram {
     background-color: $color-principal;
     padding: 13px;
-    vertical-align: middle;
+    width: 52px;
+    text-align: center;
     .fa-instagram {
         color: $color-negro;
     }
