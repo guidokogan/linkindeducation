@@ -5,9 +5,6 @@ $color-secundario: #3a527c;
 $color-principal: #f94343;
 $color-blanco: #f5f3f4;
 $color-negro: #292929;
-$font-serifBold: 700;
-$font-serifRegular: 400;
-$font-tungstenMedium: 600;
 $filtro-rojo: brightness(300%);
 $filtro-blanco: invert(42%) saturate(0%) brightness(300%);
 
@@ -38,12 +35,11 @@ body {
 a,
 button {
     color: $color-secundario;
-    font-family: "Tungsten";
-    font-weight: $font-tungstenMedium;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-family: 'LineToCircular-Book';
+    font-weight: 600;
+    font-style: normal;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
 }
 a:hover {
     color: $color-principal;
@@ -51,26 +47,27 @@ a:hover {
 }
 h2 {
     color: $color-principal;
-    font-size: 35px;
-    line-height: 45px;
-    letter-spacing: -2px;
-    font-family: 'Roboto Slab', serif;
-    font-weight: $font-serifBold;
+    font-size: 33px;
+    line-height: 42px;
+    font-family: 'Tiempos Fine Semibold';
+    font-weight: normal;
+    font-style: normal;
 }
 h3 {
     color: $color-secundario;
-    font-size: 35px;
-    line-height: 45px;
-    letter-spacing: -2px;
-    font-family: 'Roboto Slab', serif;
-    font-weight: $font-serifRegular;
+    font-size: 33px;
+    line-height: 42px;
+    font-family: 'Tiempos Fine Semibold';
+    font-weight: normal;
+    font-style: normal;
 }
 p {
     color: $color-negro;
-    font-size: 14px;
-    line-height: 25px;
-    font-family: 'Roboto Slab', serif;
-    font-weight: $font-serifRegular;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: 'LineToCircular-Book';
+    font-weight: normal;
+    font-style: normal;
     margin-bottom: 0;
 }
 a,
@@ -111,10 +108,9 @@ li {
         a {
             text-decoration: none;
             color: $color-secundario;
-            font-family: "Tungsten";
-            font-weight: $font-tungstenMedium;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            font-family: 'LineToCircular-Book';
+            font-weight: 600;
+            font-style: normal;
             padding: 10px 5px;
             margin: 0 20px;
             text-align: center;
@@ -150,9 +146,9 @@ li {
     color: $color-principal;
     font-size: 120px;
     line-height: 120px;
-    letter-spacing: -2px;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
+    font-family: 'Tiempos Fine Semibold';
+    font-weight: normal;
+    font-style: normal;
     margin-bottom: 50px;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -170,7 +166,7 @@ li {
     display: none;
 }
 .hero__botonesSimples {
-    padding: 9px 35px;
+    padding: 13px 35px;
     border: 2px solid $color-principal;
     display: inline-block;
     width: 255px;
@@ -187,12 +183,11 @@ li {
 }
 .hero__botonesSimples_links {
     color: $color-principal;
-    font-family: "Tungsten";
-    font-weight: $font-tungstenMedium;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-family: 'LineToCircular-Book';
+    font-style: normal;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 600;
 }
 .hero__botonesComplejo {
     display: flex;
@@ -201,18 +196,17 @@ li {
     li {
         display: inline-block;
         p {
-            padding: 6px 35px;
-            font-size: 16px;
+            padding: 8px 35px;
+            font-size: 15px;
             line-height: 30px;
             color: $color-principal;
         }
         a {
             text-decoration: none;
             color: $color-principal;
-            font-family: "Tungsten";
-            font-weight: $font-tungstenMedium;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            font-family: 'LineToCircular-Book';
+            font-weight: 600;
+            font-style: normal;
             padding: 0;
             margin: 0;
             text-align: center;
@@ -220,10 +214,9 @@ li {
     }
 }
 .botonesComplejo__texto {
-    font-family: "Tungsten";
-    font-weight: $font-tungstenMedium;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-family: 'LineToCircular-Book';
+    font-weight: 600;
+    font-style: normal;
     text-align: center;
 }
 .hero__botonesComplejo_contenedor {
@@ -286,21 +279,54 @@ li {
 /* Publicidades */
 .publicidades {
     margin: 220px 0 120px 0;
-}
-.publicidades__contenedor {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-.publicidades__contenedor li {
-    display: inline-block;
-    margin: 0 30px;
-}
-.publicidades__contenedor li a img {
-    text-align: center;
-    width: 80%;
+    @mixin white-gradient {
+        background: linear-gradient(to right,  rgba( 245, 243, 244 ,1) 0%,rgba( 245, 243, 244 ,0) 100%);
+    }
+    $animationSpeed: 40s;
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-250px * 7))}
+    }
+    .publicidades__slider {
+        background: $color-blanco;
+        height: 100px;
+        margin: auto;
+        overflow:hidden;
+        position: relative;
+        
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 100px;
+            position: absolute;
+            width: 200px;
+            z-index: 1;
+        }
+        
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        
+        .publicidades__slider__track {
+            animation: scroll $animationSpeed linear infinite;
+            display: flex;
+            width: calc(250px * 14);
+        }
+        
+        .publicidades__slider__track__slide {
+            height: 80px;
+            width: 250px;
+            margin-top: 20px;
+        }
+    }
 }
 .publicidad__horizontal {
     max-width: 600px;
@@ -357,6 +383,7 @@ li {
     filter: saturate(0%);
     transition: 0.2s;
     width: 100%;
+    max-width: 300px;
 }
 .articulos__foto img:hover {
     transform: translate(0, -10px);
@@ -367,9 +394,10 @@ li {
     .hashtag__texto {
         font-size: 100px;
         line-height: 100px;
-        text-transform: uppercase;
         color: $color-blanco;
         font-family: "Tungsten Book";
+        text-transform: uppercase;
+        font-style: normal;
         text-shadow: 1px 0 0 $color-principal, -1px 0 0 $color-principal, 0 1px 0 $color-principal,
             0 -1px 0 $color-principal, 1px 1px $color-principal, -1px -1px 0 $color-principal,
             1px -1px 0 $color-principal, -1px 1px 0 $color-principal;
@@ -378,24 +406,23 @@ li {
 /* Articulo Home */
 .articulos__izquierda {
     display: grid;
-    grid-template-columns: ($anchoDesktop/3)-60 ($anchoDesktop/3)-120 ($anchoDesktop/3)-80;
-    grid-template-areas: "titulo-seccion foto ." "titulo-nota foto ." "texto foto hashtag" "texto . ." "texto . ." "texto . .";
-    grid-gap: 30px 50px;
+    grid-template-columns: ($anchoDesktop/2)-80 ($anchoTablet/2)-50;
+    grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto hashtag" "texto ." "texto .";
+    grid-gap: 30px 90px;
 }
 .articulos__derecha {
-    float: right;
     margin-bottom: 100px;
     display: grid;
-    grid-template-columns: ($anchoDesktop/3)-80 ($anchoDesktop/3)-120 ($anchoDesktop/3)-60;
-    grid-template-areas: ". titulo-nota foto" ". titulo-nota foto" "hashtag texto foto" ". texto ." ". texto .";
-    grid-gap: 30px 50px;
+    grid-template-columns: ($anchoDesktop/2)-80 ($anchoTablet/2)-50;
+    grid-template-areas: "titulo-nota foto" "texto foto" "texto hashtag" "texto ." "texto .";
+    grid-gap: 30px 90px;
 }
 /* Articulo Newsletter */
 .articulos__newsletter_izquierda {
     display: grid;
-    grid-template-columns: ($anchoDesktop/3) ($anchoDesktop/3)-60;
+    grid-template-columns: ($anchoDesktop/2)-80 ($anchoTablet/2)-50;
     grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto boton-columna1" "texto hashtag" ;
-    grid-gap: 30px 50px;
+    grid-gap: 30px 90px;
     .articulos__botonColumna1 {
         .hero__botonesSimples {
             width: 100%;
@@ -403,35 +430,33 @@ li {
     }
 }
 .articulos__newsletter_derecha {
-    float: right;
     margin-bottom: 100px;
     display: grid;
-    grid-template-columns: ($anchoDesktop/3) ($anchoDesktop/3)-60;
+    grid-template-columns: ($anchoDesktop/2)-80 ($anchoTablet/2)-50;
     grid-template-areas: "titulo-nota foto" "texto foto" "texto boton-columna1" "texto hashtag" ;
-    grid-gap: 30px 50px;
+    grid-gap: 30px 90px;
 }
 /* Articulo Nosotros */
 .articulos__nosotros_izquierda {
     display: grid;
-    grid-template-columns: ($anchoDesktop/3)-80 ($anchoDesktop/3)-60 ($anchoDesktop/3)-120;
-    grid-template-areas: "titulo-seccion foto ." "texto foto hashtag" "texto foto ." "texto . ." "texto . .";
-    grid-gap: 30px 50px;
+    grid-template-columns: ($anchoDesktop/2)-80 ($anchoTablet/2)-50;
+    grid-template-areas: "titulo-seccion foto" "texto foto" "texto foto" "texto hashtag" "texto .";
+    grid-gap: 30px 90px;
 }
 .articulos__nosotros_derecha {
-    float: right;
     margin-bottom: 100px;
     display: grid;
-    grid-template-columns: ($anchoDesktop/3)-80 ($anchoDesktop/3)-60 ($anchoDesktop/3)-120;
-    grid-template-areas: ". titulo-seccion foto" "hashtag texto foto" ". texto foto";
-    grid-gap: 30px 50px;
+    grid-template-columns: ($anchoDesktop/2)-80 ($anchoTablet/2)-50;
+    grid-template-areas: "titulo-seccion foto" "texto foto" "texto foto" "texto hashtag" "texto .";
+    grid-gap: 30px 90px;
 }
 /* Articulo Revista */
 .articulos__revista {
     display: grid;
     margin-bottom: 100px;
-    grid-template-columns: ($anchoDesktop/3) ($anchoDesktop/3) ($anchoDesktop/3)-40;
-    grid-template-areas: "titulo-seccion foto ." "titulo-nota foto ." "texto foto hashtag" "texto foto ." "texto boton-columna3 ." "texto boton-columna3 ." "texto boton-columna3 ." "texto texto-columna2 .";
-    grid-gap: 30px 50px;
+    grid-template-columns: ($anchoDesktop/2)-80 ($anchoTablet/2)-50;
+    grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto foto" "texto boton-columna3" "texto boton-columna3" "texto boton-columna3" "texto hashtag";
+    grid-gap: 30px 90px;
     .articulos__botonColumna3 {
         .hero__botonesSimples {
             width: 100%;
@@ -441,32 +466,30 @@ li {
 /* Articulo Radio */
 .articulos__radio_izquierda {
     display: grid;
-    grid-template-columns: ($anchoDesktop/3)-120 ($anchoDesktop/3)-60 ($anchoDesktop/3)-120;
-    grid-template-areas: "titulo-seccion foto ." "titulo-nota foto ." "texto foto hashtag" "texto foto ." "texto audio .";
-    grid-gap: 30px 50px;
+    grid-template-columns: ($anchoDesktop/2)-80 ($anchoTablet/2)-50;
+    grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto " "texto foto" "hashtag audio";
+    grid-gap: 30px 90px;
 }
 .articulos__radio_derecha {
     display: grid;
-    float: right;
     margin-bottom: 100px;
-    grid-template-columns: ($anchoDesktop/3)-120 ($anchoDesktop/3)-80 ($anchoDesktop/3)-60;
-    grid-template-areas: ". titulo-nota foto" "hashtag texto foto" ". texto foto" ". texto audio";
-    grid-gap: 30px 50px;
+    grid-template-columns: ($anchoDesktop/2)-80 ($anchoTablet/2)-50;
+    grid-template-areas: "titulo-nota foto" "texto foto " "texto foto" "hashtag audio";
+    grid-gap: 30px 90px;
 }
 /* Articulo Home */
 .articulos__tv_izquierda {
     display: grid;
-    grid-template-columns: ($anchoDesktop/2)-90 ($anchoDesktop/2)-60;
-    grid-template-areas: "titulo-seccion video" "titulo-nota video" "texto video " "texto hashtag" "texto ." "texto .";
-    grid-gap: 30px 50px;
+    grid-template-columns: ($anchoDesktop/2)-80 ($anchoTablet/2)-50;
+    grid-template-areas: "titulo-seccion video" "titulo-nota video" "texto video" "texto hashtag" "texto ." "texto .";
+    grid-gap: 30px 90px;
 }
 .articulos__tv_derecha {
-    float: right;
     margin-bottom: 100px;
     display: grid;
-    grid-template-columns: ($anchoDesktop/2)-90 ($anchoDesktop/2)-60;
+    grid-template-columns: ($anchoDesktop/2)-80 ($anchoTablet/2)-50;
     grid-template-areas: "titulo-nota video" "texto video " "texto video " "texto hashtag" "texto ." "texto .";
-    grid-gap: 30px 50px;
+    grid-gap: 30px 90px;
 }
 .articulos__video {
     iframe {
@@ -476,9 +499,9 @@ li {
 /* Articulo Contactate */
 .articulos__contactate {
     display: grid;
-    grid-template-columns: ($anchoDesktop/3)-80 ($anchoDesktop/3)-30 ($anchoDesktop/3)-120;
-    grid-template-areas: "titulo-seccion titulo-nota ." "texto grilla-form ." "texto grilla-form hashtag" "texto grilla-form ." "texto grilla-form ." "texto grilla-form .";
-    grid-gap: 30px 50px;
+    grid-template-columns: ($anchoTablet/2)-50 ($anchoDesktop/2)-80 ;
+    grid-template-areas: "titulo-seccion titulo-nota" "texto grilla-form" "texto grilla-form" "texto grilla-form" "texto grilla-form" "hashtag grilla-form";
+    grid-gap: 30px 90px;
     margin-bottom: 100px;
 }
 .suscDesc {
@@ -506,12 +529,11 @@ li {
 }
 .suscDesc__botones__links {
     color: $color-secundario;
-    font-family: "Tungsten";
-    font-weight: $font-tungstenMedium;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-family: 'LineToCircular-Book';
+    font-weight: normal;
+    font-style: normal;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
 }
 .suscDesc__descarga,
 .suscDesc__suscribite {
@@ -523,13 +545,12 @@ li {
 }
 .suscDesc__descarga p,
 .suscDesc__suscribite p {
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: none;
     color: $color-blanco;
-    font-family: "Tungsten";
-    font-weight: $font-tungstenMedium;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-family: 'LineToCircular-Book';
+    font-weight: normal;
+    font-style: normal;
     text-align: center;
 }
 .articulos__hashtag {
@@ -549,8 +570,9 @@ li {
         color: $color-negro;
         font-size: 14px;
         line-height: 25px;
-        font-family: 'Roboto Slab', serif;
-        font-weight: $font-serifRegular;
+        font-family: 'Tiempos Fine Semibold';
+        font-weight: normal;
+        font-style: normal;
     }
     button {
         cursor: pointer;
@@ -585,7 +607,6 @@ li {
             margin-bottom: 0;
             text-decoration: none;
             text-transform: lowercase;
-            letter-spacing: 0;
             font-size: 12px;
             text-align: right;
             color: $color-blanco;
@@ -632,10 +653,9 @@ li {
             a {
                 text-decoration: none;
                 color: $color-secundario;
-                font-family: "Tungsten";
-                font-weight: $font-tungstenMedium;
-                letter-spacing: 2px;
-                text-transform: uppercase;
+                font-family: 'LineToCircular-Book';
+                font-weight: 600;
+                font-style: normal;
                 text-align: center;
                 transition: 0.2s;
             }
@@ -662,46 +682,44 @@ li {
     }
     /* Articulos */
     .articulos__izquierda {
-        grid-template-columns: ($anchoDesktopChico/3)+30 ($anchoDesktopChico/3)+30 ($anchoDesktopChico/3);
+        grid-template-columns: ($anchoDesktopChico/2)+100 ($anchoDesktopChico/2)-40;
     }
     .articulos__derecha {
-        grid-template-columns: ($anchoDesktopChico/3) ($anchoDesktopChico/3)+30 ($anchoDesktopChico/3)+30;
+        grid-template-columns: ($anchoDesktopChico/2)+100 ($anchoDesktopChico/2)-40;
     }
     /* Articulo Newsletter */
     .articulos__newsletter_izquierda {
-        grid-template-columns: ($anchoDesktopChico/2) ($anchoDesktopChico/2);
+        grid-template-columns: ($anchoDesktopChico/2)+100 ($anchoDesktopChico/2)-40;
     }
     .articulos__newsletter_derecha {
-        grid-template-columns: ($anchoDesktopChico/2) ($anchoDesktopChico/2);
+        grid-template-columns: ($anchoDesktopChico/2)+100 ($anchoDesktopChico/2)-40;
     }
     /* Articulo Nosotros */
     .articulos__nosotros_izquierda {
-        grid-template-columns: ($anchoDesktopChico/3)+30 ($anchoDesktopChico/3)+30 ($anchoDesktopChico/3);
+        grid-template-columns: ($anchoDesktopChico/2)+100 ($anchoDesktopChico/2)-40;
     }
     .articulos__nosotros_derecha {
-        grid-template-columns: ($anchoDesktopChico/3) ($anchoDesktopChico/3)+30 ($anchoDesktopChico/3)+30;
+        grid-template-columns: ($anchoDesktopChico/2)+100 ($anchoDesktopChico/2)-40;
     }
     /* Articulo Revista */
     .articulos__revista {
-        grid-template-columns: ($anchoDesktopChico/3)+60 ($anchoDesktopChico/3)+60 ($anchoDesktopChico/3)-50;
+        grid-template-columns: ($anchoDesktopChico/2)+100 ($anchoDesktopChico/2)-40;
     }
     /* Articulo Radio */
     .articulos__radio_izquierda {
-        grid-template-columns: ($anchoDesktopChico/3) ($anchoDesktopChico/3) ($anchoDesktopChico/3);
-        grid-template-areas: "titulo-seccion foto ." "titulo-nota foto ." "texto foto hashtag" "texto audio .";
+        grid-template-columns: ($anchoDesktopChico/2)+100 ($anchoDesktopChico/2)-40;
+        grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto " "texto foto" "hashtag audio";
     }
     .articulos__radio_derecha {
-        grid-template-columns: ($anchoDesktopChico/3) ($anchoDesktopChico/3) ($anchoDesktopChico/3);
+        grid-template-columns: ($anchoDesktopChico/2)+100 ($anchoDesktopChico/2)-40;
         grid-template-areas: "titulo-nota foto ." "texto foto hashtag" "texto audio .";
     }
     /* Articulo Home */
     .articulos__tv_izquierda {
-        grid-template-columns: ($anchoDesktopChico/2)+30 ($anchoDesktopChico/2)+30;
-        grid-template-areas: "titulo-seccion video" "titulo-nota video" "texto video " "texto hashtag" "texto ." "texto .";
+        grid-template-columns: ($anchoDesktopChico/2)+100 ($anchoDesktopChico/2)-40;
     }
     .articulos__tv_derecha {
-        grid-template-columns: ($anchoDesktopChico/2)+30 ($anchoDesktopChico/2)+30;
-        grid-template-areas: "titulo-nota video" "texto video " "texto video " "texto hashtag" "texto ." "texto .";
+        grid-template-columns: ($anchoDesktopChico/2)+100 ($anchoDesktopChico/2)-40;
     }
     /* Articulo Contactate */
     .articulos__contactate {
@@ -757,10 +775,9 @@ li {
             a {
                 text-decoration: none;
                 color: $color-principal;
-                font-family: "Tungsten";
-                font-weight: $font-tungstenMedium;
-                letter-spacing: 2px;
-                text-transform: uppercase;
+                font-family: 'LineToCircular-Book';
+                font-weight: normal;
+                font-style: normal;
                 padding: 0;
                 margin: 0;
                 text-align: center;
@@ -817,41 +834,40 @@ li {
     }
     /* Articulo Home */
     .articulos__izquierda {
-        grid-template-columns: ($anchoTablet/2)-30 ($anchoTablet/2)-50;
+        grid-template-columns: ($anchoTablet/2)+20 ($anchoTablet/2)-100;
         grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto hashtag" "texto ." "texto .";
         grid-gap: 30px 40px;
     }
     .articulos__derecha {
-        grid-template-columns: ($anchoTablet/2)-30 ($anchoTablet/2)-50;
+        grid-template-columns: ($anchoTablet/2)+20 ($anchoTablet/2)-100;
         grid-template-areas: "titulo-nota foto" "titulo-nota foto" "texto foto" "texto hashtag" "texto .";
         grid-gap: 30px 40px;
     }
     /* Articulo Newsletter */
     .articulos__newsletter_izquierda {
-        grid-template-columns: ($anchoTablet/2)-30 ($anchoTablet/2)-50;
+        grid-template-columns: ($anchoTablet/2)+20 ($anchoTablet/2)-100;
         grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto boton-columna1" "texto hashtag" "texto ." "texto .";
         grid-gap: 30px 40px;
     }
     .articulos__newsletter_derecha {
-        grid-template-columns: ($anchoTablet/2)-30 ($anchoTablet/2)-50;
+        grid-template-columns: ($anchoTablet/2)+20 ($anchoTablet/2)-100;
         grid-template-areas: "titulo-nota foto" "texto foto" "texto boton-columna1" "texto hashtag" ;
         grid-gap: 30px 40px;
     }
     /* Articulo Nosotros */
     .articulos__nosotros_izquierda {
-        grid-template-columns: ($anchoTablet/2)-30 ($anchoTablet/2)-50;
+        grid-template-columns: ($anchoTablet/2)+20 ($anchoTablet/2)-100;
         grid-template-areas: "titulo-seccion foto" "texto foto" "texto hashtag" "texto ." "texto .";
         grid-gap: 30px 40px;
     }
     .articulos__nosotros_derecha {
-        grid-template-columns: ($anchoTablet/2)-30 ($anchoTablet/2)-50;
+        grid-template-columns: ($anchoTablet/2)+20 ($anchoTablet/2)-100;
         grid-template-areas: "titulo-seccion foto" "texto foto" "texto hashtag" "texto ." "texto .";
         grid-gap: 30px 40px;
     }
     /* Articulo Revista */
     .articulos__revista {
-        grid-template-columns: ($anchoTablet/2)-50 ($anchoTablet/2)-50;
-        grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto foto" "texto boton-columna3" "texto boton-columna3" "texto boton-columna3" "texto hashtag" "texto texto-columna2";
+        grid-template-columns: ($anchoTablet/2) ($anchoTablet/2)-60;
         grid-gap: 30px 40px;
     }
     /* Articulo Radio */
@@ -868,13 +884,10 @@ li {
     }
     .articulos__tv_izquierda {
         grid-template-columns: ($anchoTablet/2)-50 ($anchoTablet/2)-50;
-        grid-template-areas: "titulo-seccion video" "titulo-nota video" "texto video " "texto hashtag" "texto ." "texto .";
         grid-gap: 30px 40px;
     }
     .articulos__tv_derecha {
-        float: left;
         grid-template-columns: ($anchoTablet/2)-50 ($anchoTablet/2)-50;
-        grid-template-areas: "titulo-nota video" "texto video " "texto video " "texto hashtag" "texto ." "texto .";
         grid-gap: 30px 40px;
     }
     /* Articulo Contactate */
@@ -882,6 +895,11 @@ li {
         grid-template-columns: ($anchoTablet/2)-50 ($anchoTablet/2)-50;
         grid-template-areas: "titulo-seccion titulo-nota" "texto grilla-form" "texto grilla-form" "texto grilla-form" "texto grilla-form" "hashtag grilla-form";
         grid-gap: 30px 40px;
+    }
+    .articulos__hashtag {
+        .hashtag__texto {
+            font-size: 60px;
+        }
     }
     /* Footer */
     .footer {
@@ -922,7 +940,7 @@ li {
         line-height: 35px;
     }
     p {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 28px;
     }
     /* Mobile Menu */
@@ -968,7 +986,9 @@ li {
         margin-top: 21px;
     }
     .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link{
-        font-size: 20px;
+        font-size: 15px;
+        font-family: 'LineToCircular-Book';
+        font-weight: 600;
     }
     .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
         color: $color-principal;
@@ -1065,18 +1085,21 @@ li {
         max-width: ($anchoTabletChica)-30;
         margin: 40px 0;
     }
+
+    /* Articulo Home */
+    
     /* Articulo Home */
     .articulos__izquierda {
-        grid-template-columns: ($anchoTabletChica/2)-30 ($anchoTabletChica/2)-30;
-        grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto hashtag" "texto ." "texto .";
+        grid-template-columns: ($anchoTabletChica)-30;
+        grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "hashtag";
     }
     .articulos__derecha {
-        float: left;
-        grid-template-columns: ($anchoTabletChica/2)-30 ($anchoTabletChica/2)-30;
+        grid-template-columns: ($anchoTabletChica)-30;
+        grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "hashtag";
     }
     /* Articulo Newsletter */
     .articulos__newsletter_izquierda {
-        grid-template-columns: ($anchoTabletChica)-60;
+        grid-template-columns: ($anchoTabletChica)-30;
         grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "hashtag" "boton-columna1";
         .articulos__foto {
             img {
@@ -1085,8 +1108,7 @@ li {
         }
     }
     .articulos__newsletter_derecha {
-        float: left;
-        grid-template-columns: ($anchoTabletChica)-60;
+        grid-template-columns: ($anchoTabletChica)-30;
         grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "hashtag";
         .articulos__foto {
             img {
@@ -1106,8 +1128,8 @@ li {
     }
     /* Articulo Revista */
     .articulos__revista {
-        grid-template-columns: ($anchoTabletChica/2)-30 ($anchoTabletChica/2)-30;
-        grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto foto" "texto hashtag" "texto hashtag" "texto texto-columna2" "boton-columna3 boton-columna3" "boton-columna3 boton-columna3" "boton-columna3 boton-columna3";
+        grid-template-columns: ($anchoMobile)-1;
+        grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "texto-columna2" "hashtag" "boton-columna3" "boton-columna3" "boton-columna3";
         .articulos__foto {
             img {
                 max-width: 250px;

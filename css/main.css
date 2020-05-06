@@ -16,12 +16,11 @@ body {
 a,
 button {
   color: #3a527c;
-  font-family: "Tungsten";
+  font-family: 'LineToCircular-Book';
   font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-style: normal;
   text-align: center;
-  font-size: 16px; }
+  font-size: 15px; }
 
 a:hover {
   color: #f94343;
@@ -29,26 +28,27 @@ a:hover {
 
 h2 {
   color: #f94343;
-  font-size: 35px;
-  line-height: 45px;
-  letter-spacing: -2px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700; }
+  font-size: 33px;
+  line-height: 42px;
+  font-family: 'Tiempos Fine Semibold';
+  font-weight: normal;
+  font-style: normal; }
 
 h3 {
   color: #3a527c;
-  font-size: 35px;
-  line-height: 45px;
-  letter-spacing: -2px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400; }
+  font-size: 33px;
+  line-height: 42px;
+  font-family: 'Tiempos Fine Semibold';
+  font-weight: normal;
+  font-style: normal; }
 
 p {
   color: #292929;
-  font-size: 14px;
-  line-height: 25px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: 'LineToCircular-Book';
+  font-weight: normal;
+  font-style: normal;
   margin-bottom: 0; }
 
 a,
@@ -90,10 +90,9 @@ li {
   .navDesktop__logo li a {
     text-decoration: none;
     color: #3a527c;
-    font-family: "Tungsten";
+    font-family: 'LineToCircular-Book';
     font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-style: normal;
     padding: 10px 5px;
     margin: 0 20px;
     text-align: center;
@@ -127,9 +126,9 @@ li {
   color: #f94343;
   font-size: 120px;
   line-height: 120px;
-  letter-spacing: -2px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
+  font-family: 'Tiempos Fine Semibold';
+  font-weight: normal;
+  font-style: normal;
   margin-bottom: 50px;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -143,7 +142,7 @@ li {
   display: none; }
 
 .hero__botonesSimples {
-  padding: 9px 35px;
+  padding: 13px 35px;
   border: 2px solid #f94343;
   display: inline-block;
   width: 255px;
@@ -160,12 +159,11 @@ li {
 
 .hero__botonesSimples_links {
   color: #f94343;
-  font-family: "Tungsten";
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-family: 'LineToCircular-Book';
+  font-style: normal;
   text-align: center;
-  font-size: 16px; }
+  font-size: 15px;
+  font-weight: 600; }
 
 .hero__botonesComplejo {
   display: flex;
@@ -174,26 +172,24 @@ li {
   .hero__botonesComplejo li {
     display: inline-block; }
     .hero__botonesComplejo li p {
-      padding: 6px 35px;
-      font-size: 16px;
+      padding: 8px 35px;
+      font-size: 15px;
       line-height: 30px;
       color: #f94343; }
     .hero__botonesComplejo li a {
       text-decoration: none;
       color: #f94343;
-      font-family: "Tungsten";
+      font-family: 'LineToCircular-Book';
       font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
+      font-style: normal;
       padding: 0;
       margin: 0;
       text-align: center; }
 
 .botonesComplejo__texto {
-  font-family: "Tungsten";
+  font-family: 'LineToCircular-Book';
   font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-style: normal;
   text-align: center; }
 
 .hero__botonesComplejo_contenedor {
@@ -249,20 +245,39 @@ li {
 .publicidades {
   margin: 220px 0 120px 0; }
 
-.publicidades__contenedor {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; }
-
-.publicidades__contenedor li {
-  display: inline-block;
-  margin: 0 30px; }
-
-.publicidades__contenedor li a img {
-  text-align: center;
-  width: 80%; }
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-250px * 7)); } }
+  .publicidades .publicidades__slider {
+    background: #f5f3f4;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative; }
+    .publicidades .publicidades__slider::before, .publicidades .publicidades__slider::after {
+      background: linear-gradient(to right, #f5f3f4 0%, rgba(245, 243, 244, 0) 100%);
+      content: "";
+      height: 100px;
+      position: absolute;
+      width: 200px;
+      z-index: 1; }
+    .publicidades .publicidades__slider::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg); }
+    .publicidades .publicidades__slider::before {
+      left: 0;
+      top: 0; }
+    .publicidades .publicidades__slider .publicidades__slider__track {
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: calc(250px * 14); }
+    .publicidades .publicidades__slider .publicidades__slider__track__slide {
+      height: 80px;
+      width: 250px;
+      margin-top: 20px; }
 
 .publicidad__horizontal {
   max-width: 600px;
@@ -315,7 +330,8 @@ li {
   text-align: center;
   filter: saturate(0%);
   transition: 0.2s;
-  width: 100%; }
+  width: 100%;
+  max-width: 300px; }
 
 .articulos__foto img:hover {
   transform: translate(0, -10px);
@@ -326,97 +342,93 @@ li {
   .articulos__hashtag .hashtag__texto {
     font-size: 100px;
     line-height: 100px;
-    text-transform: uppercase;
     color: #f5f3f4;
     font-family: "Tungsten Book";
+    text-transform: uppercase;
+    font-style: normal;
     text-shadow: 1px 0 0 #f94343, -1px 0 0 #f94343, 0 1px 0 #f94343, 0 -1px 0 #f94343, 1px 1px #f94343, -1px -1px 0 #f94343, 1px -1px 0 #f94343, -1px 1px 0 #f94343; }
 
 /* Articulo Home */
 .articulos__izquierda {
   display: grid;
-  grid-template-columns: 320px 260px 300px;
-  grid-template-areas: "titulo-seccion foto ." "titulo-nota foto ." "texto foto hashtag" "texto . ." "texto . ." "texto . .";
-  grid-gap: 30px 50px; }
+  grid-template-columns: 490px 310px;
+  grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto hashtag" "texto ." "texto .";
+  grid-gap: 30px 90px; }
 
 .articulos__derecha {
-  float: right;
   margin-bottom: 100px;
   display: grid;
-  grid-template-columns: 300px 260px 320px;
-  grid-template-areas: ". titulo-nota foto" ". titulo-nota foto" "hashtag texto foto" ". texto ." ". texto .";
-  grid-gap: 30px 50px; }
+  grid-template-columns: 490px 310px;
+  grid-template-areas: "titulo-nota foto" "texto foto" "texto hashtag" "texto ." "texto .";
+  grid-gap: 30px 90px; }
 
 /* Articulo Newsletter */
 .articulos__newsletter_izquierda {
   display: grid;
-  grid-template-columns: 380px 320px;
+  grid-template-columns: 490px 310px;
   grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto boton-columna1" "texto hashtag";
-  grid-gap: 30px 50px; }
+  grid-gap: 30px 90px; }
   .articulos__newsletter_izquierda .articulos__botonColumna1 .hero__botonesSimples {
     width: 100%; }
 
 .articulos__newsletter_derecha {
-  float: right;
   margin-bottom: 100px;
   display: grid;
-  grid-template-columns: 380px 320px;
+  grid-template-columns: 490px 310px;
   grid-template-areas: "titulo-nota foto" "texto foto" "texto boton-columna1" "texto hashtag";
-  grid-gap: 30px 50px; }
+  grid-gap: 30px 90px; }
 
 /* Articulo Nosotros */
 .articulos__nosotros_izquierda {
   display: grid;
-  grid-template-columns: 300px 320px 260px;
-  grid-template-areas: "titulo-seccion foto ." "texto foto hashtag" "texto foto ." "texto . ." "texto . .";
-  grid-gap: 30px 50px; }
+  grid-template-columns: 490px 310px;
+  grid-template-areas: "titulo-seccion foto" "texto foto" "texto foto" "texto hashtag" "texto .";
+  grid-gap: 30px 90px; }
 
 .articulos__nosotros_derecha {
-  float: right;
   margin-bottom: 100px;
   display: grid;
-  grid-template-columns: 300px 320px 260px;
-  grid-template-areas: ". titulo-seccion foto" "hashtag texto foto" ". texto foto";
-  grid-gap: 30px 50px; }
+  grid-template-columns: 490px 310px;
+  grid-template-areas: "titulo-seccion foto" "texto foto" "texto foto" "texto hashtag" "texto .";
+  grid-gap: 30px 90px; }
 
 /* Articulo Revista */
 .articulos__revista {
   display: grid;
   margin-bottom: 100px;
-  grid-template-columns: 380px 380px 340px;
-  grid-template-areas: "titulo-seccion foto ." "titulo-nota foto ." "texto foto hashtag" "texto foto ." "texto boton-columna3 ." "texto boton-columna3 ." "texto boton-columna3 ." "texto texto-columna2 .";
-  grid-gap: 30px 50px; }
+  grid-template-columns: 490px 310px;
+  grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto foto" "texto boton-columna3" "texto boton-columna3" "texto boton-columna3" "texto hashtag";
+  grid-gap: 30px 90px; }
   .articulos__revista .articulos__botonColumna3 .hero__botonesSimples {
     width: 100%; }
 
 /* Articulo Radio */
 .articulos__radio_izquierda {
   display: grid;
-  grid-template-columns: 260px 320px 260px;
-  grid-template-areas: "titulo-seccion foto ." "titulo-nota foto ." "texto foto hashtag" "texto foto ." "texto audio .";
-  grid-gap: 30px 50px; }
+  grid-template-columns: 490px 310px;
+  grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto " "texto foto" "hashtag audio";
+  grid-gap: 30px 90px; }
 
 .articulos__radio_derecha {
   display: grid;
-  float: right;
   margin-bottom: 100px;
-  grid-template-columns: 260px 300px 320px;
-  grid-template-areas: ". titulo-nota foto" "hashtag texto foto" ". texto foto" ". texto audio";
-  grid-gap: 30px 50px; }
+  grid-template-columns: 490px 310px;
+  grid-template-areas: "titulo-nota foto" "texto foto " "texto foto" "hashtag audio";
+  grid-gap: 30px 90px; }
 
 /* Articulo Home */
 .articulos__tv_izquierda {
   display: grid;
-  grid-template-columns: 480px 510px;
-  grid-template-areas: "titulo-seccion video" "titulo-nota video" "texto video " "texto hashtag" "texto ." "texto .";
-  grid-gap: 30px 50px; }
+  grid-template-columns: 490px 310px;
+  grid-template-areas: "titulo-seccion video" "titulo-nota video" "texto video" "texto hashtag" "texto ." "texto .";
+  grid-gap: 30px 90px; }
 
 .articulos__tv_derecha {
-  float: right;
   margin-bottom: 100px;
   display: grid;
-  grid-template-columns: 480px 510px;
+  grid-template-columns: 490px 310px;
   grid-template-areas: "titulo-nota video" "texto video " "texto video " "texto hashtag" "texto ." "texto .";
-  grid-gap: 30px 50px; }
+  grid-gap: 30px 90px; }
 
 .articulos__video iframe {
   width: 100%; }
@@ -424,9 +436,9 @@ li {
 /* Articulo Contactate */
 .articulos__contactate {
   display: grid;
-  grid-template-columns: 300px 350px 260px;
-  grid-template-areas: "titulo-seccion titulo-nota ." "texto grilla-form ." "texto grilla-form hashtag" "texto grilla-form ." "texto grilla-form ." "texto grilla-form .";
-  grid-gap: 30px 50px;
+  grid-template-columns: 310px 490px;
+  grid-template-areas: "titulo-seccion titulo-nota" "texto grilla-form" "texto grilla-form" "texto grilla-form" "texto grilla-form" "hashtag grilla-form";
+  grid-gap: 30px 90px;
   margin-bottom: 100px; }
 
 .suscDesc {
@@ -454,12 +466,11 @@ li {
 
 .suscDesc__botones__links {
   color: #3a527c;
-  font-family: "Tungsten";
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-family: 'LineToCircular-Book';
+  font-weight: normal;
+  font-style: normal;
   text-align: center;
-  font-size: 16px; }
+  font-size: 15px; }
 
 .suscDesc__descarga,
 .suscDesc__suscribite {
@@ -471,13 +482,12 @@ li {
 
 .suscDesc__descarga p,
 .suscDesc__suscribite p {
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   color: #f5f3f4;
-  font-family: "Tungsten";
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-family: 'LineToCircular-Book';
+  font-weight: normal;
+  font-style: normal;
   text-align: center; }
 
 .articulos__hashtag .hashtag__texto {
@@ -494,8 +504,9 @@ li {
   color: #292929;
   font-size: 14px;
   line-height: 25px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400; }
+  font-family: 'Tiempos Fine Semibold';
+  font-weight: normal;
+  font-style: normal; }
 
 .form button {
   cursor: pointer; }
@@ -525,7 +536,6 @@ li {
     margin-bottom: 0;
     text-decoration: none;
     text-transform: lowercase;
-    letter-spacing: 0;
     font-size: 12px;
     text-align: right;
     color: #f5f3f4; }
@@ -564,10 +574,9 @@ li {
       .navTablet__Menu li a {
         text-decoration: none;
         color: #3a527c;
-        font-family: "Tungsten";
+        font-family: 'LineToCircular-Book';
         font-weight: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+        font-style: normal;
         text-align: center;
         transition: 0.2s; }
       .navTablet__Menu li a:hover {
@@ -585,36 +594,34 @@ li {
     margin: 30px 10px; }
   /* Articulos */
   .articulos__izquierda {
-    grid-template-columns: 270px 270px 240px; }
+    grid-template-columns: 460px 320px; }
   .articulos__derecha {
-    grid-template-columns: 240px 270px 270px; }
+    grid-template-columns: 460px 320px; }
   /* Articulo Newsletter */
   .articulos__newsletter_izquierda {
-    grid-template-columns: 360px 360px; }
+    grid-template-columns: 460px 320px; }
   .articulos__newsletter_derecha {
-    grid-template-columns: 360px 360px; }
+    grid-template-columns: 460px 320px; }
   /* Articulo Nosotros */
   .articulos__nosotros_izquierda {
-    grid-template-columns: 270px 270px 240px; }
+    grid-template-columns: 460px 320px; }
   .articulos__nosotros_derecha {
-    grid-template-columns: 240px 270px 270px; }
+    grid-template-columns: 460px 320px; }
   /* Articulo Revista */
   .articulos__revista {
-    grid-template-columns: 300px 300px 190px; }
+    grid-template-columns: 460px 320px; }
   /* Articulo Radio */
   .articulos__radio_izquierda {
-    grid-template-columns: 240px 240px 240px;
-    grid-template-areas: "titulo-seccion foto ." "titulo-nota foto ." "texto foto hashtag" "texto audio ."; }
+    grid-template-columns: 460px 320px;
+    grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto " "texto foto" "hashtag audio"; }
   .articulos__radio_derecha {
-    grid-template-columns: 240px 240px 240px;
+    grid-template-columns: 460px 320px;
     grid-template-areas: "titulo-nota foto ." "texto foto hashtag" "texto audio ."; }
   /* Articulo Home */
   .articulos__tv_izquierda {
-    grid-template-columns: 390px 390px;
-    grid-template-areas: "titulo-seccion video" "titulo-nota video" "texto video " "texto hashtag" "texto ." "texto ."; }
+    grid-template-columns: 460px 320px; }
   .articulos__tv_derecha {
-    grid-template-columns: 390px 390px;
-    grid-template-areas: "titulo-nota video" "texto video " "texto video " "texto hashtag" "texto ." "texto ."; }
+    grid-template-columns: 460px 320px; }
   /* Articulo Contactate */
   .articulos__contactate {
     grid-template-columns: 390px 390px;
@@ -660,10 +667,9 @@ li {
       .hero__redes_tablet li a {
         text-decoration: none;
         color: #f94343;
-        font-family: "Tungsten";
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+        font-family: 'LineToCircular-Book';
+        font-weight: normal;
+        font-style: normal;
         padding: 0;
         margin: 0;
         text-align: center; }
@@ -703,35 +709,34 @@ li {
     width: 285px; }
   /* Articulo Home */
   .articulos__izquierda {
-    grid-template-columns: 330px 310px;
+    grid-template-columns: 380px 260px;
     grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto hashtag" "texto ." "texto .";
     grid-gap: 30px 40px; }
   .articulos__derecha {
-    grid-template-columns: 330px 310px;
+    grid-template-columns: 380px 260px;
     grid-template-areas: "titulo-nota foto" "titulo-nota foto" "texto foto" "texto hashtag" "texto .";
     grid-gap: 30px 40px; }
   /* Articulo Newsletter */
   .articulos__newsletter_izquierda {
-    grid-template-columns: 330px 310px;
+    grid-template-columns: 380px 260px;
     grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto boton-columna1" "texto hashtag" "texto ." "texto .";
     grid-gap: 30px 40px; }
   .articulos__newsletter_derecha {
-    grid-template-columns: 330px 310px;
+    grid-template-columns: 380px 260px;
     grid-template-areas: "titulo-nota foto" "texto foto" "texto boton-columna1" "texto hashtag";
     grid-gap: 30px 40px; }
   /* Articulo Nosotros */
   .articulos__nosotros_izquierda {
-    grid-template-columns: 330px 310px;
+    grid-template-columns: 380px 260px;
     grid-template-areas: "titulo-seccion foto" "texto foto" "texto hashtag" "texto ." "texto .";
     grid-gap: 30px 40px; }
   .articulos__nosotros_derecha {
-    grid-template-columns: 330px 310px;
+    grid-template-columns: 380px 260px;
     grid-template-areas: "titulo-seccion foto" "texto foto" "texto hashtag" "texto ." "texto .";
     grid-gap: 30px 40px; }
   /* Articulo Revista */
   .articulos__revista {
-    grid-template-columns: 310px 310px;
-    grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto foto" "texto boton-columna3" "texto boton-columna3" "texto boton-columna3" "texto hashtag" "texto texto-columna2";
+    grid-template-columns: 360px 300px;
     grid-gap: 30px 40px; }
   /* Articulo Radio */
   .articulos__radio_izquierda {
@@ -745,18 +750,17 @@ li {
     grid-gap: 30px 40px; }
   .articulos__tv_izquierda {
     grid-template-columns: 310px 310px;
-    grid-template-areas: "titulo-seccion video" "titulo-nota video" "texto video " "texto hashtag" "texto ." "texto .";
     grid-gap: 30px 40px; }
   .articulos__tv_derecha {
-    float: left;
     grid-template-columns: 310px 310px;
-    grid-template-areas: "titulo-nota video" "texto video " "texto video " "texto hashtag" "texto ." "texto .";
     grid-gap: 30px 40px; }
   /* Articulo Contactate */
   .articulos__contactate {
     grid-template-columns: 310px 310px;
     grid-template-areas: "titulo-seccion titulo-nota" "texto grilla-form" "texto grilla-form" "texto grilla-form" "texto grilla-form" "hashtag grilla-form";
     grid-gap: 30px 40px; }
+  .articulos__hashtag .hashtag__texto {
+    font-size: 60px; }
   /* Footer */
   .footer {
     background-color: #292929;
@@ -788,7 +792,7 @@ li {
     font-size: 31px;
     line-height: 35px; }
   p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 28px; }
   /* Mobile Menu */
   #navDesktop {
@@ -823,7 +827,9 @@ li {
   .mr-auto, .mx-auto {
     margin-top: 21px; }
   .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
-    font-size: 20px; }
+    font-size: 15px;
+    font-family: 'LineToCircular-Book';
+    font-weight: 600; }
   .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #f94343;
     background-color: #f0f0f0; }
@@ -903,21 +909,21 @@ li {
     max-width: 510px;
     margin: 40px 0; }
   /* Articulo Home */
+  /* Articulo Home */
   .articulos__izquierda {
-    grid-template-columns: 240px 240px;
-    grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto hashtag" "texto ." "texto ."; }
+    grid-template-columns: 510px;
+    grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "hashtag"; }
   .articulos__derecha {
-    float: left;
-    grid-template-columns: 240px 240px; }
+    grid-template-columns: 510px;
+    grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "hashtag"; }
   /* Articulo Newsletter */
   .articulos__newsletter_izquierda {
-    grid-template-columns: 480px;
+    grid-template-columns: 510px;
     grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "hashtag" "boton-columna1"; }
     .articulos__newsletter_izquierda .articulos__foto img {
       max-width: 350px; }
   .articulos__newsletter_derecha {
-    float: left;
-    grid-template-columns: 480px;
+    grid-template-columns: 510px;
     grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "hashtag"; }
     .articulos__newsletter_derecha .articulos__foto img {
       max-width: 350px; }
@@ -931,8 +937,8 @@ li {
     grid-template-areas: "titulo-seccion foto" "texto foto" "texto hashtag" "texto ." "texto ."; }
   /* Articulo Revista */
   .articulos__revista {
-    grid-template-columns: 240px 240px;
-    grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto foto" "texto hashtag" "texto hashtag" "texto texto-columna2" "boton-columna3 boton-columna3" "boton-columna3 boton-columna3" "boton-columna3 boton-columna3"; }
+    grid-template-columns: 99%;
+    grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "texto-columna2" "hashtag" "boton-columna3" "boton-columna3" "boton-columna3"; }
     .articulos__revista .articulos__foto img {
       max-width: 250px; }
   /* Articulo Radio */
