@@ -421,7 +421,7 @@ li {
 .articulos__newsletter_izquierda {
     display: grid;
     grid-template-columns: ($anchoDesktop/2)-80 ($anchoTablet/2)-50;
-    grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto boton-columna1" "texto hashtag" ;
+    grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto boton-columna1"  "texto hashtag" ;
     grid-gap: 30px 90px;
     .articulos__botonColumna1 {
         .hero__botonesSimples {
@@ -986,7 +986,7 @@ li {
         margin-top: 21px;
     }
     .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link{
-        font-size: 15px;
+        font-size: 17px;
         font-family: 'LineToCircular-Book';
         font-weight: 600;
     }
@@ -1058,17 +1058,17 @@ li {
         }
     /* Hero */
     .hero {
-        margin-top: 150px;
+        margin-top: 120px;
         margin-bottom: 40px;
     }
     /* Barco */
     .barco__imagen {
-        top: -450px;
+        top: -380px;
         width: 350px;
     }
     /* Redes */
     .hero__redes_tablet {
-        top: -420px;
+        top: -460px;
     }
     /* Botones Descarga Suscribe Hero */
     .hero__botonesSimples {
@@ -1183,6 +1183,9 @@ li {
 }
 
 @media (max-width: $breakpointMediaQueriesTabletChica) {
+    p {
+        font-size: 15px;
+    }
     /* Nav Mobile */
     #navMobile__menuContenedor {
         top: 37px;
@@ -1211,7 +1214,7 @@ li {
     }
     .barco__imagen_mobile {
         display: block;
-        top: -370px;
+        top: -390px;
         right: 0;
         width: 320px;
     }
@@ -1225,44 +1228,21 @@ li {
     }
     /* Publicidades */
     .publicidades {
-        margin: 50px 0;
-    }
-    .publicidades__contenedor {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-areas: "publicidad1 publicidad2" "publicidad3 publicidad4" "publicidad5 publicidad6";
-        grid-gap: 10px 20px;
-        text-align: center;
-        li {
-            height: 40%;
-            margin: 10px 10px;
-            a {
-                img {
-                    width: auto;
-                    height: 45px;
-                }
+        @mixin white-gradient {
+            background: linear-gradient(to right,  rgba( 245, 243, 244 ,1) 0%,rgba( 245, 243, 244 ,0) 100%);
+        }
+        .publicidades__slider {
+            &::before,
+            &::after {
+                @include white-gradient;
+                content: "";
+                height: 100px;
+                position: absolute;
+                width: 90px;
+                z-index: 1;
             }
         }
     }
-    .publicidades__contenedor_1 {
-        grid-area: publicidad1;
-    }
-    .publicidades__contenedor_1 {
-        grid-area: publicidad2;
-    }
-    .publicidades__contenedor_1 {
-        grid-area: publicidad3;
-    }
-    .publicidades__contenedor_1 {
-        grid-area: publicidad4;
-    }
-    .publicidades__contenedor_1 {
-        grid-area: publicidad5;
-    }
-    .publicidades__contenedor_1 {
-        grid-area: publicidad6;
-    }
-
     .publicidad__horizontal {
         max-width: ($anchoMobile)-1;
         margin: 40px 0;
