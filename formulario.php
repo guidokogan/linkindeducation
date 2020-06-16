@@ -6,7 +6,7 @@ $pais = $_POST['pais'];
 $message = $_POST['mensaje'];
 
 $formcontent="De: $name \nDesde: $pais \nMensaje: $message";
-$recipient = "guidokogan@hotmail.com";
+$recipient = "contacto@revistamegatrade.com.ar";
 $subject = "Contacto";
 $mailheader = "De: $email \r\n";
 

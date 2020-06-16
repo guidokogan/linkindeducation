@@ -42,6 +42,14 @@ h3 {
   font-weight: normal;
   font-style: normal; }
 
+h4 {
+  color: #f94343;
+  font-size: 19px;
+  line-height: 30px;
+  font-family: 'Tiempos Fine Semibold';
+  font-weight: normal;
+  font-style: normal; }
+
 p {
   color: #292929;
   font-size: 15px;
@@ -158,7 +166,6 @@ li {
   transform: translate(0, -5px); }
 
 .hero__botonesSimples_links {
-  color: #f94343;
   font-family: 'LineToCircular-Book';
   font-style: normal;
   text-align: center;
@@ -280,7 +287,7 @@ li {
       margin-top: 20px; }
 
 .publicidad__horizontal {
-  max-width: 600px;
+  max-width: 100%;
   margin: 70px 0; }
 
 /* Elementos Articulos */
@@ -295,6 +302,9 @@ li {
 
 .articulos__foto {
   grid-area: foto; }
+
+.articulos__botonFull {
+  grid-area: boton-full; }
 
 .articulos__botonColumna1 {
   grid-area: boton-columna1; }
@@ -316,6 +326,23 @@ li {
 
 .articulos__boton-suscribite {
   grid-area: boton-suscribite; }
+
+.articulos__boton__secundario {
+  grid-area: boton; }
+  .articulos__boton__secundario .hero__botonesSimples {
+    padding: 13px 35px;
+    border: 2px solid #6a696f;
+    display: inline-block;
+    width: 255px;
+    margin: 0 20px 20px 0;
+    transition: 0.2s;
+    color: #6a696f;
+    background-color: #f5f3f4; }
+  .articulos__boton__secundario .hero__botonesSimples:hover {
+    color: #f5f3f4;
+    border: 2px solid #6a696f;
+    background-color: #6a696f;
+    transform: translate(0, -5px); }
 
 .articulos__form {
   grid-area: grilla-form; }
@@ -366,16 +393,18 @@ li {
 .articulos__newsletter_izquierda {
   display: grid;
   grid-template-columns: 490px 310px;
-  grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto boton-columna1"  "texto hashtag";
+  grid-template-areas: "boton-full boton-full" "titulo-seccion foto" "titulo-nota foto" "texto foto" "boton hashtag";
   grid-gap: 30px 90px; }
-  .articulos__newsletter_izquierda .articulos__botonColumna1 .hero__botonesSimples {
-    width: 100%; }
+  .articulos__newsletter_izquierda .articulos__botonFull .hero__botonesSimples {
+    width: 490px; }
+  .articulos__newsletter_izquierda .articulos__botonFull .hero__botonesSimples:hover {
+    color: #f5f3f4; }
 
 .articulos__newsletter_derecha {
   margin-bottom: 100px;
   display: grid;
   grid-template-columns: 490px 310px;
-  grid-template-areas: "titulo-nota foto" "texto foto" "texto boton-columna1" "texto hashtag";
+  grid-template-areas: "titulo-nota foto" "texto foto" "boton foto" ". hashtag";
   grid-gap: 30px 90px; }
 
 /* Articulo Nosotros */
@@ -402,12 +431,23 @@ li {
   .articulos__revista .articulos__botonColumna3 .hero__botonesSimples {
     width: 100%; }
 
+/* Articulo Nota */
+.articulos__nota {
+  display: grid;
+  margin-bottom: 100px;
+  grid-template-columns: 490px 310px;
+  grid-template-areas: "boton foto" "titulo-nota foto" "texto foto" "texto foto" "texto ." "texto hashtag";
+  grid-gap: 30px 90px; }
+  .articulos__nota .articulos__botonColumna3 .hero__botonesSimples {
+    width: 100%; }
+
 /* Articulo Radio */
 .articulos__radio_izquierda {
   display: grid;
   grid-template-columns: 490px 310px;
   grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto " "texto foto" "hashtag audio";
-  grid-gap: 30px 90px; }
+  grid-gap: 30px 90px;
+  margin-bottom: 100px; }
 
 .articulos__radio_derecha {
   display: grid;
@@ -421,7 +461,8 @@ li {
   display: grid;
   grid-template-columns: 490px 310px;
   grid-template-areas: "titulo-seccion video" "titulo-nota video" "texto video" "texto hashtag" "texto ." "texto .";
-  grid-gap: 30px 90px; }
+  grid-gap: 30px 90px;
+  margin-bottom: 100px; }
 
 .articulos__tv_derecha {
   margin-bottom: 100px;
@@ -491,7 +532,8 @@ li {
   text-align: center; }
 
 .articulos__hashtag .hashtag__texto {
-  font-size: 80px; }
+  font-size: 80px;
+  line-height: 59px; }
 
 /* Formulario */
 .form input {
@@ -600,6 +642,8 @@ li {
   /* Articulo Newsletter */
   .articulos__newsletter_izquierda {
     grid-template-columns: 460px 320px; }
+    .articulos__newsletter_izquierda .articulos__botonFull .hero__botonesSimples {
+      width: 460px; }
   .articulos__newsletter_derecha {
     grid-template-columns: 460px 320px; }
   /* Articulo Nosotros */
@@ -608,7 +652,7 @@ li {
   .articulos__nosotros_derecha {
     grid-template-columns: 460px 320px; }
   /* Articulo Revista */
-  .articulos__revista {
+  .articulos__revista, .articulos__nota {
     grid-template-columns: 460px 320px; }
   /* Articulo Radio */
   .articulos__radio_izquierda {
@@ -719,11 +763,13 @@ li {
   /* Articulo Newsletter */
   .articulos__newsletter_izquierda {
     grid-template-columns: 380px 260px;
-    grid-template-areas: "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto boton-columna1" "texto hashtag" "texto ." "texto .";
+    grid-template-areas: "boton-full boton-full" "titulo-seccion foto" "titulo-nota foto" "texto foto" "texto hashtag" "boton .";
     grid-gap: 30px 40px; }
+    .articulos__newsletter_izquierda .articulos__botonFull .hero__botonesSimples {
+      width: 100%; }
   .articulos__newsletter_derecha {
     grid-template-columns: 380px 260px;
-    grid-template-areas: "titulo-nota foto" "texto foto" "texto boton-columna1" "texto hashtag";
+    grid-template-areas: "titulo-nota foto" "texto foto" "texto hashtag" "boton .";
     grid-gap: 30px 40px; }
   /* Articulo Nosotros */
   .articulos__nosotros_izquierda {
@@ -735,7 +781,7 @@ li {
     grid-template-areas: "titulo-seccion foto" "texto foto" "texto hashtag" "texto ." "texto .";
     grid-gap: 30px 40px; }
   /* Articulo Revista */
-  .articulos__revista {
+  .articulos__revista, .articulos__nota {
     grid-template-columns: 360px 300px;
     grid-gap: 30px 40px; }
   /* Articulo Radio */
@@ -791,6 +837,8 @@ li {
   h3 {
     font-size: 31px;
     line-height: 35px; }
+  h4 {
+    line-height: 28px; }
   p {
     font-size: 15px;
     line-height: 28px; }
@@ -919,12 +967,14 @@ li {
   /* Articulo Newsletter */
   .articulos__newsletter_izquierda {
     grid-template-columns: 510px;
-    grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "hashtag" "boton-columna1"; }
+    grid-template-areas: "boton-full" "titulo-seccion" "titulo-nota" "foto" "hashtag" "texto"  "boton"; }
     .articulos__newsletter_izquierda .articulos__foto img {
       max-width: 350px; }
+    .articulos__newsletter_izquierda .articulos__botonFull .hero__botonesSimples {
+      width: 510px; }
   .articulos__newsletter_derecha {
     grid-template-columns: 510px;
-    grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "hashtag"; }
+    grid-template-areas: "titulo-nota" "foto" "hashtag" "texto"  "boton"; }
     .articulos__newsletter_derecha .articulos__foto img {
       max-width: 350px; }
   /* Articulo Nosotros */
@@ -940,6 +990,12 @@ li {
     grid-template-columns: 99%;
     grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "texto-columna2" "hashtag" "boton-columna3" "boton-columna3" "boton-columna3"; }
     .articulos__revista .articulos__foto img {
+      max-width: 250px; }
+  /* Articulo Nota */
+  .articulos__nota {
+    grid-template-columns: 99%;
+    grid-template-areas: "boton" "titulo-nota" "foto" "hashtag" "texto"; }
+    .articulos__nota .articulos__foto img {
       max-width: 250px; }
   /* Articulo Radio */
   .articulos__radio_izquierda {
@@ -1026,10 +1082,12 @@ li {
   /* Articulo Newsletter */
   .articulos__newsletter_izquierda {
     grid-template-columns: 99%;
-    grid-template-areas: "titulo-seccion" "titulo-nota" "foto" "texto" "hashtag" "boton-columna1"; }
+    grid-template-areas: "boton-full" "titulo-seccion" "titulo-nota" "foto" "hashtag" "texto"  "boton"; }
+    .articulos__newsletter_izquierda .articulos__botonFull .hero__botonesSimples {
+      width: 99%; }
   .articulos__newsletter_derecha {
     grid-template-columns: 99%;
-    grid-template-areas: "titulo-nota" "foto" "texto" "hashtag"; }
+    grid-template-areas: "titulo-nota" "foto" "hashtag" "texto"  "boton"; }
   /* Articulo Nosotros */
   .articulos__nosotros_izquierda {
     grid-template-columns: 99%;
