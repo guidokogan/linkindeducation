@@ -33,6 +33,9 @@ body {
     background-color: $color-blanco;
     overflow-x: hidden;
 }
+label{
+    display: block;
+}
 a,
 button {
     color: $color-secundario;
@@ -608,17 +611,29 @@ li {
 }
 /* Formulario */
 .form {
+    label {
+        width: 100%;
+        background-color: transparent;
+        margin-bottom: 14px;
+        border: none;
+        color: $color-negro;
+        font-size: 14px;
+        line-height: 25px;
+        font-family: 'Tiempos Fine Semibold';
+        font-weight: normal;
+        font-style: normal;
+    }
     input {
         width: 100%;
         background-color: transparent;
         padding: 0 10px 10px 0px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         border: none;
         border-bottom: 2px solid $color-secundario;
         color: $color-negro;
         font-size: 14px;
         line-height: 25px;
-        font-family: 'Tiempos Fine Semibold';
+        font-family: 'LineToCircular-Book';
         font-weight: normal;
         font-style: normal;
     }

@@ -30,12 +30,31 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169326200-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-169326200-1');
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "UA-169326200-1");
         </script>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-PF292H7");
+        </script>
+        <!-- End Google Tag Manager -->
     </head>
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF292H7" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <!-- Header -->
         <div class="container-fluid">
             <div class="row">
@@ -169,12 +188,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
-                    <a class="hero__botonesSimples_links" href="revistas/mayo2020.pdf">
+                    <a class="hero__botonesSimples_links" target="_blank" href="revistas/junio2020.pdf">
                         <div class="hero__botonesSimples">
                             Descargá la última revista
                         </div>
                     </a>
-                    <a class="hero__botonesSimples_links" href="suscribite.html">
+                    <a class="hero__botonesSimples_links" target="_blank" href="suscribite.html">
                         <div class="hero__botonesSimples">
                             Suscribite al newsletter
                         </div>
@@ -437,7 +456,7 @@
                         <div class="suscDesc__descarga">
                             <p>Mirá la última revista</p>
                         </div>
-                        <a class="suscDesc__botones__links" href="revistas/mayo2020.pdf">
+                        <a class="suscDesc__botones__links" href="revistas/junio2020.pdf">
                             <div class="suscDesc__botones">
                                 Descargala
                             </div>

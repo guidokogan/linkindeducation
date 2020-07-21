@@ -30,12 +30,31 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169326200-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-169326200-1');
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "UA-169326200-1");
         </script>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-PF292H7");
+        </script>
+        <!-- End Google Tag Manager -->
     </head>
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF292H7" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <!-- Header -->
         <div class="container-fluid">
             <div class="row">
@@ -168,12 +187,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
-                    <a class="hero__botonesSimples_links" href="revistas/mayo2020.pdf">
+                    <a class="hero__botonesSimples_links" target="_blank" href="revistas/junio2020.pdf">
                         <div class="hero__botonesSimples">
                             Descargá la última revista
                         </div>
                     </a>
-                    <a class="hero__botonesSimples_links" href="suscribite.html">
+                    <a class="hero__botonesSimples_links" target="_blank" href="suscribite.html">
                         <div class="hero__botonesSimples">
                             Suscribite al newsletter
                         </div>
@@ -352,7 +371,9 @@
                                     <a href="http://www.loprimo.com.ar/"><img src="assets/publi-loprimo.jpg" alt="LoPrimo" /></a>
                                 </div>
                                 <div class="publicidades__slider__track__slide">
-                                    <a href="https://www.one-line.com/"><a href="https://www.one-line.com/"><img src="assets/publi-one.jpg" alt="One" /></a></a>
+                                    <a href="https://www.one-line.com/">
+                                        <a href="https://www.one-line.com/"><img src="assets/publi-one.jpg" alt="One" /></a>
+                                    </a>
                                 </div>
                                 <div class="publicidades__slider__track__slide">
                                     <a href="http://riodelaplatapilots.com.ar/"><img src="assets/publi-practicajeriodelaplata.jpg" alt="Practicaje rio de la Plata" /></a>
@@ -372,30 +393,33 @@
                 </div>
             </div>
         </div>
-		
+
         <div class="container">
-			
             <div class="row">
-				
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="articulos__izquierda">
                         <div class="articulos__titulo">
                             <h2>Noticias Destacadas</h2>
                         </div>
                         <div class="articulos__subtitulo">
-                            <h3>Razones porque Perú crece en exportación
-                                de frutas y deja atrás a todos en la región...</h3>
+                            <h3>La vuelta del fútbol, prioridad</h3>
                         </div>
                         <div class="articulos__texto">
-                            <p>Según un estudio patrocinado por entidades del sector frutícola chileno sobre la producción de arándanos a nivel mundial, la provisión del Hemisferio Sur batió récords en la temporada 19/20, 18% más que en la temporada anterior. Un dato particular es que por primera vez Perú sobrepasa a Chile como proveedor.
-                            En cinco años Perú pasó de exportar 13.000 ton a más de 120 mil, un 800% más. Esto se repite en otras frutas. Hace tiempo se debate cómo hizo. Los críticos señalan los bajos precios entre otras cosas, por la precariedad de la situación de los trabajadores y la informalidad, el uso intensivo de fertilizantes, etc. Pero acaso no es que los mercados principales siguen muy de cerca las malas prácticas?.. Hay cierta hipocresía en algunos compradores de los mercados desarrollados?. Será así?. No tanto.
+                            <p>
+                                En la declaración de los mandatarios de los Estados parte y los Asociados, donde se incluyeron 34 puntos - con temas como el combate a las drogas, los derechos humanos, la protección ante el Covid 19, el
+                                empoderamiento de las mujeres, el desarrollo digital o la importancia de las instituciones multilaterales, como herramienta para abordar los desafíos económicos, sociales y medioambientales, regionales y
+                                globales, y para avanzar en la construcción de un orden internacional más justo e inclusivo- curiosamente se metió el tema del futbol. En el punto 10 se tomó nota del Proyecto “Vuelta al Futbol” sobre las
+                                Competiciones Deportivas Internacionales ligadas a la CONMEBOL Libertadores 2020, la CONMEBOL Sudamericana 2020, y las eliminatorias CONMEBOL para la Copa Mundial de la FIFA Qatar 2022, que como dijimos
+                                presentó el propio presidente de la CONMEBOL durante la Cumbre; “iniciativa que se continuará estudiando en las instancias competentes de cada Estado, en el marco de la evaluación de la reanudación de la
+                                actividad deportiva regular, segura y ordenada, y respetando los protocolos sanitarios de cada país”....<br />
+                                Lo importante es lo importante….
                             </p>
                         </div>
                         <div class="articulos__foto">
-                           <!-- <img src="" alt="Puerto" />-->
+                            <!-- <img src="assets/fotonotas/notaindex.png" alt="Gasero" />-->
                         </div>
                         <div class="articulos__hashtag">
-                            <p class="hashtag__texto">#Coyuntura</p>
+                            <p class="hashtag__texto">#Mercosur</p>
                         </div>
                     </div>
                 </div>
@@ -404,10 +428,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <a href="http://www.exolgan.com/"><img class="publicidad__horizontal" src="assets/publi-exolgan-grande.jpg"  alt="Exolgan"/></a>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <a href="https://www.jandenul.com/"><img class="publicidad__horizontal" src="assets/jangif.gif" alt="Jan de Nul"/></a>
-                </div>
+                    <a href="http://www.exolgan.com/"><img class="publicidad__horizontal" src="assets/publi-exolgan-grande.jpg" alt="Exolgan" /></a>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <a href="https://www.jandenul.com/"><img class="publicidad__horizontal" src="assets/jangif.gif" alt="Jan de Nul" /></a>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <a href="https://www.tl-americas.org/"><img class="publicidad__horizontal" src="assets/tp.gif" alt="Transport Logistic" /></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -416,19 +443,25 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="articulos__derecha">
                         <div class="articulos__subtitulo">
-                            <h3>Mensaje a importadores, por unos días a buscar
-                                dólares en el colchón o “quedate en casa”</h3>
+                            <h3>Te queríamos tanto canal Magdalena</h3>
                         </div>
                         <div class="articulos__texto">
-                            <p>Según el gobierno las medidas de supercepo al
-                                comercio exterior tienen que ver con la falta de dólares del Banco Central, entidad que según un directivo de una cámara del sector viene siendo un “pelotazo en contra” desde hace tiempo; incluso con la administración anterior que con la debacle quería evitar que salga un dólar del país. Ya no se trata de que no salen LNA y no hay funcionario con quien hablar o que los bancos no atiendan.
+                            <p>
+                                Como si no hubiera pasado nada en los últimos cuatro años, antes de haber llegado el nuevo gobierno; o mejor dicho como si esta fuera una continuidad de tan buenos tiempos kirchneristas; algunos quieren
+                                volver a instalar la necesidad de encarar las obras para aprovechar y utilizar el histórico canal Magdalena. Este proyecto, más allá de sus ventajas logísticas y de menor costo de dragado, - especialmente
+                                beneficioso para La Plata por ejemplo-; en su momento se promovía como una forma de “independizarnos” logísticamente de Uruguay y para que los buques tengan opciones al entrar y salir en el sistema del Río de
+                                la Plata sin acercarnos a Montevideo. Pero precisamente la mínima mención de este tema se ve para ciertos hermanos en Montevideo como una nueva intención de volver a los ataques que se le lanzaban desde la
+                                subsecretaría de Puertos y Vías Navegables en los gloriosos días del anterior gobierno nacional y popular, apenas interrumpido por pocos años de globos amarillos. Antes la movida se veía desde Uruguay como
+                                parte de la “venganza” entre otras cosas con la resolución que impedía hacer trasbordo en Montevideo por la situación con las pasteras del otro lado del río Uruguay .....Será que este temor infundado tiene
+                                que ver con que ahora el gobierno de Lacalle Pou promueve la radicación de cierta oligarquía argentina en Punta del Este, espantada ante la tendencias populistas de un gobierno con muchos ideólogos que creen
+                                que lo mejor que puede pasar al país es volver a 80 años atrás.... Que la sangre no llegue al río...de la Plata...
                             </p>
                         </div>
                         <div class="articulos__foto">
-                           <!-- <img src="" alt="Puerto" />-->
+                            <!-- <img src="" alt="Puerto" />-->
                         </div>
                         <div class="articulos__hashtag">
-                            <p class="hashtag__texto">#Coyuntura</p>
+                            <p class="hashtag__texto">#Puertos</p>
                         </div>
                     </div>
                 </div>
@@ -441,7 +474,7 @@
                         <div class="suscDesc__descarga">
                             <p>Mirá la última revista</p>
                         </div>
-                        <a class="suscDesc__botones__links" href="revistas/mayo2020.pdf">
+                        <a class="suscDesc__botones__links" href="revistas/junio2020.pdf">
                             <div class="suscDesc__botones">
                                 Descargala
                             </div>
