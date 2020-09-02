@@ -26,7 +26,6 @@
 
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/font/fonts.css" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169326200-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -35,9 +34,7 @@
             }
             gtag("js", new Date());
             gtag("config", "UA-169326200-1");
-        </script>
-        <!-- Google Tag Manager -->
-        <script>
+
             (function (w, d, s, l, i) {
                 w[l] = w[l] || [];
                 w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -49,11 +46,10 @@
                 f.parentNode.insertBefore(j, f);
             })(window, document, "script", "dataLayer", "GTM-PF292H7");
         </script>
-        <!-- End Google Tag Manager -->
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF292H7" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PF292H7" style="display: none; visibility: hidden;" width="0"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <!-- Header -->
         <div class="container-fluid">
@@ -188,14 +184,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
-                    <a class="hero__botonesSimples_links" target="_blank" href="revistas/junio2020.pdf">
-                        <div class="hero__botonesSimples">
+                    <a target="_blank" class="hero__botonesSimples_links" href="revistas/julio2020.pdf"  >
+                        <div id="hero__boton__descargalaultimarevista" onclick="ga('send', 'event', [PDF], [Download], [DescargadeRevistasHero]);" class="hero__botonesSimples" >
                             Descargá la última revista
                         </div>
                     </a>
-                    <a class="hero__botonesSimples_links" target="_blank" href="suscribite.html">
-                        <div class="hero__botonesSimples">
-                            Suscribite al newsletter
+                    <a target="_blank" class="hero__botonesSimples_links" href="virtuales/agosto20203.pdf" } >
+                        <div id="hero__boton__miraelultimonewsletter" onclick="ga('send', 'event', [PDF], [Download], [DescargadeNewslettersHero]);" class="hero__botonesSimples" >
+                            Mirá el último newsletter
                         </div>
                     </a>
                     <ul class="hero__botonesComplejo">
@@ -372,7 +368,9 @@
                                     <a href="http://www.loprimo.com.ar/"><img src="assets/publi-loprimo.jpg" alt="LoPrimo" /></a>
                                 </div>
                                 <div class="publicidades__slider__track__slide">
-                                    <a href="https://www.one-line.com/"><a href="https://www.one-line.com/"><img src="assets/publi-one.jpg" alt="One" /></a></a>
+                                    <a href="https://www.one-line.com/">
+                                        <a href="https://www.one-line.com/"><img src="assets/publi-one.jpg" alt="One" /></a>
+                                    </a>
                                 </div>
                                 <div class="publicidades__slider__track__slide">
                                     <a href="http://riodelaplatapilots.com.ar/"><img src="assets/publi-practicajeriodelaplata.jpg" alt="Practicaje rio de la Plata" /></a>
@@ -421,7 +419,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <a href="http://www.exolgan.com/"><img class="publicidad__horizontal" src="assets/publi-exolgan-grande.jpg"  alt="Exolgan"/></a>
+                    <a href="http://www.exolgan.com/"><img class="publicidad__horizontal" src="assets/publi-exolgan-grande.jpg" alt="Exolgan" /></a>
                 </div>
             </div>
         </div>
@@ -456,7 +454,7 @@
                         <div class="suscDesc__descarga">
                             <p>Mirá la última revista</p>
                         </div>
-                        <a class="suscDesc__botones__links" href="revistas/junio2020.pdf">
+                        <a class="suscDesc__botones__links" href="revistas/julio2020.pdf">
                             <div class="suscDesc__botones">
                                 Descargala
                             </div>
