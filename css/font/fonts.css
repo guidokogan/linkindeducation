@@ -1,55 +1,19 @@
 @font-face {
-    font-family: 'Tungsten Book';
-    src:    url('Tungsten-Book.woff2') format('woff2'),
-            url('Tungsten-Book.woff') format('woff');
+    font-family: proxima_nova, sans-serif;
+    font-weight: 700;
+    src: 
+         url('proxima_nova_bold.woff2') format('woff2'),
+         url('proxima_nova_bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
 
-@font-face {
-    font-family: 'Tungsten';
-    src:    url('Tungsten-Bold.woff2') format('woff2'),
-            url('Tungsten-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Tungsten';
-    src:    url('Tungsten-Light.woff2') format('woff2'),
-            url('Tungsten-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Tungsten';
-    src:    url('Tungsten-Medium.woff2') format('woff2'),
-            url('Tungsten-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Tungsten';
-    src:    url('Tungsten-Semibold.woff2') format('woff2'),
-            url('Tungsten-Semibold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Tiempos Fine Semibold';
-    src:    url('Tiempos-Fine-Semibold.woff2') format('woff2'),
-            url('Tiempos-Fine-Semibold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 @font-face {
-    font-family: 'LineToCircular-Book';
-    src:    url('lineto-circular-book.woff2') format('woff2'),
-            url('lineto-circular-book.woff') format('woff');
+    font-family: proxima_nova, sans-serif;
+    font-weight: 400;
+    src: 
+        url('/Sitio/css/font/proxima_nova_regular.woff2') format('woff2'),
+        url('/Sitio/css/font/proxima_nova_regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

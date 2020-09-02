@@ -1,0 +1,1286 @@
+/* Variables */
+
+/* Colores */
+$color-naranja: #cd4e37;
+$color-amarillo: #d98d28;
+$color-blanco: #ffffff;
+$color-gris: #434041;
+$color-grisClaro: #e6e7e8;
+
+/* Gradients */
+%bordeGradient {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, $color-naranja, $color-amarillo);
+}
+%textoGradient {
+    background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textos */
+%proximaNova_Regular {
+    font-family: proxima_nova, sans-serif;
+    font-weight: 400;
+}
+%proximaNova_Bold {
+    font-family: proxima_nova, sans-serif;
+    font-weight: 700;
+}
+%tituloTop {
+    font-family: proxima_nova, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+}
+%tituloBot {
+    font-family: proxima_nova, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+}
+%textoLectura {
+    font-family: proxima_nova, sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 26px;
+}
+
+/* Generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+ul,
+a {
+    font-family: proxima_nova, sans-serif;
+    text-decoration: none;
+}
+p,
+li,
+ul{
+    @extend %textoLectura;
+}
+a {
+    @extend %proximaNova_Bold;
+}
+h1 {
+    @extend %tituloTop;
+}
+h2 {
+    @extend %tituloBot;
+}
+
+.version__mobile {
+    display: none !important;
+}
+
+.titulo__top__white{
+    display: inline-block;
+    p{
+        @extend %tituloTop;
+        color: $color-blanco;
+        text-transform: uppercase;
+    }
+    hr{
+        background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
+        height: 6px;
+        width: 100px;
+        margin: auto;
+        border: none;
+        margin-top: 10px;
+    }
+}
+
+.cd-img-replace {
+    /* replace text with a background-image */
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+  }
+  
+  .cd-scroll-down {
+    position: absolute;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 20px;
+    width: 38px;
+    height: 44px;
+    background: url("../img/cd-arrow-bottom.svg") no-repeat center center;
+  }
+  
+  /* No Touch devices */
+  .cd-nav-trigger {
+    display: none;
+  }
+  
+  .no-touch #cd-vertical-nav {
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  .no-touch #cd-vertical-nav li {
+    text-align: right;
+    list-style: none;
+  }
+  .no-touch #cd-vertical-nav a {
+    display: inline-block;
+    /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .no-touch #cd-vertical-nav a:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .no-touch #cd-vertical-nav a span {
+    float: right;
+    display: inline-block;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+  .no-touch #cd-vertical-nav a:hover span {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  .no-touch #cd-vertical-nav a:hover .cd-label {
+    opacity: 1;
+  }
+  .no-touch #cd-vertical-nav a.is-selected .cd-dot {
+    background-color: black;
+  }
+  .no-touch #cd-vertical-nav .cd-dot {
+    position: relative;
+    /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+    top: 8px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #b0b3b3;
+    -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+    -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+    transition: transform 0.2s, background-color 0.5s;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  .no-touch #cd-vertical-nav .cd-label {
+    position: relative;
+    margin-right: 10px;
+    padding: .4em .5em;
+    color: #b0b3b3;
+    line-height: 16px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 0;
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
+  
+  /* Touch devices */
+  .touch .cd-nav-trigger {
+    display: block;
+    z-index: 2;
+    position: fixed;
+    bottom: 30px;
+    right: 5%;
+    height: 44px;
+    width: 44px;
+    border-radius: 0.25em;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .touch .cd-nav-trigger span {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    background-color: #3e3947;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .touch .cd-nav-trigger span::before, .touch .cd-nav-trigger span::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: inherit;
+    border-radius: inherit;
+  }
+  .touch .cd-nav-trigger span::before {
+    top: -9px;
+  }
+  .touch .cd-nav-trigger span::after {
+    bottom: -9px;
+  }
+  
+  .touch #cd-vertical-nav {
+    position: fixed;
+    z-index: 1;
+    right: 5%;
+    bottom: 30px;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    -o-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    border-radius: 0.25em;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .touch #cd-vertical-nav a {
+    display: block;
+    padding: 1em;
+    border-bottom: 1px solid rgba(62, 57, 71, 0.1);
+  }
+  .touch #cd-vertical-nav a span:first-child {
+    display: none;
+  }
+  .touch #cd-vertical-nav a.is-selected span:last-child {
+    color: #b0b3b3;
+  }
+  .touch #cd-vertical-nav.open {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  .touch #cd-vertical-nav.open + .cd-nav-trigger {
+    background-color: transparent;
+  }
+  .touch #cd-vertical-nav.open + .cd-nav-trigger span {
+    background-color: rgba(62, 57, 71, 0);
+  }
+  .touch #cd-vertical-nav.open + .cd-nav-trigger span::before, .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+    background-color: #3e3947;
+    height: 3px;
+    width: 20px;
+    border-radius: 0;
+    left: -8px;
+  }
+  .touch #cd-vertical-nav.open + .cd-nav-trigger span::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 1px;
+  }
+  .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    bottom: 0;
+  }
+  .touch #cd-vertical-nav li:last-child a {
+    border-bottom: none;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .touch .cd-nav-trigger, .touch #cd-vertical-nav {
+      bottom: 40px;
+    }
+  }
+  
+/* Nav */
+
+#navegador {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: $color-blanco;
+    transition: 0.2s;
+    .navegador{
+        padding: 15px 0px;
+        position: relative;
+        width: 81%;
+        margin: auto;
+        .navegador__logo {
+            position: relative;
+            float: left;
+            a{
+                img{
+                    padding-bottom: 12px;
+                    width: 238px;
+                }
+            }
+        }
+        .navegador__links {
+            float: right;
+            position: relative;
+            margin-top: 7px;
+            li {
+                padding: 0;
+                list-style: none;
+                position: relative;
+                display: inline-block;
+                padding: 11px 0 0 20px;
+                margin-left: 20px;
+                &:nth-child(4){
+                    margin-right: 0;
+                }
+                &:nth-child(5){
+                    width: 20px;
+                    transform: translateY(4px);
+                    a {
+                        width: 21px;
+                        img{
+                            width: 21px;
+                        }
+                        &:hover {
+                            border-bottom: 0 solid;
+                        }
+                    }
+                }
+                a {
+                    position: relative;
+                    display: inline-block;
+                    height: 28px;
+                    color: $color-gris !important;
+                    &:hover,
+                    :active,
+                    :focus {
+                        border-bottom: 4px solid;
+                        @extend %bordeGradient;
+                    }
+                }
+                .linkactive {
+                    position: relative;
+                    display: inline-block;
+                    height: 28px;
+                    color: $color-gris !important;
+                    border-bottom: 4px solid;
+                    @extend %bordeGradient;
+                }
+                ul {
+                    position: absolute;
+                    left: 0;
+                    margin: 0;
+                    background: $color-blanco;
+                    display: none;
+                    padding-top: 5px;
+                    margin-left: 19px;
+                    li {
+                        clear: both;
+                        list-style: none;
+                        display: block;
+                        margin-left: 0;
+                        padding: 0;
+                        a {
+                            padding: 0 0 30px 20px;
+                            font-size: 13px;
+                            color: $color-gris !important;
+                            display: inline-block;
+                            width: 100%;
+                            border-bottom: 0 solid transparent;
+                            &:hover {
+                                @extend %bordeGradient;
+                                @extend %textoGradient;
+                                border-bottom: 0 solid;
+                            }
+                        }
+                        &:nth-child(1){
+                            a {
+                                padding-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            li:hover{
+                ul{
+                    display: block;
+                    animation: fadeInRight 0.3s ease;
+                    -webkit-animation: fadeInRight 0.3s ease;
+                    width: 200px;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+section {
+    padding: 150px 70px;
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    text-align: center;
+}
+#othersolutions{
+    background: $color-naranja;
+    background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
+    background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-naranja.png");
+    background-size: cover;
+    background-position: center;
+}
+.section1__infocontainer {
+    text-align: center;
+    .section1__animation {
+        margin: auto;
+        width: 837px;
+    }
+    .section1__scroll{
+        width: 315px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        img{
+            width: 100%;
+        }
+    }
+}
+.titulo__top__normal{
+    p{
+        @extend %tituloTop;
+        color: $color-gris;
+        text-transform: uppercase;
+    }
+    hr{
+        background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
+        height: 6px;
+        width: 100px;
+        margin: auto;
+        border: none;
+        margin-top: 10px;
+    }
+}
+.titulo__top__texto__normal{
+    position: relative;
+    margin: auto;
+    width: 900px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    p {
+        @extend %textoLectura;
+        color: $color-gris;
+        margin: auto;
+        text-align: center;
+    }
+}
+.studentrecruitment-img{
+    margin-top: 50px;
+    img{
+        width: 70%;
+        margin: -20px 0;
+        &:nth-child(2){
+            margin-left: 2%;
+        }
+        &:nth-child(3){
+            margin-left: 5%;
+        }
+        &:nth-child(4){
+            margin-left: 2%;
+        }
+    }
+}
+#strategicconsultancy{
+    background: $color-grisClaro;
+    background: linear-gradient(to right, $color-blanco 0%, $color-grisClaro 100%);
+    background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-gris.png");
+    background-size: cover;
+    background-position: bottom;
+}
+.strategicconsultancy-img{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 1600px;
+    margin: auto;
+    img{
+        width: 300px;
+    }
+}
+
+#contactoDatos {
+    padding: 110px 0 50px 0;
+    min-height: auto;
+}
+#contactoFormulario{
+    margin-top: 50px;
+
+}
+.footer__Datos__Contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    &:nth-child(1) {
+        text-align: right;
+    }
+    &:nth-child(3) {
+        text-align: left;
+    }
+    .footer__Datos__Contacto__Paises {
+        .footer__Datos__Contacto__Titulo {
+            color: $color-amarillo;
+            font-size: 23px;
+            line-height: 26px;
+            @extend %proximaNova_Bold;
+            margin-bottom: 20px;
+        }
+        .footer__Datos__Contacto__Texto {
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 0 !important;
+            @extend %proximaNova_Regular;
+            color: $color-gris;
+        }
+        img {
+            width: 32px;
+        }
+    }
+    .footer__Datos__Contacto__Linking {
+        text-align: center;
+        margin: 0 5%;
+        a {
+            color: $color-amarillo;
+            font-size: 18px;
+            line-height: 25px;
+            @extend %proximaNova_Regular;
+        }
+        img {
+            margin: 10px auto;
+            display: block;
+            width: 160px;
+        }
+    }
+}
+.footer__Formulario__Container {
+    width: 100vw;
+    background: $color-naranja;
+    background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
+    background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-footer.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 587px;
+    .titulo__top__white {
+        margin: 30px auto 10px auto;
+    }
+    .footer__Formulario__Form {
+        width: 80%;
+        max-width: 980px;
+        margin: 5px auto 10px auto;
+        box-shadow: 0px 5px 14px 0px rgba(97, 53, 0, 0.7);
+        height: 413px;
+    }
+}
+.footer__Formulario__Copyright {
+    background-color: #000;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    p {
+        font-size: 13px;
+        line-height: 20px;
+        @extend %proximaNova_Regular;
+        color: $color-blanco;
+        padding: 0;
+        margin: 0;
+    }
+}
+#fieldTitle{
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+    @extend %proximaNova_Bold;
+    text-align: left;
+    display: inherit;
+}
+
+#field__your-name,
+#field__your-mail,
+#field__your-company-university,
+#field__your-position,
+#field__your-message {
+    br{
+        display: none;
+    }
+}
+.wpcf7 {
+    background-blend-mode: darken;
+    background-color: rgba(217, 141, 40, 0.2);
+}
+.wpcf7 input:not([type="submit"]):not([type="checkbox"]),
+.wpcf7 textarea,
+.wpcf7 select {
+    font-size: 14px;
+    line-height: 20px;
+    @extend %proximaNova_Bold;
+}
+.wpcf7-list-item-label {
+    font-size: 15px;
+    line-height: 28px;
+    @extend %proximaNova_Regular;
+}
+.wpcf7-form {
+    padding: 30px;
+    height: 413px;
+}
+.wpcf7-form-control-wrap {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 12px 0;
+}
+.wpcf7-form input[type="submit"] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0 !important;
+    background-color: $color-blanco;
+}
+.wpcf7 input[type="submit"] {
+    color: #000 !important;
+    margin: auto;
+}
+input[type="submit"],
+button[type="submit"] {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000 !important;
+    @extend %proximaNova_Regular;
+    text-transform: lowercase !important;
+    padding: 5px 10px !important;
+}
+.wpcf7-form input[type="submit"]:hover {
+    transform: translatey(4px);
+    background-color: $color-amarillo !important;
+}
+#field__first__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    #field__left{
+        width: 45%;
+        display: block;
+        margin-top: 0px;
+        #field__your-name, #field__your-company-university {
+            display: block;
+        }
+    }
+    #field__right{
+        width: 45%;
+        display: block;;
+        margin-top: 0;
+        #field__your-position, #field__your-mail {
+            display: block;
+        }
+    }
+    #field__your-message, #field__send {
+        width: 100%;
+    }
+}
+    #field__send br {
+        display: none;
+    }
+    .your-message,.your-consent {
+        float: clear;
+        width: 100%;
+    }
+    .your-message textarea {
+        max-height: 70px;
+    }
+    .your-consent {
+        border: none;
+    }
+span.wpcf7-list-item {
+    margin: 0;
+    margin-top: 10px;
+    text-align: left !important;
+}
+textarea,#footer textarea {
+    padding: 10px 0 11px 0 !important;
+}
+input[type="text"],input[type="email"],input[type="password"],input:not([type="submit"]),textarea,.wpcf7 select {
+    padding: 10px 0 11px 0 !important;
+    color: #fff !important;
+}
+
+@media (max-width: 1635px) {
+    .navegador {
+        .navegador__logo{
+            position: relative;
+            float: left;
+            a{
+                img{
+                    padding-bottom: 0;
+                    width: 210px;
+                }
+            }
+        }
+        .navegador__links{
+            li {
+                a {
+                    font-size: 18px;
+                }
+                ul{
+                    li{
+                        a{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .footer__Datos__Contacto {
+        margin: 90px auto 10px auto;
+        &:nth-child(1){
+            text-align: right;
+        }
+        &:nth-child(3){
+            text-align: left;
+        }
+        .footer__Datos__Contacto__Linking{
+            img{
+                width: 139px;
+            }
+        } 
+        .footer__Datos__Contacto__Paises {
+            .footer__Datos__Contacto__Titulo {
+                font-size: 15px;
+                line-height: 17px;
+                margin-bottom: 10px;
+            }
+            .footer__Datos__Contacto__Texto {
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+        .footer__Datos__Contacto__Linking{
+            a {
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+    }
+    
+    .footer__Formulario__Container{
+        width: 100%;
+        height: 560px;
+        .titulo__top__white{
+            margin: 20px 40px 10px 40px;
+            p{
+                font-size: 20px;
+            }
+        }
+        .footer__Formulario__Form {
+            width: 80%;
+            max-width: 980px;
+            margin: 10px auto;
+            box-shadow: 0px 5px 14px 0px rgba(97, 53, 0, 0.7);
+            height: 423px;
+        }
+    }
+    
+    .wpcf7-form {
+        height: 423px;
+    }
+}
+
+
+
+@media (max-width: 1478px) {
+    .section1__infocontainer {
+        .section1__animation {
+            width: 750px;
+        }
+        .section1__scroll{
+            width: 190px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .titulo__top__texto__normal{
+        width: 800px;
+        margin-top: 30px;
+        p {
+            font-size: 18px;
+        }
+    }
+    .titulo__bot__texto__normal{
+        width: 800px;
+        margin-top: 10px;
+        p{
+            font-size: 18px;
+        }
+    }
+    .studentrecruitment-img{
+        margin-top: 50px;
+        img{
+            width: 90%;
+            margin: -20px 0;
+        }
+    }
+    .strategicconsultancy-img{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        width: 950px;
+        margin: auto;
+        img{
+            width: 180px;
+        }
+    }
+}
+
+@media (max-width: 1220px) {
+    .navegador {
+        .navegador__links {
+            li {
+                a {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    section{
+        padding: 80px 70px;
+    }
+}
+
+@media (max-width: 940px) {
+    #cd-vertical-nav{
+        display: none;
+    }
+    #contactoDatos {
+        padding: 150px 0 50px 0;
+        min-height: auto;
+    }
+    section{
+        padding: 60px 40px;
+    }
+
+    #navegador{
+        .navegador {
+            width: 90%;
+            .navegador__logo{
+                position: relative;
+                float: none;
+                display: block;
+                a{
+                    img{
+                        padding-bottom: 5px;
+                        width: 160px;
+                    }
+                }
+            }
+            .navegador__links{
+                display: block;
+                float: none;
+                position: relative;
+                margin-top: 0;
+                li {
+                    padding: 0;
+                    list-style: none;
+                    position: relative;
+                    display: inline-block;
+                    padding: 11px 0 0 20px;
+                    margin-left: 0;
+                    a {
+                        position: relative;
+                        display: inline-block;
+                        height: 28px;
+                        color: $color-gris !important;
+                        &:hover {
+                            border-bottom: 4px solid;
+                        }
+                    }
+                    ul{
+                        position: absolute;
+                        left: 0;
+                        margin: 0;
+                        background: $color-blanco;
+                        display: none;
+                        padding-top: 5px;
+                        li{
+                            clear: both;
+                            list-style: none;
+                            display: block;
+                            margin-left: 0;
+                            padding: 0 0;
+                            a{
+                                padding: 12px 20px 25px 20px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                & li:nth-child(1){ 
+                    padding: 11px 0 0 0;
+                }
+                li:hover{
+                    ul{
+                        display: block;
+                        animation: fadeInRight 0.3s ease;
+                        -webkit-animation: fadeInRight 0.3s ease;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+    .section1__infocontainer {
+        padding-top: 180px;
+        .section1__animation {
+            width: 350px;
+        }
+    }
+    .seccion_Base__Container {
+        width: 90%;
+        margin-top: 10px;
+    }
+    .titulo__top__texto__normal{
+        width: 500px;
+        p {
+            font-size: 18px;
+        }
+    }
+    .titulo__bot__texto__normal{
+        width: 500px;
+        p{
+            font-size: 18px;
+        }
+    }
+    .studentrecruitment-img{
+        img{
+            width: 100%;
+            margin: -10px 0;
+            &:nth-child(2){
+                margin-left: 0;
+            }
+            &:nth-child(3){
+                margin-left: 0;
+            }
+            &:nth-child(4){
+                margin-left: 0;
+            }
+        }
+    }
+    .strategicconsultancy-img{
+        margin-top: 20px;
+        padding-left: 20px;
+        width: 500px;
+        margin: auto;
+        img{
+            width: 150px;
+        }
+    }
+    .footer__Datos {
+        height: auto;
+    }
+    .footer__Formulario__Container {
+        width: 100%;
+    }
+    .footer__Formulario__Container .footer__Formulario__Titulo {
+        width: 56%;
+    }
+    .wpcf7-form {
+        padding: 10px 10px 20px 20px;
+        height: 424px;
+    }
+    .footer__Formulario__Container .footer__Formulario__Titulo {
+        margin-top: 30px;
+    }
+    .footer__Formulario__Container {
+        height: 650px;
+    }
+    .footer__Formulario__Form {
+        margin: 20px auto;
+        height: 424px;
+    }
+    
+    #field__first__row {
+        width: 100%;
+    }
+    #field__your-name,
+    #field__your-mail,
+    #field__your-company-university,
+    #field__your-position {
+        width: 97%;
+    }
+    #field__your-message,
+    #field__send {
+        width: 97%;
+    }
+    .your-message textarea {
+        max-height: 101px;
+    }
+}
+
+
+@media (max-width: 664px) {
+    #navegador .navegador .navegador__links li:hover ul{
+        display: none !important;
+    }
+    
+    #navegador{
+        padding: 10px 50px 0px 10px;
+        .navegador {
+            width: 90%;
+            .navegador__logo {
+                position: relative;
+                a {
+                    img {
+                        padding-bottom: 10px;
+                        width: 160px;
+                    }
+                }
+            }
+            .navegador__links{
+                float: left;
+                position: relative;
+                margin-top: 0;
+                width: 320px;
+                li {
+                    padding: 0;
+                    list-style: none;
+                    position: relative;
+                    display: inline-block;
+                    padding: 0 0 0 20px;
+                    margin-left: 0;
+                    a {
+                        position: relative;
+                        display: inline-block;
+                        height: 28px;
+                        color: $color-gris !important;
+                        &:hover {
+                            border-bottom: 4px solid;
+                        }
+                    }
+                    ul{
+                        position: absolute;
+                        left: 0;
+                        margin: 0;
+                        background: $color-blanco;
+                        display: none;
+                        padding-top: 5px;
+                        li{
+                            clear: both;
+                            list-style: none;
+                            display: block;
+                            margin-left: 0;
+                            padding: 0 0;
+                            a{
+                                padding: 12px 20px 25px 20px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                & li:nth-child(1){ 
+                    padding: 0 0 0 0;
+                }
+                & li:nth-child(3){ 
+                    padding: 0 0 0 0;
+                }
+                li:hover{
+                    ul{
+                        display: block;
+                        animation: fadeInRight 0.3s ease;
+                        -webkit-animation: fadeInRight 0.3s ease;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+    .footer__Datos__Contacto {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 50px;
+        .footer__Datos__Contacto__Paises {
+            text-align: center;
+        }
+        .footer__Datos__Contacto__Linking{
+            text-align: center;
+            margin: 30px;
+        }
+    }
+    #Datos {
+        background-color: #f5f5f5;
+    }
+    .titulo__top__texto__normal{
+        width: 380px;
+        p {
+            font-size: 18px;
+        }
+    }
+    .titulo__bot__texto__normal{
+        width: 380px;
+        p{
+            font-size: 18px;
+        }
+    }
+    .studentrecruitment-img{
+        img{
+            width: 100%;
+            margin: -5px 0;
+        }
+    }
+    .strategicconsultancy-img{
+        margin-top: 20px;
+        width: 380px;
+        margin: auto;
+        img{
+            width: 50%;
+        }
+    }
+    .footer__Formulario__Container{
+        width: 100%;
+        height: 770px;
+        .titulo__top__white{
+            margin: 20px 40px 10px 40px;
+            p{
+                font-size: 20px;
+            }
+        }
+        .footer__Formulario__Form {
+            width: 90%;
+            max-width: 980px;
+            margin: 10px auto;
+            box-shadow: 0px 5px 14px 0px rgba(97, 53, 0, 0.7);
+            height: 583px;
+        }
+    }
+    .wpcf7-list-item-label {
+        font-size: 13px;
+        line-height: 28px;
+    }
+    .wpcf7-form {
+        height: 583px;
+    }
+    #field__first__row {
+        width: 100%;
+        #field__left{
+            width: 100%;
+        }
+        #field__right{
+            width: 100%;
+        }
+        #field__your-message, #field__send {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 545px) {
+
+    .footer__Datos__Contacto {
+        width: auto;
+    }
+
+    .footer__Formulario__Container {
+        height: 980px;
+        .footer__Formulario__Form {
+            height: 604px;
+        }
+    }
+    .wpcf7-form {
+        height: 604px;
+    }
+}
