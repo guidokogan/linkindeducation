@@ -341,6 +341,7 @@ h2 {
     }
   }
   
+
 /* Nav */
 #navegador {
     position: fixed;
@@ -351,16 +352,16 @@ h2 {
     width: 100%;
     background: $color-blanco;
     transition: 0.2s;
-    .navegador{
+    .navegador {
         padding: 15px 0px;
         position: relative;
-        width: 81%;
+        width: 90%;
         margin: auto;
         .navegador__logo {
-            position: relative;
             float: left;
-            a{
-                img{
+            position: relative;
+            a {
+                img {
                     padding-bottom: 12px;
                     width: 238px;
                 }
@@ -368,8 +369,22 @@ h2 {
         }
         .navegador__links {
             float: right;
-            position: relative;
+            max-width: 820px;
+            width: 100%;
             margin-top: 7px;
+            .linkedinnav {
+                width: 20px;
+                transform: translateY(4px);
+                a {
+                    width: 21px;
+                    img {
+                        width: 21px;
+                    }
+                    &:hover {
+                        border-bottom: 0 solid;
+                    }
+                }
+            }
             li {
                 padding: 0;
                 list-style: none;
@@ -377,21 +392,9 @@ h2 {
                 display: inline-block;
                 padding: 11px 0 0 20px;
                 margin-left: 20px;
-                &:nth-child(4){
+                font-size: 16px;
+                &:nth-child(5) {
                     margin-right: 0;
-                }
-                &:nth-child(5){
-                    width: 20px;
-                    transform: translateY(4px);
-                    a {
-                        width: 21px;
-                        img{
-                            width: 21px;
-                        }
-                        &:hover {
-                            border-bottom: 0 solid;
-                        }
-                    }
                 }
                 a {
                     position: relative;
@@ -440,7 +443,7 @@ h2 {
                                 border-bottom: 0 solid;
                             }
                         }
-                        &:nth-child(1){
+                        &:nth-child(1) {
                             a {
                                 padding-top: 10px;
                             }
@@ -448,19 +451,33 @@ h2 {
                     }
                 }
             }
-            li:hover{
-                ul{
+            li:hover {
+                ul {
                     display: block;
                     animation: fadeInRight 0.3s ease;
                     -webkit-animation: fadeInRight 0.3s ease;
-                    width: 200px;
+                    width: 320px;
                     padding-top: 10px;
+                }
+            }
+            li:hover:nth-child(1){
+                ul {
+                    width: 200px;
+                }
+            }
+            li:hover:nth-child(2){
+                ul {
+                    width: 200px;
+                }
+            }
+            li:hover:nth-child(4){
+                ul {
+                    width: 200px;
                 }
             }
         }
     }
 }
-
 @keyframes fadeInRight {
     0% {
         opacity: 0;
@@ -471,15 +488,15 @@ h2 {
         transform: none;
     }
 }
-
 section {
-    padding: 150px 70px;
+    padding: 70px;
     position: relative;
-    min-height: 100vh;
     height: auto;
     text-align: center;
 }
 #aboutus{
+    min-height: 100vh;
+    height: auto;
     background: $color-naranja;
     background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
     background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-naranja.png");
@@ -489,7 +506,10 @@ section {
 .section1__infocontainer {
     text-align: center;
     .section1__animation {
-        margin: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 40%;
         width: 482px;
     }
     .section1__scroll{
@@ -576,6 +596,8 @@ section {
     background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-gris.png");
     background-size: cover;
     background-position: bottom;
+    min-height: 77vh;
+    height: auto;
 }
 #mission{
     .titulo__top__normal{
@@ -636,7 +658,7 @@ section {
 }
 .lineavertical-abajo{
     position: absolute;;
-    bottom: -130px;
+    bottom: -40px;
     z-index: 10;
     left: 26%;
     transform: translateX(-26%);
@@ -646,10 +668,6 @@ section {
     background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
     border-radius: 50px;
 }
-#mission, #vision, #values{
-    min-height: auto;
-}
-
 #contactoDatos {
     padding: 110px 0 50px 0;
     min-height: auto;
@@ -671,6 +689,7 @@ section {
         text-align: left;
     }
     .footer__Datos__Contacto__Paises {
+        display: none;
         .footer__Datos__Contacto__Titulo {
             color: $color-amarillo;
             font-size: 23px;
@@ -701,10 +720,11 @@ section {
         img {
             margin: 10px auto;
             display: block;
-            width: 160px;
+            width: 210px;
         }
     }
 }
+
 .footer__Formulario__Container {
     width: 100vw;
     background: $color-naranja;
@@ -879,20 +899,6 @@ input[type="text"],input[type="email"],input[type="password"],input:not([type="s
                 }
             }
         }
-        .navegador__links{
-            li {
-                a {
-                    font-size: 18px;
-                }
-                ul{
-                    li{
-                        a{
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
-        }
     }
     
     .footer__Datos__Contacto {
@@ -951,7 +957,7 @@ input[type="text"],input[type="email"],input[type="password"],input:not([type="s
 }
 
 
-@media (max-width: 1478px) {
+@media (max-width: 1520px) {
     .section1__infocontainer {
         .section1__animation {
             width: 350px;
@@ -1036,11 +1042,24 @@ input[type="text"],input[type="email"],input[type="password"],input:not([type="s
 
 
 @media (max-width: 1220px) {
-    .navegador {
-        .navegador__links {
-            li {
-                a {
-                    font-size: 15px;
+    /* Nav */
+    #navegador {
+        .navegador {
+            .navegador__links {
+                max-width: 100%;
+                width: 100%;
+                float: left;
+                li {
+                    &:nth-child(1) {
+                        margin-left: -21px;
+                    }
+                    ul {
+                        li {
+                            &:nth-child(1) {
+                                margin-left: 0;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1061,71 +1080,33 @@ input[type="text"],input[type="email"],input[type="password"],input:not([type="s
     section{
         padding: 60px 40px;
     }
-
-    #navegador{
+    /* Nav */
+    #navegador {
         .navegador {
-            width: 90%;
-            .navegador__logo{
-                position: relative;
-                float: none;
-                display: block;
-                a{
-                    img{
-                        padding-bottom: 5px;
-                        width: 160px;
-                    }
-                }
+            .navegador__logo {
+                width: 100%;
             }
-            .navegador__links{
-                display: block;
-                float: none;
-                position: relative;
-                margin-top: 0;
+            .navegador__links {
+                max-width: 500px;
+                width: 100%;
                 li {
-                    padding: 0;
-                    list-style: none;
-                    position: relative;
-                    display: inline-block;
-                    padding: 11px 0 0 20px;
-                    margin-left: 0;
-                    a {
-                        position: relative;
-                        display: inline-block;
-                        height: 28px;
-                        color: $color-gris !important;
-                        &:hover {
-                            border-bottom: 4px solid;
-                        }
+                    &:nth-child(1) {
+                        margin-left: -21px;
                     }
-                    ul{
-                        position: absolute;
-                        left: 0;
-                        margin: 0;
-                        background: $color-blanco;
-                        display: none;
-                        padding-top: 5px;
-                        li{
-                            clear: both;
-                            list-style: none;
-                            display: block;
-                            margin-left: 0;
-                            padding: 0 0;
-                            a{
-                                padding: 12px 20px 25px 20px;
-                                font-size: 12px;
+                    &:nth-child(4) {
+                        margin-left: -21px;
+                    }
+                    ul {
+                        li {
+                            &:nth-child(1) {
+                                margin-left: 0;
                             }
                         }
                     }
                 }
-                & li:nth-child(1){ 
-                    padding: 11px 0 0 0;
-                }
-                li:hover{
-                    ul{
-                        display: block;
-                        animation: fadeInRight 0.3s ease;
-                        -webkit-animation: fadeInRight 0.3s ease;
-                        width: 200px;
+                li:hover {
+                    ul {
+                        display: none;
                     }
                 }
             }
@@ -1134,7 +1115,8 @@ input[type="text"],input[type="email"],input[type="password"],input:not([type="s
     .section1__infocontainer {
         padding-top: 180px;
         .section1__animation {
-            width: 260px;
+            width: 90%;
+            max-width: 260px;
         }
     }
     .titulo__top__texto__normal{
@@ -1232,56 +1214,51 @@ input[type="text"],input[type="email"],input[type="password"],input:not([type="s
 
 
 @media (max-width: 664px) {
-    #navegador .navegador .navegador__links li:hover ul{
-        display: none !important;
+    #aboutus{
+        min-height: 100vh;
+        height: auto;
     }
-    #navegador{
-        padding: 10px 50px 0px 10px;
+
+    /* Nav */
+    #navegador {
         .navegador {
-            width: 90%;
             .navegador__logo {
-                position: relative;
+                width: 100%;
                 a {
                     img {
-                        padding-bottom: 10px;
-                        width: 160px;
+                        padding-bottom: 12px;
+                        width: 150px;
                     }
                 }
             }
-            .navegador__links{
-                float: left;
-                position: relative;
+            .navegador__links {
+                max-width: 400px;
+                width: 100%;
                 margin-top: 0;
-                width: 320px;
                 li {
-                    padding: 0;
-                    list-style: none;
-                    position: relative;
-                    display: inline-block;
-                    padding: 0 0 0 20px;
-                    margin-left: 0;
-                    a {
-                        position: relative;
-                        display: inline-block;
-                        height: 28px;
-                        color: $color-gris !important;
-                        &:hover {
-                            border-bottom: 4px solid;
+                    padding: 7px 0 0 20px;
+                    font-size: 15px;
+                    margin-left: 10px;
+                    &:nth-child(1) {
+                        margin-left: -21px;
+                    }
+                    &:nth-child(3) {
+                        margin-left: -21px;
+                    }
+                    &:nth-child(4) {
+                        margin-left: 5px;
+                    }
+                    ul {
+                        li {
+                            &:nth-child(1) {
+                                margin-left: 0;
+                            }
                         }
                     }
                 }
-                & li:nth-child(1){ 
-                    padding: 0 0 0 0;
-                }
-                & li:nth-child(3){ 
-                    padding: 0 0 0 0;
-                }
-                li:hover{
-                    ul{
-                        display: block;
-                        animation: fadeInRight 0.3s ease;
-                        -webkit-animation: fadeInRight 0.3s ease;
-                        width: 200px;
+                li:hover {
+                    ul {
+                        display: none;
                     }
                 }
             }
@@ -1342,6 +1319,53 @@ input[type="text"],input[type="email"],input[type="password"],input:not([type="s
 }
 
 @media (max-width: 545px) {
+    
+    /* Nav */
+    #navegador {
+        .navegador {
+            .navegador__logo {
+                width: 100%;
+                a {
+                    img {
+                        padding-bottom: 12px;
+                        width: 150px;
+                    }
+                }
+            }
+            .navegador__links {
+                max-width: 300px;
+                width: 100%;
+                margin-top: 0;
+                padding-left: 10px;
+                li {
+                    padding: 7px 0 0 7px;
+                    font-size: 14px;
+                    margin-left: 2px;
+                    &:nth-child(1) {
+                        margin-left: -21px;
+                    }
+                    &:nth-child(3) {
+                        margin-left: -21px;
+                    }
+                    &:nth-child(4) {
+                        margin-left: 2px;
+                    }
+                    ul {
+                        li {
+                            &:nth-child(1) {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                li:hover {
+                    ul {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
     #aboutus{
         height: 700px;
     }
