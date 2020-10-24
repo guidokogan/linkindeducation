@@ -99,6 +99,24 @@ h2 {
         margin-top: 10px;
     }
 }
+.titulo__bot__normal {
+    position: relative;
+    width: auto;
+    display: inline-block;
+    margin-top: 50px;
+    p {
+        @extend %tituloBot;
+        color: $color-gris;
+    }
+    hr {
+        background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
+        height: 6px;
+        width: 100px;
+        margin: auto;
+        border: none;
+        margin-top: 10px;
+    }
+}
 .cd-img-replace {
     /* replace text with a background-image */
     display: inline-block;
@@ -556,16 +574,16 @@ section {
     margin: auto;
     img {
         &:nth-child(1) {
-            width: 800px;
+            max-width: 710px;
             display: inline-block;
         }
         &:nth-child(2) {
-            width: 800px;
+            max-width: 710px;
             margin-left: 90px;
             display: inline-block;
         }
         &:nth-child(3) {
-            width: 800px;
+            max-width: 710px;
             display: inline-block;
         }
     }
@@ -833,7 +851,6 @@ section {
         text-align: left;
     }
     .footer__Datos__Contacto__Paises {
-        display: none;
         .footer__Datos__Contacto__Titulo {
             color: $color-amarillo;
             font-size: 23px;
@@ -1044,8 +1061,8 @@ textarea,
 
 @media (max-width: 1635px) {
     .lineavertical {
-        top: 240px;
-        left: 122px;
+        top: 200px;
+        left: 123px;
     }
     .home__SeccionHowWeCreate__Grafico__Container {
         width: 1200px;
@@ -1201,6 +1218,10 @@ textarea,
 }
 
 @media (max-width: 1520px) {
+    .lineavertical {
+        top: 200px;
+        left: 74px;
+    }
     .section1__infocontainer {
         .section1__animation {
             width: 90%;

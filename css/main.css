@@ -3,22 +3,22 @@
 /* Gradients */
 #navegador .navegador .navegador__links li a:hover,
 #navegador .navegador .navegador__links li a :active,
-#navegador .navegador .navegador__links li a :focus, #navegador .navegador .navegador__links li .linkactive, #navegador .navegador .navegador__links li ul li a:hover {
+#navegador .navegador .navegador__links li a :focus, #navegador .navegador .navegador__links li .linkactive, #navegador .navegador .navegador__links li ul li a:hover, .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios, .home__SeccionHowWeCreate__Grafico__Container .vl {
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #cd4e37, #d98d28); }
 
-#navegador .navegador .navegador__links li ul li a:hover, .international .international__container ul li::before, .degrees .degrees__container ul li::before {
+#navegador .navegador .navegador__links li ul li a:hover, .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Listado ul li::before, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul li::before, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul li::before {
   background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 /* Textos */
-.international .international__container ul li, .degrees .degrees__container ul li, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Texto, .footer__Datos__Contacto .footer__Datos__Contacto__Linking a, .footer__Formulario__Copyright p, .wpcf7-list-item-label, input[type="submit"],
+.home__SeccionPartners__Programs__Container div p, .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Listado ul li, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul li, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Regular, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul li, .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Titulo p, .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Regular p, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Texto, .footer__Datos__Contacto .footer__Datos__Contacto__Linking a, .footer__Formulario__Copyright p, .wpcf7-list-item-label, input[type="submit"],
 button[type="submit"] {
   font-family: proxima_nova, sans-serif;
   font-weight: 400; }
 
-a, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Titulo, #fieldTitle, .wpcf7 input:not([type="submit"]):not([type="checkbox"]),
+a, .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Titulo p, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Titulo p, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado p, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Bold, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado p, .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item p, .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Quote p, .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Bold p, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Titulo, #fieldTitle, .wpcf7 input:not([type="submit"]):not([type="checkbox"]),
 .wpcf7 textarea,
 .wpcf7 select {
   font-family: proxima_nova, sans-serif;
@@ -30,7 +30,7 @@ h1, .titulo__top__white p, .titulo__top__normal p {
   font-size: 30px;
   line-height: 32px; }
 
-h2 {
+h2, .titulo__bot__white p, .titulo__bot__normal p {
   font-family: proxima_nova, sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -38,7 +38,7 @@ h2 {
 
 p,
 li,
-ul, .titulo__top__texto__normal p, .ceu .ceu__container .ceu__title, .ceu .ceu__container .ceu__description, .ceu__inFigures .ceu__inFigures__container .ceu__inFigures__number, .ceu__inFigures .ceu__inFigures__container .ceu__inFigures__title, .international .international__container .international__title, .international .international__container .international__description, .degrees .degrees__container .degrees__title, .degrees .degrees__container .degrees__description {
+ul, .titulo__top__texto__white p, .titulo__top__texto__normal p, .home__SeccionPartners__Programs p {
   font-family: proxima_nova, sans-serif;
   font-weight: 400;
   font-size: 23px;
@@ -51,8 +51,7 @@ ul, .titulo__top__texto__normal p, .ceu .ceu__container .ceu__title, .ceu .ceu__
   box-sizing: border-box; }
 
 html {
-  overflow-x: hidden;
-  scroll-behavior: smooth; }
+  overflow-x: hidden; }
 
 h1,
 h2,
@@ -65,17 +64,44 @@ a {
   font-family: proxima_nova, sans-serif;
   text-decoration: none; }
 
-.titulo__top__white {
-  display: inline-block; }
-  .titulo__top__white p {
-    color: #ffffff; }
-  .titulo__top__white hr {
-    background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
-    height: 6px;
-    width: 100px;
-    margin: auto;
-    border: none;
-    margin-top: 10px; }
+/* Pantalla de Carga */
+.megaTitulo__container {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  left: 30%;
+  transform: translateX(-30%); }
+
+#megaTitulo__container {
+  width: 80%;
+  max-width: 1200px; }
+
+.animacionDesktop {
+  display: block; }
+
+.animacionmobile {
+  display: none; }
+
+.scroll__container img {
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); }
+
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  width: 100vw;
+  height: 100vh;
+  background-color: #434041; }
+
+/* Pagina */
+.page {
+  display: none; }
 
 .cd-img-replace {
   /* replace text with a background-image */
@@ -418,96 +444,62 @@ a {
     opacity: 1;
     transform: none; } }
 
+/*VIDEO*/
+.fullscreen-bg {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 100vh; }
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transform: scale(1.15); }
+
 section {
-  padding: 50px;
+  padding: 70px;
   position: relative;
-  text-align: center; }
-
-#dualdegrees {
-  min-height: 100vh;
   height: auto;
-  background: #cd4e37;
-  background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
-  background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-naranja.png");
-  background-size: cover;
-  background-position: center; }
-
-.section1__infocontainer {
   text-align: center; }
-  .section1__infocontainer .section1__animation {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 39%;
-    width: 692px; }
-  .section1__infocontainer .section1__scroll {
-    width: 200px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%); }
-    .section1__infocontainer .section1__scroll img {
-      width: 100%; }
 
-.titulo__top__normal p {
-  color: #434041; }
+#home__SeccionHero {
+  min-height: 100vh;
+  height: auto; }
 
-.titulo__top__normal hr {
-  background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
-  height: 6px;
-  width: 100px;
-  margin: auto;
-  border: none;
-  margin-top: 10px; }
+.hero__LogoMedio {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-35%);
+  left: 42%;
+  transform: translateX(-42%);
+  z-index: 2; }
+  .hero__LogoMedio img {
+    width: 200px; }
 
-.titulo__top__texto__normal {
-  position: relative;
-  margin: auto;
-  width: 1300px;
-  margin-top: 30px; }
-  .titulo__top__texto__normal p {
+.text_bottom_gris {
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 920px;
+  z-index: 2; }
+  .text_bottom_gris p {
     color: #434041;
-    margin: auto;
     text-align: center; }
 
-#ceu {
-  width: 90%;
-  max-width: 1400px;
-  margin: auto; }
+.hero__iconoScroll img {
+  color: #434041;
+  position: absolute;
+  bottom: 65px;
+  left: 80px;
+  width: 50px;
+  z-index: 2; }
 
-.ceu {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1300px;
-  margin: auto;
-  margin-top: 70px; }
-  .ceu .ceu__container {
-    width: 30%;
-    min-width: 275px;
-    max-width: 330px;
-    margin-bottom: 70px; }
-    .ceu .ceu__container .ceu__title {
-      font-size: 16px;
-      margin-bottom: 10px;
-      font-weight: 700;
-      margin-top: 40px; }
-    .ceu .ceu__container hr {
-      background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
-      height: 3px;
-      width: 100px;
-      margin: 10px auto 20px auto;
-      border: none; }
-    .ceu .ceu__container .ceu__description {
-      font-size: 16px;
-      min-height: 156px;
-      text-align: left; }
-    .ceu .ceu__container img {
-      width: 100%; }
-
-#ceu__inFigures {
+#home__SeccionExperts {
   background: #cd4e37;
   background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
   background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-naranja.png");
@@ -527,123 +519,493 @@ section {
     border: none;
     margin-top: 10px; }
 
-.ceu__inFigures {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  max-width: 1000px;
-  margin: 20px auto; }
-  .ceu__inFigures .ceu__inFigures__container {
-    min-width: 300px; }
-    .ceu__inFigures .ceu__inFigures__container .ceu__inFigures__number {
-      -webkit-margin-bottom-collapse: 20px;
-      font-weight: 700;
-      color: #ffffff;
-      font-size: 45px;
-      line-height: 55px; }
-    .ceu__inFigures .ceu__inFigures__container hr {
-      background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
-      height: 3px;
-      width: 100px;
-      margin: 10px auto 10px auto;
-      border: none; }
-    .ceu__inFigures .ceu__inFigures__container .ceu__inFigures__title {
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 16px; }
+.titulo__top__normal {
+  display: inline-block; }
+  .titulo__top__normal p {
+    color: #434041;
+    text-transform: uppercase; }
+  .titulo__top__normal hr {
+    background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+    height: 6px;
+    width: 100px;
+    margin: auto;
+    border: none;
+    margin-top: 10px; }
 
-.international {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  max-width: 1000px;
-  margin: 20px auto; }
-  .international .international__container {
-    max-width: 400px;
-    width: 450px;
-    margin-bottom: 40px; }
-    .international .international__container img {
-      width: 100%; }
-    .international .international__container .international__title {
-      font-size: 15px;
-      margin-bottom: 10px;
-      font-weight: 700;
-      text-align: left; }
-    .international .international__container hr {
-      background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
-      height: 3px;
-      width: 100px;
-      margin: 30px 0;
-      border: none; }
-    .international .international__container .international__description {
-      font-size: 15px;
-      text-align: left; }
-    .international .international__container ul {
-      list-style: none;
-      margin-bottom: 30px; }
-      .international .international__container ul li {
-        margin: 3px 0;
-        line-height: 25px;
-        color: #434041;
-        text-align: left;
-        font-size: 15px; }
-        .international .international__container ul li::before {
-          content: "\2022";
-          font-weight: bold;
-          display: inline-block;
-          width: 1em; }
+.titulo__top__texto__white {
+  position: relative;
+  margin: auto;
+  width: 1060px;
+  margin-top: 30px; }
+  .titulo__top__texto__white p {
+    color: #ffffff;
+    margin: auto;
+    text-align: center; }
 
-.degrees {
+.titulo__top__texto__normal {
+  position: relative;
+  margin: auto;
+  width: 1060px;
+  margin-top: 30px; }
+  .titulo__top__texto__normal p {
+    color: #434041;
+    margin: auto;
+    text-align: center; }
+
+.home__SeccionExperts__Grafico {
+  margin: auto;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 20px auto; }
-  .degrees .degrees__container {
-    max-width: 320px;
-    margin-top: 40px; }
-    .degrees .degrees__container img {
-      width: 100%; }
-    .degrees .degrees__container .degrees__title {
-      font-size: 15px;
-      margin: 10px auto;
-      font-weight: 700; }
-    .degrees .degrees__container hr {
+  align-items: center;
+  margin-top: 52px; }
+  .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes {
+    margin: 0 20px; }
+    .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(1) img {
+      width: 480px; }
+    .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(2) img {
+      width: 446px; }
+    .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(3) img {
+      width: 480px; }
+
+.titulo__bot__white {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  margin-top: 30px; }
+  .titulo__bot__white p {
+    color: #ffffff; }
+  .titulo__bot__white hr {
+    background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+    height: 6px;
+    width: 100px;
+    margin: auto;
+    border: none;
+    margin-top: 10px; }
+
+.titulo__bot__normal {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  margin-top: 50px; }
+  .titulo__bot__normal p {
+    color: #434041; }
+  .titulo__bot__normal hr {
+    background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+    height: 6px;
+    width: 100px;
+    margin: auto;
+    border: none;
+    margin-top: 10px; }
+
+.home__SeccionPartners__Grafico {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  max-width: 1040px; }
+  .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes {
+    margin: 20px 20px; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(1) img {
+      height: 76px;
+      margin: 34px auto; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(2) img {
+      width: 98px; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(3) img {
+      width: 216px; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(4) img {
+      width: 251px; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(5) img {
+      width: 286px; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(6) img {
+      margin-left: -39px;
+      width: 291px; }
+
+.home__SeccionPartners__Programs {
+  position: relative;
+  width: auto;
+  bottom: auto;
+  left: auto;
+  transform: translateX(0%);
+  display: inline-block;
+  margin-top: 10px; }
+
+#home__SeccionPartners .titulo__bot__normal {
+  margin-top: 10px; }
+  #home__SeccionPartners .titulo__bot__normal p {
+    font-size: 35px; }
+  #home__SeccionPartners .titulo__bot__normal hr {
+    background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+    height: 6px;
+    width: 100px;
+    margin-top: 5px; }
+
+.home__SeccionPartners__Programs__Container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  max-width: 1100px; }
+  .home__SeccionPartners__Programs__Container div {
+    position: relative;
+    margin: auto;
+    width: 300px !important;
+    margin-top: 15px; }
+    .home__SeccionPartners__Programs__Container div hr {
       background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
-      height: 3px;
-      width: 100px;
-      margin: 20px auto 20px auto;
-      border: none; }
-    .degrees .degrees__container .degrees__description {
-      font-size: 15px;
-      text-align: left; }
-    .degrees .degrees__container ul {
-      list-style: none;
-      margin-bottom: 30px; }
-      .degrees .degrees__container ul li {
-        margin: 3px 0;
-        line-height: 25px;
+      height: 5px;
+      width: 120px;
+      margin: auto;
+      border: none;
+      margin-top: 10px; }
+    .home__SeccionPartners__Programs__Container div p {
+      padding: 18px 0 12px 0;
+      color: #434041;
+      margin: auto;
+      text-align: center;
+      font-size: 22px; }
+
+#home__SeccionLinkingEducation {
+  background: #e6e7e8;
+  background: linear-gradient(to right, #ffffff 0%, #e6e7e8 100%);
+  background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-gris.png");
+  background-size: cover;
+  background-position: bottom; }
+
+.home__SeccionLinkingEducation__Beneficios__Container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 70px auto 5px auto;
+  position: relative;
+  width: 90%; }
+  .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios {
+    width: 382px;
+    height: 448px;
+    background: #ffffff;
+    padding: 27px;
+    position: relative;
+    border-bottom: 22px solid; }
+    .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Bandera {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -54px; }
+      .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Bandera img {
+        width: 110px; }
+    .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Titulo {
+      margin-top: 48px;
+      margin-bottom: 20px; }
+      .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Titulo p {
+        font-size: 25px;
+        line-height: 30px;
         color: #434041;
-        text-align: left;
-        font-size: 15px; }
-        .degrees .degrees__container ul li::before {
+        margin: auto;
+        text-align: center; }
+    .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Listado ul {
+      list-style: none; }
+      .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Listado ul li {
+        margin: 6px 25px;
+        font-size: 23px;
+        line-height: 26px;
+        color: #434041;
+        text-align: left; }
+        .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Listado ul li::before {
           content: "\2022";
           font-weight: bold;
           display: inline-block;
           width: 1em;
-          margin-left: -15px; }
+          margin-left: -1em; }
 
-.imgfull {
-  width: 100%; }
+#home__SeccionLinkingEducation .titulo__bot__normal {
+  margin-top: 20px; }
+  #home__SeccionLinkingEducation .titulo__bot__normal p {
+    font-size: 35px; }
+  #home__SeccionLinkingEducation .titulo__bot__normal hr {
+    background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+    height: 6px;
+    width: 100px;
+    margin-top: 5px; }
+
+.boton__learnMore {
+  margin: auto;
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 240px; }
+  .boton__learnMore .btn {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    font-family: proxima_nova, sans-serif;
+    font-weight: 400; }
+    .boton__learnMore .btn:hover {
+      text-decoration: none; }
+  .boton__learnMore .effect04 {
+    display: var(--uismLinkDisplay);
+    color: #ffffff;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    background-color: #cd4e37;
+    outline: solid 2px #cd4e37; }
+    .boton__learnMore .effect04::before,
+    .boton__learnMore .effect04 span {
+      margin: 0 auto;
+      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+      transition-duration: 0.4s; }
+    .boton__learnMore .effect04:hover {
+      background-color: #e6e7e8; }
+    .boton__learnMore .effect04:hover span {
+      -webkit-transform: translateY(-400%) scale(-0.1, 20);
+      transform: translateY(-400%) scale(-0.1, 20); }
+    .boton__learnMore .effect04::before {
+      content: attr(data-sm-link-text);
+      color: #cd4e37;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      -webkit-transform: translateY(500%) scale(-0.1, 20);
+      transform: translateY(500%) scale(-0.1, 20); }
+    .boton__learnMore .effect04:hover::before {
+      letter-spacing: 0.05em;
+      -webkit-transform: translateY(0) scale(1, 1);
+      transform: translateY(0) scale(1, 1); }
+
+.home__SeccionHowWeCreate__Grafico__Container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  position: relative;
+  width: 1380px; }
+  .home__SeccionHowWeCreate__Grafico__Container .vl {
+    height: 355px;
+    border-right: 3px solid;
+    margin: 20px 0; }
+  .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico {
+    width: 332px;
+    margin: 20px auto; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Numero {
+      display: block;
+      width: 100%; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Numero img {
+        width: 108px;
+        margin: auto; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Titulo {
+      display: block;
+      width: 100%; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Titulo p {
+        margin: 6px 0 25px 0;
+        font-size: 26px;
+        line-height: 32px;
+        color: #434041;
+        margin-bottom: 30px; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado {
+      margin-left: 1em;
+      padding: 0 15px;
+      height: 388px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado p {
+        margin: 6px 0;
+        font-size: 19px;
+        line-height: 25px;
+        color: #434041;
+        text-align: left;
+        margin: 10px 0;
+        margin-left: -1em; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul {
+        list-style: none; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul li {
+          margin: 3px 0;
+          font-size: 19px;
+          line-height: 25px;
+          color: #434041;
+          text-align: left; }
+          .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul li::before {
+            content: "\2022";
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto {
+      margin-left: 1em;
+      padding: 0 15px;
+      height: 388px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Bold {
+        margin: 3px 0;
+        font-size: 19px;
+        line-height: 25px;
+        color: #434041;
+        text-align: left;
+        margin: 10px 0; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Regular {
+        margin: 3px 0;
+        font-size: 19px;
+        line-height: 25px;
+        color: #434041;
+        text-align: left; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto img {
+        margin-top: 30px;
+        width: 90%;
+        display: block; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado {
+      margin-left: 1em;
+      padding: 0 15px;
+      height: 388px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado p {
+        margin: 3px 0;
+        font-size: 19px;
+        line-height: 25px;
+        color: #434041;
+        text-align: left;
+        margin: 10px 60px 10px 0;
+        margin-left: -1em; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul {
+        list-style: none; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul li {
+          margin: 3px 0;
+          font-size: 19px;
+          line-height: 25px;
+          color: #434041;
+          text-align: left; }
+          .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul li::before {
+            content: "\2022";
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+
+.home__SeccionOurTopPrograms__Container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px auto 5px auto;
+  position: relative;
+  width: 1100px; }
+  .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item {
+    width: 300px;
+    margin: 5px 0; }
+    .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item hr {
+      background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+      height: 3px;
+      width: 150px;
+      margin: auto;
+      border: none;
+      margin-top: 10px; }
+    .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item p {
+      padding: 18px 0 12px 0;
+      color: #434041;
+      margin: auto;
+      text-align: center;
+      font-size: 22px; }
+    .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item .uerealmadrid {
+      mix-blend-mode: darken;
+      height: 53px; }
+    .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item .universidadEuropea_IBM {
+      mix-blend-mode: darken;
+      width: 280px; }
+    .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item .gsic_Valencia {
+      mix-blend-mode: darken;
+      width: 294px; }
+    .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item .cruyff_barca {
+      mix-blend-mode: darken;
+      width: 245px; }
+    .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item .valencia {
+      mix-blend-mode: darken;
+      width: 200px; }
+
+#home__SeccionOurTopPrograms .titulo__bot__normal {
+  margin-top: 20px; }
+  #home__SeccionOurTopPrograms .titulo__bot__normal p {
+    font-size: 35px; }
+  #home__SeccionOurTopPrograms .titulo__bot__normal hr {
+    background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+    height: 6px;
+    width: 100px;
+    margin-top: 5px; }
+
+.home__SeccionCEOMessage__Imagen {
+  position: absolute;
+  top: -100px;
+  z-index: 2;
+  clip-path: inset(100px 0 0 0);
+  height: 905px;
+  left: 0; }
+  .home__SeccionCEOMessage__Imagen img {
+    height: 100%; }
+
+.home__SeccionCEOMessage__TextContainer {
+  height: 655px;
+  padding: 4% 3% 4% 42%;
+  text-align: left;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #cd4e37, #d98d28); }
+  .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Titulo {
+    display: inline-block; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Titulo p {
+      font-size: 29px;
+      line-height: 32px;
+      color: #434041;
+      text-transform: uppercase; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Titulo hr {
+      background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+      height: 6px;
+      width: 100px;
+      border: none;
+      margin-top: 10px; }
+  .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Quote {
+    margin: 20px 0; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Quote p {
+      font-size: 25px;
+      line-height: 30px;
+      color: #d98d28;
+      text-align: left; }
+  .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Bold {
+    margin-bottom: 25px; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Bold p {
+      font-size: 22px;
+      line-height: 25px;
+      color: #434041; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Bold img {
+      margin-top: 40px;
+      width: 30px;
+      transition: 0.2s; }
+      .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Bold img:hover {
+        filter: invert(100%); }
+  .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Regular {
+    margin-bottom: 25px; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Regular p {
+      font-size: 19px;
+      line-height: 27px;
+      color: #434041; }
 
 #contactoDatos {
-  padding: 20px 0 50px 0;
+  padding: 110px 0 50px 0;
   min-height: auto; }
 
 #contactoFormulario {
@@ -659,20 +1021,18 @@ section {
     text-align: right; }
   .footer__Datos__Contacto:nth-child(3) {
     text-align: left; }
-  .footer__Datos__Contacto .footer__Datos__Contacto__Paises {
-    display: none; }
-    .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Titulo {
-      color: #d98d28;
-      font-size: 23px;
-      line-height: 26px;
-      margin-bottom: 20px; }
-    .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Texto {
-      font-size: 18px;
-      line-height: 25px;
-      margin-bottom: 0 !important;
-      color: #434041; }
-    .footer__Datos__Contacto .footer__Datos__Contacto__Paises img {
-      width: 32px; }
+  .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Titulo {
+    color: #d98d28;
+    font-size: 23px;
+    line-height: 26px;
+    margin-bottom: 20px; }
+  .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Texto {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 0 !important;
+    color: #434041; }
+  .footer__Datos__Contacto .footer__Datos__Contacto__Paises img {
+    width: 32px; }
   .footer__Datos__Contacto .footer__Datos__Contacto__Linking {
     text-align: center;
     margin: 0 5%; }
@@ -841,11 +1201,341 @@ textarea,
   color: #fff !important; }
 
 @media (max-width: 1635px) {
-  .lineavertical {
-    top: 240px;
-    left: 122px; }
+  .navegador .navegador__logo {
+    position: relative;
+    float: left; }
+    .navegador .navegador__logo a img {
+      padding-bottom: 0;
+      width: 210px; }
+  .hero__iconoScroll img {
+    width: 30px; }
+  .home__SeccionExperts__Grafico {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 32px; }
+    .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes {
+      margin: 0 20px; }
+      .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(1) img {
+        width: 380px; }
+      .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(2) img {
+        width: 325px; }
+      .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(3) img {
+        width: 380px; }
+  .home__SeccionPartners__Grafico {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    width: 910px; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes {
+      margin: 20px 20px; }
+      .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(1) img {
+        height: 56px;
+        margin: 34px auto; }
+      .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(2) img {
+        width: 78px; }
+      .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(3) img {
+        width: 196px; }
+      .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(4) img {
+        width: 221px; }
+      .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(5) img {
+        width: 246px; }
+      .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(6) img {
+        margin-left: -39px;
+        width: 271px; }
+  h2,
+  .titulo__bot__white p,
+  .titulo__bot__normal p {
+    font-size: 28px; }
+  #home__SeccionPartners .titulo__bot__normal {
+    margin-top: 10px; }
+    #home__SeccionPartners .titulo__bot__normal p {
+      font-size: 28px; }
+  .home__SeccionLinkingEducation__Beneficios__Container {
+    width: 90%; }
+    .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios {
+      width: 300px;
+      height: 380px;
+      background: #ffffff;
+      padding: 20px;
+      position: relative; }
+      .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Bandera {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -54px; }
+        .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Bandera img {
+          width: 110px; }
+      .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Titulo {
+        margin-top: 40px;
+        margin-bottom: 13px; }
+        .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Titulo p {
+          font-size: 20px;
+          line-height: 28px; }
+      .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Listado ul li {
+        margin: 6px 15px;
+        font-size: 18px;
+        line-height: 23px; }
+  .home__SeccionHowWeCreate__Grafico__Container {
+    width: 1200px; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico {
+      width: 290px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Numero {
+        display: block;
+        width: 100%; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Numero img {
+          width: 80px;
+          margin: auto; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Titulo {
+        display: block;
+        width: 100%; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Titulo p {
+          margin: 6px 0;
+          font-size: 24px;
+          line-height: 28px;
+          color: #434041;
+          margin-bottom: 20px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado {
+        margin-left: 1em;
+        padding: 0 15px;
+        height: 388px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado p {
+          margin: 6px 0;
+          font-size: 18px;
+          line-height: 22px;
+          color: #434041;
+          text-align: left;
+          margin: 10px 0;
+          margin-left: -1em; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul {
+          list-style: none; }
+          .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul li {
+            margin: 3px 0;
+            font-size: 18px;
+            line-height: 22px;
+            color: #434041;
+            text-align: left; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto {
+        margin-left: 1em;
+        padding: 0 15px;
+        height: 388px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Bold {
+          margin: 3px 0;
+          font-size: 18px;
+          line-height: 22px;
+          color: #434041;
+          text-align: left;
+          margin: 10px 0; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Regular {
+          margin: 3px 0;
+          font-size: 18px;
+          line-height: 22px;
+          color: #434041;
+          text-align: left; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto img {
+          margin-top: 30px;
+          width: 90%;
+          display: block; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado {
+        margin-left: 1em;
+        padding: 0 15px;
+        height: 388px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado p {
+          margin: 3px 0;
+          font-size: 18px;
+          line-height: 22px;
+          color: #434041;
+          text-align: left;
+          margin: 10px 0;
+          margin-left: -1em; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul {
+          list-style: none; }
+          .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul li {
+            margin: 3px 0;
+            font-size: 18px;
+            line-height: 22px;
+            color: #434041;
+            text-align: left; }
+  .home__SeccionCEOMessage__Imagen {
+    left: -150px; }
+  .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Titulo p {
+    font-size: 30px;
+    line-height: 32px; }
+  .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Quote {
+    margin: 20px 0; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Quote p {
+      font-size: 23px;
+      line-height: 25px;
+      color: #d98d28; }
+  .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Bold {
+    margin-bottom: 25px; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Bold p {
+      font-size: 20px;
+      line-height: 23px;
+      color: #434041; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Bold img {
+      margin-top: 40px;
+      width: 30px;
+      transition: 0.2s; }
+      .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Bold img:hover {
+        filter: invert(100%); }
+  .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Regular {
+    margin-bottom: 25px; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Regular p {
+      font-size: 20px;
+      line-height: 23px;
+      color: #434041; }
+  .footer__Formulario__Container {
+    height: 585px; } }
+
+@media (max-width: 1420px) {
+  .home__SeccionHowWeCreate__Grafico__Container {
+    width: 1100px; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico {
+      width: 250px; } }
+
+@media (max-width: 1220px) {
+  /* Nav */
+  #navegador .navegador .navegador__links {
+    max-width: 100%;
+    width: 100%;
+    float: left; }
+    #navegador .navegador .navegador__links li:nth-child(1) {
+      margin-left: -21px; }
+    #navegador .navegador .navegador__links li ul li:nth-child(1) {
+      margin-left: 0; }
+  section {
+    padding: 80px 70px; }
+  .home__SeccionOurTopPrograms__Container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px auto 5px auto;
+    position: relative;
+    width: 900px; }
+    .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item {
+      width: 300px;
+      margin: 5px 0; }
+      .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item p {
+        padding: 15px 0 12px 0;
+        font-size: 18px; }
+  .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(1) img {
+    width: 220px; }
+  .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(2) img {
+    width: 180px; }
+  .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(3) img {
+    width: 220px; }
+  .titulo__top__white p,
+  .titulo__top__normal p,
+  .titulo__top__normal p span {
+    font-size: 27px;
+    line-height: 32px; }
+  p,
+  li,
+  ul,
+  .titulo__top__texto__white p,
+  .titulo__top__texto__normal p,
+  .home__SeccionPartners__Programs p,
+  .home__SeccionPartners__Programs__Container div p {
+    font-size: 17px;
+    line-height: 20px; }
+  .text_bottom_gris {
+    width: 80%; }
+  #home__SeccionPartners .titulo__bot__normal p {
+    font-size: 27px;
+    line-height: 32px; }
+  .home__SeccionPartners__Grafico {
+    width: 590px;
+    margin: 25px auto;
+    height: 210px; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(1) img {
+      width: 144px; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(2) img {
+      width: 55px; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(3) img {
+      width: 187px; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(4) img {
+      width: 227px; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes:nth-child(5) img {
+      width: 207px; }
+  .home__SeccionPartners__Programs__Container div {
+    width: 230px !important; }
+  .home__SeccionPartners__Programs {
+    width: 95%; }
+  #home__SeccionLinkingEducation .titulo__bot__normal p {
+    font-size: 27px;
+    line-height: 32px; }
+  .home__SeccionLinkingEducation__Beneficios__Container {
+    width: 90%; }
+    .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios {
+      width: 230px;
+      height: 310px;
+      border-bottom: 18px solid; }
+      .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Bandera {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -54px; }
+        .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Bandera img {
+          width: 90px; }
+      .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Titulo {
+        margin-top: 25px;
+        margin-bottom: 20px; }
+        .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Titulo p {
+          font-size: 16px;
+          line-height: 22px; }
+      .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Listado ul li {
+        margin: 6px 9px;
+        font-size: 14px;
+        line-height: 16px; }
+  .home__SeccionHowWeCreate__Grafico__Container {
+    width: 100%; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico {
+      width: 212px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado {
+        margin-left: 1em;
+        padding: 0 15px;
+        height: 360px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado p {
+          font-size: 14px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul li {
+          font-size: 13px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto {
+        height: 360px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Bold {
+          font-size: 14px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Regular {
+          font-size: 13px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto img {
+          margin-top: 30px;
+          width: 95%;
+          display: block; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado {
+        height: 360px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado p {
+          font-size: 14px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul li {
+          font-size: 13px; }
+  .home__SeccionCEOMessage__Imagen {
+    left: -350px;
+    top: -60px;
+    clip-path: inset(60px 0 0 0);
+    height: 905px; }
+  .home__SeccionCEOMessage__TextContainer {
+    height: 765px; }
   .footer__Datos__Contacto {
-    margin: 30px auto 10px auto; }
+    margin: 90px auto 10px auto; }
     .footer__Datos__Contacto:nth-child(1) {
       text-align: right; }
     .footer__Datos__Contacto:nth-child(3) {
@@ -866,7 +1556,7 @@ textarea,
     width: 100%;
     height: 560px; }
     .footer__Formulario__Container .titulo__top__white {
-      margin: 20px 40px 10px 40px; }
+      margin: 10px 40px 10px 40px; }
       .footer__Formulario__Container .titulo__top__white p {
         font-size: 20px; }
     .footer__Formulario__Container .footer__Formulario__Form {
@@ -878,40 +1568,23 @@ textarea,
   .wpcf7-form {
     height: 423px; } }
 
-@media (max-width: 1520px) {
-  .section1__infocontainer .section1__animation {
-    width: 90%;
-    max-width: 520px; }
-  .section1__infocontainer .section1__scroll {
-    width: 90%;
-    max-width: 160px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%); }
-    .section1__infocontainer .section1__scroll img {
-      width: 100%; }
-  .titulo__top__normal p {
-    color: #434041; }
-  .titulo__top__texto__normal {
-    width: 100%; }
-    .titulo__top__texto__normal p {
-      font-size: 18px; } }
-
-@media (max-width: 1220px) {
-  /* Nav */
-  #navegador .navegador .navegador__links {
-    max-width: 100%;
-    width: 100%;
-    float: left; }
-    #navegador .navegador .navegador__links li:nth-child(1) {
-      margin-left: -21px; }
-    #navegador .navegador .navegador__links li ul li:nth-child(1) {
-      margin-left: 0; }
-  section {
-    padding: 80px 70px; } }
-
 @media (max-width: 940px) {
+  #cd-vertical-nav {
+    display: none; }
+  section {
+    padding: 60px 40px; }
+  #contactoDatos {
+    padding: 150px 0 50px 0;
+    min-height: auto; }
+  .hero__iconoScroll {
+    display: none; }
+  #home__SeccionHero {
+    background-color: #ffffff;
+    background: url("https://linkingeducation.com/wp-content/uploads/2020/07/mapa.jpg");
+    background-size: cover;
+    background-position: center; }
+  .megaTitulo__container img {
+    width: 420px; }
   /* Nav */
   #navegador .navegador .navegador__logo {
     width: 100%; }
@@ -926,13 +1599,205 @@ textarea,
       margin-left: 0; }
     #navegador .navegador .navegador__links li:hover ul {
       display: none; }
-  #cd-vertical-nav {
+  .fullscreen-bg__video {
     display: none; }
-  #contactoDatos {
-    padding: 150px 0 50px 0;
-    min-height: auto; }
-  section {
-    padding: 60px 40px; }
+  .hero__LogoMedio {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; }
+    .hero__LogoMedio img {
+      width: 200px; }
+  #home__SeccionHero {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    margin-top: 0px; }
+  .titulo__top__texto__normal,
+  .titulo__top__texto__white {
+    width: 100%; }
+  .home__SeccionExperts__Grafico {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 52px; }
+    .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes {
+      margin: 0 20px; }
+      .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(1) {
+        width: 300px; }
+        .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(1) img {
+          width: 100%;
+          margin-left: 60px; }
+      .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(2) {
+        width: 300px; }
+        .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(2) img {
+          width: 100%; }
+      .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(3) {
+        width: 300px; }
+        .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(3) img {
+          width: 100%;
+          margin-left: -120px; }
+  .home__SeccionPartners__Programs {
+    width: 90%; }
+    .home__SeccionPartners__Programs p {
+      font-family: proxima_nova, sans-serif;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 25px; }
+  .home__SeccionPartners__Programs__Container div {
+    margin-top: 20px; }
+    .home__SeccionPartners__Programs__Container div p {
+      padding: 10px;
+      font-size: 15px;
+      line-height: 17px; }
+  #home__SeccionLinkingEducation {
+    background: #f5f5f5; }
+  .home__SeccionLinkingEducation__Beneficios {
+    width: 188px;
+    height: 290px;
+    background: #f5f5f5;
+    padding: 40px 0;
+    border-bottom: 4px solid; }
+    .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Bandera {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -43px; }
+      .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Bandera img {
+        width: 84px; }
+    .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Titulo {
+      margin-top: 22px;
+      margin-bottom: 20px; }
+      .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Titulo p {
+        font-size: 13px;
+        line-height: 17px;
+        text-align: left; }
+    .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Listado {
+      margin-left: 11px; }
+      .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Listado ul li {
+        margin: 2px 0;
+        font-size: 13px; }
+  #home__SeccionHowWeCreate {
+    background-color: #fafafa; }
+  .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado {
+    border-right: 0 solid; }
+  .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto {
+    border-right: 0 solid; }
+  .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado {
+    border-right: 0 solid; }
+  .home__SeccionHowWeCreate__Grafico__Container {
+    justify-content: space-evenly;
+    width: 430px;
+    margin-bottom: 0; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__Titulo p {
+      margin: 6px 0;
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 10px; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__Listado {
+      margin-left: 1em;
+      border-right: 0 solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to left, #cd4e37, #d98d28);
+      padding: 0 10px;
+      height: 290px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__Listado p {
+        margin: 6px 0;
+        font-size: 13px;
+        line-height: 20px;
+        margin-left: -1em; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__Listado ul {
+        list-style: none; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__Listado ul li {
+          margin: 3px 0;
+          font-size: 13px; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__Numero img {
+      width: 60px; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__02__Texto {
+      margin-left: 1em;
+      border-right: 0 solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to left, #cd4e37, #d98d28);
+      padding: 0 10px;
+      height: 290px;
+      padding-right: 30px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Bold {
+        margin: 6px 0;
+        font-size: 13px;
+        line-height: 20px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Regular {
+        font-size: 12px;
+        line-height: 18px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__02__Texto img {
+        width: 100%;
+        margin-top: 10px; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__04__Listado {
+      margin-left: 1em;
+      padding: 0 10px;
+      height: 290px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__04__Listado p {
+        margin: 6px 0;
+        font-size: 13px;
+        line-height: 20px;
+        margin-left: -1em; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__04__Listado ul {
+        list-style: none; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico__04__Listado ul li {
+          font-size: 12px;
+          line-height: 18px;
+          margin: 3px 0; }
+  .home__SeccionCEOMessage__Imagen {
+    left: -370px;
+    height: 855px;
+    top: -120px;
+    clip-path: inset(120px 0 0 0); }
+  .home__SeccionCEOMessage__TextContainer {
+    height: auto;
+    margin: 0 0;
+    border: 0 solid;
+    z-index: 3; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Quote p {
+      font-size: 14px;
+      line-height: 17px; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Bold p {
+      font-size: 14px;
+      line-height: 17px; }
+    .home__SeccionCEOMessage__TextContainer .home__SeccionCEOMessage__Regular p {
+      font-size: 14px;
+      line-height: 20px; }
+  .home__SeccionOurTopPrograms__Container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px auto 5px auto;
+    position: relative;
+    width: 650px; }
+    .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item {
+      width: 300px;
+      margin: 15px 0; }
+      .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item hr {
+        background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+        height: 3px;
+        width: 150px;
+        margin: auto;
+        border: none;
+        margin-top: 10px; }
+      .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item .universidadEuropea_IBM {
+        width: 250px; }
+      .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item .gsic_Valencia {
+        width: 264px; }
+      .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item .cruyff_barca {
+        width: 215px; }
+      .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item .valencia {
+        width: 170px; }
   .footer__Datos {
     height: auto; }
   .footer__Formulario__Container {
@@ -963,12 +1828,10 @@ textarea,
     max-height: 101px; } }
 
 @media (max-width: 664px) {
-  section {
-    height: auto;
-    min-height: auto; }
-  #dualdegrees {
-    min-height: 100vh;
-    height: auto; }
+  .animacionDesktop {
+    display: none; }
+  .animacionmobile {
+    display: block; }
   /* Nav */
   #navegador .navegador .navegador__logo {
     width: 100%; }
@@ -993,23 +1856,81 @@ textarea,
         margin-left: 0; }
     #navegador .navegador .navegador__links li:hover ul {
       display: none; }
-  .section1__infocontainer {
-    padding-top: 180px; }
-    .section1__infocontainer .section1__animation {
-      width: 90%;
-      max-width: 380px; }
+  .text_bottom_gris,
+  .titulo__top__texto__white,
+  .titulo__top__normal {
+    width: 300px; }
+  .home__SeccionExperts__Grafico {
+    width: 300px; }
+  .home__SeccionExperts__Grafico__Imagenes {
+    margin: 10px 0; }
+    .home__SeccionExperts__Grafico__Imagenes:nth-child(1) img {
+      transform: translateX(-25px);
+      width: 210px; }
+    .home__SeccionExperts__Grafico__Imagenes:nth-child(2) img {
+      width: 170px; }
+    .home__SeccionExperts__Grafico__Imagenes:nth-child(3) img {
+      transform: translateX(25px);
+      width: 210px; }
+  .home__SeccionPartners__Grafico {
+    width: auto;
+    margin: 25px auto;
+    height: auto;
+    flex-direction: column; }
+    .home__SeccionPartners__Grafico .home__SeccionPartners__Grafico__Imagenes {
+      margin: 10px 0; }
+  .home__SeccionPartners__Programs__Container {
+    flex-direction: column; }
+    .home__SeccionPartners__Programs__Container div {
+      width: 200px; }
+  .home__SeccionLinkingEducation__Beneficios__Container {
+    flex-direction: column;
+    margin: 25px auto 25px auto; }
+    .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios {
+      width: 300px;
+      height: auto;
+      padding: 30px;
+      margin-bottom: 10px; }
+      .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Bandera {
+        position: relative;
+        width: auto;
+        bottom: auto;
+        left: auto;
+        transform: translateY(0%);
+        display: inline-block;
+        top: auto;
+        margin-bottom: 20px; }
+        .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Bandera img {
+          width: 84px; }
+      .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Titulo {
+        margin-top: 0px;
+        margin-bottom: 10px; }
+        .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Titulo p {
+          text-align: center; }
+      .home__SeccionLinkingEducation__Beneficios__Container .home__SeccionLinkingEducation__Beneficios .home__SeccionLinkingEducation__Beneficios__Listado ul li {
+        text-align: center; }
+  .home__SeccionCEOMessage__Imagen {
+    display: none; }
+  .home__SeccionCEOMessage__TextContainer {
+    padding: 0 0 0 0;
+    margin: auto;
+    text-align: center; }
+  #home__SeccionOurTopPrograms .titulo__top__normal {
+    margin-top: 0; }
+  .home__SeccionOurTopPrograms__Container {
+    width: 90%; }
+    .home__SeccionOurTopPrograms__Container .home__SeccionOurTopPrograms__Item {
+      width: 300px;
+      margin: 15px 0; }
   .footer__Datos__Contacto {
     flex-direction: column;
     align-items: center;
-    margin: auto;
-    padding: 50px; }
+    margin: auto; }
     .footer__Datos__Contacto .footer__Datos__Contacto__Paises {
       text-align: center; }
     .footer__Datos__Contacto .footer__Datos__Contacto__Linking {
       text-align: center;
       margin: 30px; }
-  #Datos {
-    background-color: #f5f5f5; }
   .footer__Formulario__Container {
     width: 100%;
     height: 770px; }
@@ -1019,7 +1940,7 @@ textarea,
         font-size: 20px; }
     .footer__Formulario__Container .footer__Formulario__Form {
       width: 90%;
-      max-width: 100%;
+      max-width: 980px;
       margin: 10px auto;
       box-shadow: 0px 5px 14px 0px rgba(97, 53, 0, 0.7);
       height: 583px; }
@@ -1064,8 +1985,48 @@ textarea,
         margin-left: 0; }
     #navegador .navegador .navegador__links li:hover ul {
       display: none; }
-  #Datos {
-    height: auto; }
+  #megaTitulo__container {
+    width: 80%;
+    margin: auto; }
+  #home__SeccionHero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 0px; }
+  .home__SeccionExperts__Grafico {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 52px; }
+    .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes {
+      margin: 0 20px; }
+      .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(1) {
+        width: 200px; }
+        .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(1) img {
+          width: 100%;
+          margin-left: 52px; }
+      .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(2) {
+        width: 200px; }
+        .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(2) img {
+          width: 100%; }
+      .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(3) {
+        width: 200px; }
+        .home__SeccionExperts__Grafico .home__SeccionExperts__Grafico__Imagenes:nth-child(3) img {
+          width: 100%;
+          margin-left: -95px; }
+  .home__SeccionHowWeCreate__Grafico__Container {
+    width: auto; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico {
+      width: 242px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado {
+        height: auto; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto {
+        height: auto; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado {
+        height: auto; }
   .footer__Datos__Contacto {
     width: auto; }
   .footer__Formulario__Container {

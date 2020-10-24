@@ -707,33 +707,39 @@ section {
     align-items: center;
     margin: auto;
     position: relative;
-    max-width: 1250px;
+    max-width: 1040px;
     .home__SeccionPartners__Grafico__Imagenes {
         margin: 20px 20px;
         &:nth-child(1) {
             img {
-                width: 276px;
+                height: 76px;
+                margin: 34px auto;
             }
         }
         &:nth-child(2) {
             img {
-                width: 155px;
+                width: 98px;
             }
         }
         &:nth-child(3) {
             img {
-                width: 373px;
+                width: 216px;
             }
         }
         &:nth-child(4) {
             img {
-                width: 416px;
+                width: 251px;
             }
         }
         &:nth-child(5) {
             img {
+                width: 286px;
+            }
+        }
+        &:nth-child(6) {
+            img {
                 margin-left: -39px;
-                width: 361px;
+                width: 291px;
             }
         }
     }
@@ -1107,6 +1113,10 @@ section {
             font-size: 22px;
             @extend %proximaNova_Bold;
         }
+        .uerealmadrid {
+            mix-blend-mode: darken;
+            height: 53px;
+        }
         .universidadEuropea_IBM {
             mix-blend-mode: darken;
             width: 280px;
@@ -1234,7 +1244,6 @@ section {
         text-align: left;
     }
     .footer__Datos__Contacto__Paises {
-        display: none;
         .footer__Datos__Contacto__Titulo {
             color: $color-amarillo;
             font-size: 23px;
@@ -1503,28 +1512,34 @@ textarea,
             margin: 20px 20px;
             &:nth-child(1) {
                 img {
-                    width: 206px;
+                    height: 56px;
+                    margin: 34px auto;
                 }
             }
             &:nth-child(2) {
                 img {
-                    width: 75px;
+                    width: 78px;
                 }
             }
             &:nth-child(3) {
                 img {
-                    width: 271px;
+                    width: 196px;
                 }
             }
             &:nth-child(4) {
                 img {
-                    width: 306px;
+                    width: 221px;
                 }
             }
             &:nth-child(5) {
                 img {
+                    width: 246px;
+                }
+            }
+            &:nth-child(6) {
+                img {
                     margin-left: -39px;
-                    width: 291px;
+                    width: 271px;
                 }
             }
         }
