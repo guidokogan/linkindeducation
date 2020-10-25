@@ -555,17 +555,17 @@ section {
     margin: auto;
 }
 .partners{
+    margin: auto;
     margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1300px;
+    max-width: 1200px;
     .partners__school{
-        width: 30%;
+        width: 20%;
         min-width: 275px;
-        max-width: 330px;
         margin-bottom: 70px;
         img{
             width: 100%;
@@ -573,7 +573,7 @@ section {
         .partners__school__logos{
             width: auto;
             height: 48px;
-            margin: 34px auto;
+            margin: 25px auto;
         }
         hr {
             background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
