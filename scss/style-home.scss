@@ -1231,6 +1231,7 @@ section {
     margin-top: 50px;
 
 }
+
 .footer__Datos__Contacto {
     display: flex;
     flex-direction: row;
@@ -1735,8 +1736,37 @@ textarea,
             }
         }
     }
-    .footer__Formulario__Container {
-        height: 585px;
+
+    .footer__Datos__Contacto {
+        margin: 30px auto 10px auto;
+        &:nth-child(1) {
+            text-align: right;
+        }
+        &:nth-child(3) {
+            text-align: left;
+        }
+        .footer__Datos__Contacto__Linking {
+            img {
+                width: 139px;
+            }
+        }
+        .footer__Datos__Contacto__Paises {
+            .footer__Datos__Contacto__Titulo {
+                font-size: 15px;
+                line-height: 17px;
+                margin-bottom: 10px;
+            }
+            .footer__Datos__Contacto__Texto {
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+        .footer__Datos__Contacto__Linking {
+            a {
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
     }
 }
 
@@ -1973,7 +2003,7 @@ textarea,
     }
 
     .footer__Datos__Contacto {
-        margin: 90px auto 10px auto;
+        margin: 30px auto 10px auto;
         &:nth-child(1) {
             text-align: right;
         }
