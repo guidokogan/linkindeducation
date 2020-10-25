@@ -7,13 +7,13 @@
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #cd4e37, #d98d28); }
 
-#navegador .navegador .navegador__links li ul li a:hover, .degrees .degrees__container ul li::before, .connecting__textContainer ul li::before {
+#navegador .navegador .navegador__links li ul li a:hover, .degrees .degrees__container ul li::before, .pilars .pilars__container .pilars__text ul li::before {
   background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 /* Textos */
-.degrees .degrees__container ul li, .connecting__textContainer ul li, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Texto, .footer__Datos__Contacto .footer__Datos__Contacto__Linking a, .footer__Formulario__Copyright p, .wpcf7-list-item-label, input[type="submit"],
+.degrees .degrees__container ul li, .pilars .pilars__container .pilars__text ul li, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Texto, .footer__Datos__Contacto .footer__Datos__Contacto__Linking a, .footer__Formulario__Copyright p, .wpcf7-list-item-label, input[type="submit"],
 button[type="submit"] {
   font-family: proxima_nova, sans-serif;
   font-weight: 400; }
@@ -24,7 +24,7 @@ a, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Con
   font-family: proxima_nova, sans-serif;
   font-weight: 700; }
 
-h1, .titulo__top__white p, .titulo__top__normal p {
+h1, .titulo__top__white p, .titulo__top__normal p, #thewhiteweek .titulo__top__normal p {
   font-family: proxima_nova, sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -38,7 +38,7 @@ h2 {
 
 p,
 li,
-ul, .titulo__top__texto__normal p, .universidadeuropea .universidadeuropea__container .universidadeuropea__title, .ue__inFigures .ue__inFigures__container .ue__inFigures__number, .ue__inFigures .ue__inFigures__container .ue__inFigures__title, .ue__inFigures .ue__inFigures__container .ue__inFigures__description, .degrees .degrees__container .degrees__title, .degrees .degrees__container .degrees__description, .connecting__textContainer .connecting__text__description, .investing__container .investing__description {
+ul, .titulo__top__texto__normal p, .realmadrid__container .realmadrid__text, .realmadrid__container .realmadrid__text__full, .rm__values__normalText, .rm__values__container .rm__values__text p, .degrees .degrees__title, .degrees .degrees__description, .degrees .degrees__container .degrees__title, .degrees .degrees__container .degrees__description, #rm__orange .rm__orange__text, #thewhiteweek p, .pilars .pilars__container .pilars__text .pilars__title, .pilars .pilars__container .pilars__text .pilars__description {
   font-family: proxima_nova, sans-serif;
   font-weight: 400;
   font-size: 23px;
@@ -450,15 +450,15 @@ section {
       width: 100%; }
 
 .titulo__top__normal p {
-  color: #434041; }
+  color: #434041;
+  margin: 20px auto; }
 
 .titulo__top__normal hr {
   background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
   height: 6px;
   width: 100px;
   margin: auto;
-  border: none;
-  margin-top: 10px; }
+  border: none; }
 
 .titulo__top__texto__normal {
   position: relative;
@@ -470,98 +470,83 @@ section {
     margin: auto;
     text-align: center; }
 
-#universidadeuropea {
+#realmadrid {
   width: 90%;
   max-width: 1400px;
   margin: auto; }
 
-.universidadeuropea {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1300px;
+.mainpic {
+  display: block;
+  margin: 60px auto;
+  max-width: 750px;
+  width: 100%; }
+
+.logopic {
+  display: block;
   margin: auto;
-  margin-top: 70px; }
-  .universidadeuropea .universidadeuropea__container {
-    width: 30%;
-    min-width: 275px;
-    max-width: 330px;
-    margin-bottom: 70px; }
-    .universidadeuropea .universidadeuropea__container .universidadeuropea__title {
-      font-size: 16px;
-      margin-bottom: 10px;
-      font-weight: 700;
-      margin-top: 20px; }
-    .universidadeuropea .universidadeuropea__container img {
-      width: 100%; }
+  max-width: 500px;
+  width: 100%; }
 
-#ue__inFigures {
-  background: #cd4e37;
-  background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
-  background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-naranja.png");
-  background-size: cover;
-  background-position: center; }
-
-.titulo__top__white {
-  display: inline-block; }
-  .titulo__top__white p {
-    color: #ffffff;
-    text-transform: uppercase; }
-  .titulo__top__white hr {
-    background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
-    height: 6px;
-    width: 100px;
-    margin: auto;
-    border: none;
-    margin-top: 10px; }
-
-.ue__inFigures {
+.realmadrid__container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1000px;
-  margin: 20px auto; }
-  .ue__inFigures .ue__inFigures__container {
-    width: 300px; }
-    .ue__inFigures .ue__inFigures__container .ue__inFigures__number {
-      -webkit-margin-bottom-collapse: 20px;
-      font-weight: 700;
-      color: #ffffff;
-      font-size: 45px;
-      line-height: 55px; }
-    .ue__inFigures .ue__inFigures__container hr {
-      background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
-      height: 3px;
-      width: 100px;
-      margin: 10px auto 10px auto;
-      border: none; }
-    .ue__inFigures .ue__inFigures__container .ue__inFigures__title {
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 16px; }
-    .ue__inFigures .ue__inFigures__container .ue__inFigures__description {
-      margin-top: 30px;
-      margin-bottom: 40px;
-      color: #ffffff;
-      font-size: 16px;
-      text-align: left; }
+  margin: auto;
+  margin-top: 70px; }
+  .realmadrid__container img {
+    width: 100%;
+    max-width: 480px;
+    margin: 20px 0; }
+  .realmadrid__container .realmadrid__text {
+    width: 100%;
+    max-width: 480px;
+    margin: 20px 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: left; }
+  .realmadrid__container .realmadrid__img {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0; }
+  .realmadrid__container .realmadrid__text__full {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: left; }
 
-#certificates img {
-  padding-top: 50px;
-  width: 80%;
-  max-width: 900px;
+.rm__values__normalText {
+  margin: 30px auto 20px auto;
+  font-size: 19px;
+  max-width: 1000px; }
+
+.rm__values__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1000px;
   margin: auto; }
-
-#degreesandprograms {
-  background: #e6e7e8;
-  background: linear-gradient(to right, #ffffff 0%, #e6e7e8 100%);
-  background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-gris.png");
-  background-size: cover;
-  background-position: bottom; }
+  .rm__values__container .rm__values__text {
+    width: 100%;
+    max-width: 360px;
+    margin: 20px auto; }
+    .rm__values__container .rm__values__text p {
+      font-size: 19px;
+      margin-top: 20px;
+      color: #cd4e37;
+      font-weight: 700; }
+  .rm__values__container img {
+    width: 100%;
+    max-width: 640px;
+    margin: 20px auto; }
 
 .degrees {
   display: flex;
@@ -569,8 +554,16 @@ section {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 20px auto; }
+  .degrees .degrees__title {
+    font-size: 17px;
+    margin: 20px auto;
+    font-weight: 700;
+    width: 100%; }
+  .degrees .degrees__description {
+    font-size: 15px;
+    text-align: left; }
   .degrees .degrees__container {
     max-width: 320px;
     margin-top: 40px; }
@@ -605,60 +598,106 @@ section {
           width: 1em;
           margin-left: -15px; }
 
-.connecting__container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 20px auto; }
-  .connecting__container img {
-    max-width: 320px;
-    margin-top: 40px; }
-
-.connecting__textContainer {
-  max-width: 1200px;
-  margin: 20px auto; }
-  .connecting__textContainer .connecting__text__description {
-    font-size: 15px;
-    text-align: left; }
-  .connecting__textContainer ul {
-    list-style: none;
-    margin-bottom: 30px; }
-    .connecting__textContainer ul li {
-      margin: 15px 0;
-      line-height: 25px;
-      text-align: left;
-      font-size: 15px; }
-      .connecting__textContainer ul li::before {
-        content: "\2022";
-        font-weight: bold;
-        display: inline-block;
-        width: 1em; }
-
-#investing {
-  background: #e6e7e8;
-  background: linear-gradient(to right, #ffffff 0%, #e6e7e8 100%);
-  background: url("https://linkingeducation.com/wp-content/uploads/2020/10/ue__background.jpg");
+#rm__orange {
+  background: #cd4e37;
+  background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+  background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-naranja.png");
   background-size: cover;
-  background-position: bottom;
-  padding: 80px 20px;
-  margin-bottom: 90px; }
-
-.investing__container {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 90%;
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px; }
-  .investing__container .titulo__top__normal {
-    margin-bottom: 50px; }
-  .investing__container .investing__description {
+  background-position: center; }
+  #rm__orange .rm__orange__text {
     font-size: 18px;
-    text-align: center;
+    margin: 10px auto;
     font-weight: 700;
-    margin: 20px auto; }
+    color: #ffffff; }
+  #rm__orange img {
+    max-width: 50px; }
+
+#thewhiteweek {
+  max-width: 1000px;
+  margin: auto; }
+  #thewhiteweek img {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0; }
+  #thewhiteweek p {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: left; }
+  #thewhiteweek .titulo__top__normal p {
+    color: #434041;
+    margin: 20px auto;
+    text-align: center; }
+  #thewhiteweek .titulo__top__normal hr {
+    background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+    height: 6px;
+    width: 100px;
+    border: none; }
+
+.pilars {
+  margin-top: 40px; }
+  .pilars .pilars__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1000px;
+    margin: 50px auto; }
+    .pilars .pilars__container .pilars__img {
+      max-width: 300px;
+      width: 100%; }
+      .pilars .pilars__container .pilars__img img {
+        width: 100%; }
+    .pilars .pilars__container .pilars__text {
+      max-width: 680px;
+      width: 100%; }
+      .pilars .pilars__container .pilars__text .pilars__title {
+        font-size: 17px;
+        margin: 20px auto;
+        font-weight: 700;
+        width: 100%;
+        text-align: left; }
+      .pilars .pilars__container .pilars__text .pilars__description {
+        font-size: 15px;
+        text-align: left; }
+      .pilars .pilars__container .pilars__text ul {
+        list-style: none; }
+        .pilars .pilars__container .pilars__text ul li {
+          margin: 3px 0;
+          line-height: 25px;
+          text-align: left;
+          font-size: 15px; }
+          .pilars .pilars__container .pilars__text ul li::before {
+            content: "\2022";
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -20px; }
+
+.pilars__title__1 {
+  color: #d98d28;
+  font-weight: 700;
+  font-size: 48px;
+  margin-left: 30%;
+  margin-right: 20px; }
+
+.pilars__title__2 {
+  color: #d98d28;
+  font-weight: 700;
+  font-size: 48px;
+  margin-left: 20%;
+  margin-right: 20px; }
+
+.pilars__title__3 {
+  color: #d98d28;
+  font-weight: 700;
+  font-size: 48px;
+  margin-left: 5%;
+  margin-right: 20px; }
 
 #contactoDatos {
   padding: 20px 0 50px 0;
@@ -925,9 +964,21 @@ textarea,
     #navegador .navegador .navegador__links li ul li:nth-child(1) {
       margin-left: 0; }
   section {
-    padding: 80px 70px; } }
+    padding: 80px 70px; }
+  .pilars .pilars__container .pilars__img {
+    max-width: 300px;
+    width: 100%; }
+  .pilars .pilars__container .pilars__text {
+    max-width: 500px;
+    width: 100%; } }
 
 @media (max-width: 940px) {
+  .pilars__title__1 {
+    margin-left: 0; }
+  .pilars__title__2 {
+    margin-left: 0; }
+  .pilars__title__3 {
+    margin-left: 0; }
   /* Nav */
   #navegador .navegador .navegador__logo {
     width: 100%; }

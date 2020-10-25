@@ -527,6 +527,7 @@ section {
     p {
         @extend %tituloTop;
         color: $color-gris;
+        margin: 20px auto;
     }
     hr {
         background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
@@ -534,7 +535,6 @@ section {
         width: 100px;
         margin: auto;
         border: none;
-        margin-top: 10px;
     }
 }
 .titulo__top__texto__normal {
@@ -549,61 +549,97 @@ section {
         text-align: center;
     }
 }
-#universidadeuropea{
+#realmadrid{
     width: 90%;
     max-width: 1400px;
     margin: auto;
 }
-.universidadeuropea{
+.mainpic{
+    display: block;
+    margin: 60px auto;
+    max-width: 750px;
+    width: 100%;
+}
+.logopic{
+    display: block;
+    margin: auto;
+    max-width: 500px;
+    width: 100%;
+}
+.realmadrid__container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1300px;
+    max-width: 1000px;
     margin: auto;
     margin-top: 70px;
-    .universidadeuropea__container{
-        width: 30%;
-        min-width: 275px;
-        max-width: 330px;
-        margin-bottom: 70px;
-        .universidadeuropea__title{
+    img{
+        width: 100%;
+        max-width: 480px;
+        margin: 20px 0;
+    }
+    .realmadrid__text{
+        width: 100%;
+        max-width: 480px;
+        margin: 20px 0;
+        @extend %textoLectura;
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-align: left;
+    }
+    .realmadrid__img{
+        width: 100%;
+        max-width: 1000px;
+        margin: 20px 0;
+    }
+    .realmadrid__text__full{
+        width: 100%;
+        max-width: 1000px;
+        margin: 20px 0;
+        @extend %textoLectura;
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-align: left;
+    }
+}
+.rm__values__normalText{
+    margin: 30px auto 20px auto;
+    @extend %textoLectura;
+    font-size: 19px;
+    max-width: 1000px;
+}
+.rm__values__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1000px;
+    margin: auto;
+    .rm__values__text{
+        width: 100%;
+        max-width: 360px;
+        margin: 20px auto;
+        p{
             @extend %textoLectura;
-            font-size: 16px;
-            margin-bottom: 10px;
-            font-weight: 700;
+            font-size: 19px;
             margin-top: 20px;
+            color: $color-naranja;
+            font-weight: 700;
         }
-        img{
-            width: 100%;
-        }
+    }
+    img{
+        width: 100%;
+        max-width: 640px;
+        margin: 20px auto;
+
     }
 }
-#ue__inFigures {
-    background: $color-naranja;
-    background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
-    background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-naranja.png");
-    background-size: cover;
-    background-position: center;
-}
-.titulo__top__white {
-    display: inline-block;
-    p {
-        @extend %tituloTop;
-        color: $color-blanco;
-        text-transform: uppercase;
-    }
-    hr {
-        background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
-        height: 6px;
-        width: 100px;
-        margin: auto;
-        border: none;
-        margin-top: 10px;
-    }
-}
-.ue__inFigures{
+.degrees{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -611,63 +647,18 @@ section {
     align-items: flex-start;
     max-width: 1000px;
     margin: 20px auto;
-    .ue__inFigures__container{
-        width: 300px;
-        .ue__inFigures__number{
-            -webkit-margin-bottom-collapse: 20px;
-            @extend %textoLectura;
-            font-weight: 700;
-            color: $color-blanco;
-            font-size: 45px;
-            line-height: 55px;
-        }
-        hr {
-            background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
-            height: 3px;
-            width: 100px;
-            margin: 10px auto 10px auto;
-            border: none;
-        }
-        .ue__inFigures__title{
-            @extend %textoLectura;
-            color: $color-blanco;
-            font-weight: 700;
-            font-size: 16px;
-        }
-        .ue__inFigures__description{
-            @extend %textoLectura;
-            margin-top: 30px;
-            margin-bottom: 40px;
-            color: $color-blanco;
-            font-size: 16px;
-            text-align: left;
-        }
+    .degrees__title{
+        @extend %textoLectura;
+        font-size: 17px;
+        margin: 20px auto;
+        font-weight: 700;
+        width: 100%;
     }
-}
-#certificates{
-    img{
-        padding-top: 50px;
-        width: 80%;
-        max-width: 900px;
-        margin: auto;
+    .degrees__description{
+        @extend %textoLectura;
+        font-size: 15px;
+        text-align: left;
     }
-}
-#degreesandprograms{
-    background: $color-grisClaro;
-    background: linear-gradient(to right, $color-blanco 0%, $color-grisClaro 100%);
-    background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-gris.png");
-    background-size: cover;
-    background-position: bottom;
-}
-
-.degrees{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 20px auto;
     .degrees__container{
         max-width: 320px;
         margin-top: 40px;
@@ -714,71 +705,133 @@ section {
         }
     }
 }
-.connecting__container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 20px auto;
+
+#rm__orange {
+    background: $color-naranja;
+    background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
+    background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-naranja.png");
+    background-size: cover;
+    background-position: center;
+    .rm__orange__text{
+        @extend %textoLectura;
+        font-size: 18px;
+        margin: 10px auto;
+        font-weight: 700;
+        color: $color-blanco;
+    }
     img{
-        max-width: 320px;
-        margin-top: 40px;
+        max-width: 50px;
     }
 }
-.connecting__textContainer{
-    max-width: 1200px;
-    margin: 20px auto;
-    .connecting__text__description{
+
+#thewhiteweek {
+    max-width: 1000px;
+    margin: auto;
+    img{
+        width: 100%;
+        max-width: 1000px;
+        margin: 20px 0;
+    }
+    p{
+        width: 100%;
+        max-width: 1000px;
+        margin: 20px 0;
         @extend %textoLectura;
-        font-size: 15px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 20px;
         text-align: left;
     }
-    ul {
-        list-style: none;
-        margin-bottom: 30px;
-        li {
-            margin: 15px 0;
-            line-height: 25px;
-            @extend %proximaNova_Regular;
-            text-align: left;
-            font-size: 15px;
-            &::before {
-                content: "\2022";
-                @extend %textoGradient;
-                font-weight: bold;
-                display: inline-block;
-                width: 1em;
+    .titulo__top__normal {
+        p {
+            @extend %tituloTop;
+            color: $color-gris;
+            margin: 20px auto;
+            text-align: center;
+        }
+        hr {
+            background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
+            height: 6px;
+            width: 100px;
+            border: none;
+        }
+    }
+}
+.pilars{
+    margin-top: 40px;
+    .pilars__container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        max-width: 1000px;
+        margin: 50px auto;
+        .pilars__img{
+            max-width: 300px;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .pilars__text{
+            max-width: 680px;
+            width: 100%;
+            .pilars__title{
+                @extend %textoLectura;
+                font-size: 17px;
+                margin: 20px auto;
+                font-weight: 700;
+                width: 100%;
+                text-align: left;
+            }
+            .pilars__description{
+                @extend %textoLectura;
+                font-size: 15px;
+                text-align: left;
+            }
+            ul {
+                list-style: none;
+                li {
+                    margin: 3px 0;
+                    line-height: 25px;
+                    @extend %proximaNova_Regular;
+                    text-align: left;
+                    font-size: 15px;
+                    &::before {
+                        content: "\2022";
+                        @extend %textoGradient;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -20px;
+                    }
+                }
             }
         }
     }
 }
-#investing{
-    background: $color-grisClaro;
-    background: linear-gradient(to right, $color-blanco 0%, $color-grisClaro 100%);
-    background: url("https://linkingeducation.com/wp-content/uploads/2020/10/ue__background.jpg");
-    background-size: cover;
-    background-position: bottom;
-    padding: 80px 20px;
-    margin-bottom: 90px;
+.pilars__title__1{
+    color:#d98d28;
+    font-weight: 700;
+    font-size: 48px;
+    margin-left: 30%;
+    margin-right: 20px;
 }
-.investing__container{
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-    .titulo__top__normal{
-        margin-bottom: 50px;
-    }
-    .investing__description{
-        @extend %textoLectura;
-        font-size: 18px;
-        text-align: center;
-        font-weight: 700;
-        margin: 20px auto;
-    }
+.pilars__title__2{
+    color:#d98d28;
+    font-weight: 700;
+    font-size: 48px;
+    margin-left: 20%;
+    margin-right: 20px;
+    
+}
+.pilars__title__3{
+    color:#d98d28;
+    font-weight: 700;
+    font-size: 48px;
+    margin-left: 5%;
+    margin-right: 20px;
 }
 #contactoDatos {
     padding: 20px 0 50px 0;
@@ -786,7 +839,6 @@ section {
 }
 #contactoFormulario{
     margin-top: 50px;
-
 }
 .footer__Datos__Contacto {
     display: flex;
@@ -1127,9 +1179,32 @@ textarea,
     section {
         padding: 80px 70px;
     }
+    
+    .pilars{
+        .pilars__container{
+            .pilars__img{
+                max-width: 300px;
+                width: 100%;
+            }
+            .pilars__text{
+                max-width: 500px;
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 940px) {
+    .pilars__title__1{
+        margin-left: 0;
+    }
+    .pilars__title__2{
+        margin-left: 0;
+        
+    }
+    .pilars__title__3{
+        margin-left: 0;
+    }
     
     /* Nav */
     #navegador {
