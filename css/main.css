@@ -3,34 +3,34 @@
 /* Gradients */
 #navegador .navegador .navegador__links li a:hover,
 #navegador .navegador .navegador__links li a :active,
-#navegador .navegador .navegador__links li a :focus, #navegador .navegador .navegador__links li .linkactive, #navegador .navegador .navegador__links li ul li a:hover {
+#navegador .navegador .navegador__links li a :focus, #navegador .navegador .navegador__links li .linkactive, #navegador .navegador .navegador__links li ul li a:hover, .home__SeccionHowWeCreate__Grafico__Container .vl {
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #cd4e37, #d98d28); }
 
-#navegador .navegador .navegador__links li ul li a:hover {
+#navegador .navegador .navegador__links li ul li a:hover, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul li::before, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul li::before, .partneringwithlinking__container .partneringwithlinking__infocontainer ul li::before {
   background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 /* Textos */
-.footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Texto, .footer__Datos__Contacto .footer__Datos__Contacto__Linking a, .footer__Formulario__Copyright p, .wpcf7-list-item-label, input[type="submit"],
+.home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul li, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Regular, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul li, .partneringwithlinking__container .partneringwithlinking__infocontainer ul li, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Texto, .footer__Datos__Contacto .footer__Datos__Contacto__Linking a, .footer__Formulario__Copyright p, .wpcf7-list-item-label, input[type="submit"],
 button[type="submit"] {
   font-family: proxima_nova, sans-serif;
   font-weight: 400; }
 
-a, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Titulo, #fieldTitle, .wpcf7 input:not([type="submit"]):not([type="checkbox"]),
+a, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Titulo p, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado p, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Bold, .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado p, .partneringwithlinking__container .partneringwithlinking__infocontainer p, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Titulo, #fieldTitle, .wpcf7 input:not([type="submit"]):not([type="checkbox"]),
 .wpcf7 textarea,
 .wpcf7 select {
   font-family: proxima_nova, sans-serif;
   font-weight: 700; }
 
-h1, .titulo__top__white p, .titulo__top__normal p {
+h1, .titulo__top__white p, .titulo__top__normal p, #partneringwithlinking .titulo__top__normal p {
   font-family: proxima_nova, sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 32px; }
 
-h2 {
+h2, .titulo__bot__normal p {
   font-family: proxima_nova, sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -68,8 +68,24 @@ a {
 .titulo__top__white {
   display: inline-block; }
   .titulo__top__white p {
-    color: #ffffff; }
+    color: #ffffff;
+    text-transform: uppercase; }
   .titulo__top__white hr {
+    background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+    height: 6px;
+    width: 100px;
+    margin: auto;
+    border: none;
+    margin-top: 10px; }
+
+.titulo__bot__normal {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  margin-top: 50px; }
+  .titulo__bot__normal p {
+    color: #434041; }
+  .titulo__bot__normal hr {
     background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
     height: 6px;
     width: 100px;
@@ -438,8 +454,8 @@ section {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 39%;
-    width: 692px; }
+    top: 40%;
+    width: 1071px; }
   .section1__infocontainer .section1__scroll {
     width: 200px;
     position: absolute;
@@ -450,7 +466,8 @@ section {
       width: 100%; }
 
 .titulo__top__normal p {
-  color: #434041; }
+  color: #434041;
+  text-transform: uppercase; }
 
 .titulo__top__normal hr {
   background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
@@ -470,95 +487,219 @@ section {
     margin: auto;
     text-align: center; }
 
-#partners {
-  width: 90%;
-  max-width: 1400px;
+#whycreating {
+  text-align: center;
+  width: 900px;
   margin: auto; }
+  #whycreating img:nth-child(1) {
+    max-width: 710px;
+    display: inline-block; }
+  #whycreating img:nth-child(2) {
+    max-width: 710px;
+    margin-left: 90px;
+    display: inline-block; }
+  #whycreating img:nth-child(3) {
+    max-width: 710px;
+    display: inline-block; }
+  #whycreating p {
+    width: 800px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 32px; }
 
-.partners {
+.home__SeccionHowWeCreate__Grafico__Container {
   margin: auto;
-  margin-top: 70px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px; }
-  .partners .partners__school {
-    width: 20%;
-    min-width: 275px;
-    margin-bottom: 70px; }
-    .partners .partners__school img {
+  flex-wrap: wrap;
+  align-items: flex-end;
+  position: relative;
+  width: 1380px; }
+  .home__SeccionHowWeCreate__Grafico__Container .vl {
+    height: 355px;
+    border-right: 3px solid;
+    margin: 20px 0; }
+  .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico {
+    width: 332px;
+    margin: 20px auto; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Numero {
+      display: block;
       width: 100%; }
-    .partners .partners__school .partners__school__logos {
-      width: auto;
-      height: 48px;
-      margin: 25px auto; }
-    .partners .partners__school hr {
-      background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
-      height: 3px;
-      width: 100px;
-      margin: 10px auto 20px auto;
-      border: none; }
-    .partners .partners__school p {
-      font-size: 16px;
-      margin-bottom: 30px; }
-    .partners .partners__school .boton__learnMore {
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Numero img {
+        width: 108px;
+        margin: auto; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Titulo {
+      display: block;
+      width: 100%; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Titulo p {
+        margin: 6px 0 25px 0;
+        font-size: 26px;
+        line-height: 32px;
+        color: #434041;
+        margin-bottom: 30px; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado {
+      margin-left: 1em;
+      padding: 0 15px;
+      height: 388px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado p {
+        margin: 6px 0;
+        font-size: 19px;
+        line-height: 25px;
+        color: #434041;
+        text-align: left;
+        margin: 10px 0;
+        margin-left: -1em; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul {
+        list-style: none; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul li {
+          margin: 3px 0;
+          font-size: 19px;
+          line-height: 25px;
+          color: #434041;
+          text-align: left; }
+          .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul li::before {
+            content: "\2022";
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto {
+      margin-left: 1em;
+      padding: 0 15px;
+      height: 388px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Bold {
+        margin: 3px 0;
+        font-size: 19px;
+        line-height: 25px;
+        color: #434041;
+        text-align: left;
+        margin: 10px 0; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Regular {
+        margin: 3px 0;
+        font-size: 19px;
+        line-height: 25px;
+        color: #434041;
+        text-align: left; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto img {
+        margin-top: 30px;
+        width: 90%;
+        display: block; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado {
+      margin-left: 1em;
+      padding: 0 15px;
+      height: 388px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado p {
+        margin: 3px 0;
+        font-size: 19px;
+        line-height: 25px;
+        color: #434041;
+        text-align: left;
+        margin: 10px 60px 10px 0;
+        margin-left: -1em; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul {
+        list-style: none; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul li {
+          margin: 3px 0;
+          font-size: 19px;
+          line-height: 25px;
+          color: #434041;
+          text-align: left; }
+          .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul li::before {
+            content: "\2022";
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+
+#partneringwithlinking .titulo__top__normal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 180px; }
+  #partneringwithlinking .titulo__top__normal p {
+    color: #434041;
+    text-transform: uppercase; }
+  #partneringwithlinking .titulo__top__normal hr {
+    background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+    height: 6px;
+    width: 100px;
+    margin: auto;
+    border: none;
+    margin-top: 10px; }
+
+.partneringwithlinking__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 110px;
+  position: relative;
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  margin-top: 40px; }
+  .partneringwithlinking__container .partneringwithlinking__img {
+    width: 15%;
+    max-width: 110px;
+    margin-top: -40px; }
+    .partneringwithlinking__container .partneringwithlinking__img img {
+      width: 100%; }
+    .partneringwithlinking__container .partneringwithlinking__img .lineavertical {
+      height: 100%;
+      min-height: 500px;
+      width: 4px;
       margin: auto;
-      margin-top: 20px;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      width: 240px; }
-      .partners .partners__school .boton__learnMore .btn {
-        cursor: pointer;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 28px;
-        max-width: 160px;
-        position: relative;
-        text-decoration: none;
-        width: 100%;
-        font-family: proxima_nova, sans-serif;
-        font-weight: 400; }
-        .partners .partners__school .boton__learnMore .btn:hover {
-          text-decoration: none; }
-      .partners .partners__school .boton__learnMore .effect04 {
-        display: var(--uismLinkDisplay);
-        color: #ffffff;
-        position: relative;
-        transition-duration: 0.4s;
-        overflow: hidden;
-        background-color: #cd4e37;
-        outline: solid 2px #cd4e37; }
-        .partners .partners__school .boton__learnMore .effect04::before,
-        .partners .partners__school .boton__learnMore .effect04 span {
-          margin: 0 auto;
-          transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-          transition-duration: 0.4s; }
-        .partners .partners__school .boton__learnMore .effect04:hover {
-          background-color: #e6e7e8; }
-        .partners .partners__school .boton__learnMore .effect04:hover span {
-          -webkit-transform: translateY(-400%) scale(-0.1, 20);
-          transform: translateY(-400%) scale(-0.1, 20); }
-        .partners .partners__school .boton__learnMore .effect04::before {
-          content: attr(data-sm-link-text);
-          color: #cd4e37;
-          position: absolute;
-          left: 0;
-          right: 0;
-          margin: auto;
-          -webkit-transform: translateY(500%) scale(-0.1, 20);
-          transform: translateY(500%) scale(-0.1, 20); }
-        .partners .partners__school .boton__learnMore .effect04:hover::before {
-          letter-spacing: 0.05em;
-          -webkit-transform: translateY(0) scale(1, 1);
-          transform: translateY(0) scale(1, 1); }
+      margin-top: 50px;
+      background: #cd4e37;
+      background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+      border-radius: 50px; }
+  .partneringwithlinking__container .partneringwithlinking__infocontainer {
+    width: 80%;
+    margin-left: 50px; }
+    .partneringwithlinking__container .partneringwithlinking__infocontainer p {
+      font-size: 22px;
+      line-height: 28px;
+      color: #434041;
+      text-align: left;
+      margin-left: -1em;
+      margin-bottom: 30px; }
+    .partneringwithlinking__container .partneringwithlinking__infocontainer ul {
+      list-style: none; }
+      .partneringwithlinking__container .partneringwithlinking__infocontainer ul li {
+        margin: 8px 0;
+        font-size: 19px;
+        line-height: 25px;
+        color: #434041;
+        text-align: left; }
+        .partneringwithlinking__container .partneringwithlinking__infocontainer ul li::before {
+          content: "\2022";
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em; }
+
+#partneringwithlinking-esp {
+  padding-top: 100px;
+  margin-bottom: -100px; }
+  #partneringwithlinking-esp .partneringwithlinking__container {
+    padding-top: 50px; }
+
+#partneringwithlinking-usa {
+  padding-top: 100px;
+  margin-bottom: -100px; }
+  #partneringwithlinking-usa .partneringwithlinking__container {
+    padding-top: 0; }
+
+#partneringwithlinking-student {
+  padding-top: 100px;
+  margin-bottom: -100px; }
+  #partneringwithlinking-student .partneringwithlinking__container {
+    padding-top: 0; }
 
 #contactoDatos {
-  padding: 20px 0 50px 0;
+  padding: 110px 0 50px 0;
   min-height: auto; }
 
 #contactoFormulario {
@@ -754,11 +895,88 @@ textarea,
   color: #fff !important; }
 
 @media (max-width: 1635px) {
-  .lineavertical {
-    top: 240px;
-    left: 122px; }
+  .home__SeccionHowWeCreate__Grafico__Container {
+    width: 1200px; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico {
+      width: 290px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Numero {
+        display: block;
+        width: 100%; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Numero img {
+          width: 80px;
+          margin: auto; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Titulo {
+        display: block;
+        width: 100%; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Titulo p {
+          margin: 6px 0;
+          font-size: 24px;
+          line-height: 28px;
+          color: #434041;
+          margin-bottom: 20px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado {
+        margin-left: 1em;
+        padding: 0 15px;
+        height: 388px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado p {
+          margin: 6px 0;
+          font-size: 18px;
+          line-height: 22px;
+          color: #434041;
+          text-align: left;
+          margin: 10px 0;
+          margin-left: -1em; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul {
+          list-style: none; }
+          .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul li {
+            margin: 3px 0;
+            font-size: 18px;
+            line-height: 22px;
+            color: #434041;
+            text-align: left; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto {
+        margin-left: 1em;
+        padding: 0 15px;
+        height: 388px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Bold {
+          margin: 3px 0;
+          font-size: 18px;
+          line-height: 22px;
+          color: #434041;
+          text-align: left;
+          margin: 10px 0; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Regular {
+          margin: 3px 0;
+          font-size: 18px;
+          line-height: 22px;
+          color: #434041;
+          text-align: left; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto img {
+          margin-top: 30px;
+          width: 90%;
+          display: block; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado {
+        margin-left: 1em;
+        padding: 0 15px;
+        height: 388px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado p {
+          margin: 3px 0;
+          font-size: 18px;
+          line-height: 22px;
+          color: #434041;
+          text-align: left;
+          margin: 10px 0;
+          margin-left: -1em; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul {
+          list-style: none; }
+          .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul li {
+            margin: 3px 0;
+            font-size: 18px;
+            line-height: 22px;
+            color: #434041;
+            text-align: left; }
   .footer__Datos__Contacto {
-    margin: 30px auto 10px auto; }
+    margin: 90px auto 10px auto; }
     .footer__Datos__Contacto:nth-child(1) {
       text-align: right; }
     .footer__Datos__Contacto:nth-child(3) {
@@ -794,7 +1012,7 @@ textarea,
 @media (max-width: 1520px) {
   .section1__infocontainer .section1__animation {
     width: 90%;
-    max-width: 520px; }
+    max-width: 650px; }
   .section1__infocontainer .section1__scroll {
     width: 90%;
     max-width: 160px;
@@ -805,11 +1023,34 @@ textarea,
     .section1__infocontainer .section1__scroll img {
       width: 100%; }
   .titulo__top__normal p {
-    color: #434041; }
+    color: #434041;
+    text-transform: uppercase; }
   .titulo__top__texto__normal {
     width: 100%; }
     .titulo__top__texto__normal p {
-      font-size: 18px; } }
+      font-size: 18px; }
+  #whycreating {
+    text-align: center;
+    width: 100%; }
+    #whycreating img:nth-child(1) {
+      width: 90%;
+      max-width: 580px;
+      display: inline-block; }
+    #whycreating img:nth-child(2) {
+      width: 90%;
+      max-width: 580px;
+      margin-left: 90px;
+      display: inline-block; }
+    #whycreating img:nth-child(3) {
+      width: 90%;
+      max-width: 580px;
+      display: inline-block; }
+  .home__SeccionHowWeCreate__Grafico__Container {
+    width: 90%;
+    max-width: 1100px; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico {
+      width: 90%;
+      max-width: 250px; } }
 
 @media (max-width: 1220px) {
   /* Nav */
@@ -825,27 +1066,84 @@ textarea,
     padding: 80px 70px; } }
 
 @media (max-width: 940px) {
-  /* Nav */
-  #navegador .navegador .navegador__logo {
-    width: 100%; }
-  #navegador .navegador .navegador__links {
-    max-width: 500px;
-    width: 100%; }
-    #navegador .navegador .navegador__links li:nth-child(1) {
-      margin-left: -21px; }
-    #navegador .navegador .navegador__links li:nth-child(4) {
-      margin-left: -21px; }
-    #navegador .navegador .navegador__links li ul li:nth-child(1) {
-      margin-left: 0; }
-    #navegador .navegador .navegador__links li:hover ul {
-      display: none; }
   #cd-vertical-nav {
     display: none; }
   #contactoDatos {
     padding: 150px 0 50px 0;
     min-height: auto; }
+  #partneringwithlinking-student .partneringwithlinking__container {
+    padding-top: 0; }
   section {
     padding: 60px 40px; }
+  #whycreating {
+    height: auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 0; }
+    #whycreating img {
+      text-align: center; }
+      #whycreating img:nth-child(1) {
+        width: 500px;
+        display: inline-block; }
+      #whycreating img:nth-child(2) {
+        width: 500px;
+        margin-left: 90px;
+        display: inline-block; }
+      #whycreating img:nth-child(3) {
+        width: 500px;
+        display: inline-block; }
+  #whycreating p {
+    width: 90%;
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 25px; }
+  .home__SeccionHowWeCreate__Grafico__Container {
+    width: 100%; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico {
+      width: 90%;
+      max-width: 212px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado {
+        margin-left: 1em;
+        padding: 0 15px;
+        height: 360px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado p {
+          font-size: 14px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado ul li {
+          font-size: 13px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto {
+        height: 360px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Bold {
+          font-size: 14px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto .home__SeccionHowWeCreate__Grafico__02__Texto__Regular {
+          font-size: 13px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto img {
+          margin-top: 30px;
+          width: 95%;
+          display: block; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado {
+        height: 360px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado p {
+          font-size: 14px; }
+        .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado ul li {
+          font-size: 13px; }
+  .partneringwithlinking__container {
+    padding-top: 110px;
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    margin: auto; }
+    .partneringwithlinking__container img {
+      width: 80px; }
+    .partneringwithlinking__container .partneringwithlinking__infocontainer {
+      width: 90%;
+      max-width: 300px;
+      margin-left: 50px; }
+      .partneringwithlinking__container .partneringwithlinking__infocontainer p {
+        font-size: 18px;
+        line-height: 22px; }
+      .partneringwithlinking__container .partneringwithlinking__infocontainer ul li {
+        font-size: 18px;
+        line-height: 22px; }
   .footer__Datos {
     height: auto; }
   .footer__Formulario__Container {
@@ -875,13 +1173,26 @@ textarea,
   .your-message textarea {
     max-height: 101px; } }
 
+@media (max-width: 940px) {
+  /* Nav */
+  #navegador .navegador .navegador__logo {
+    width: 100%; }
+  #navegador .navegador .navegador__links {
+    max-width: 500px;
+    width: 100%; }
+    #navegador .navegador .navegador__links li:nth-child(1) {
+      margin-left: -21px; }
+    #navegador .navegador .navegador__links li:nth-child(4) {
+      margin-left: -21px; }
+    #navegador .navegador .navegador__links li ul li:nth-child(1) {
+      margin-left: 0; }
+    #navegador .navegador .navegador__links li:hover ul {
+      display: none; } }
+
 @media (max-width: 664px) {
   section {
     height: auto;
     min-height: auto; }
-  #dualdegrees {
-    min-height: 100vh;
-    height: auto; }
   /* Nav */
   #navegador .navegador .navegador__logo {
     width: 100%; }
@@ -906,11 +1217,24 @@ textarea,
         margin-left: 0; }
     #navegador .navegador .navegador__links li:hover ul {
       display: none; }
-  .section1__infocontainer {
-    padding-top: 180px; }
-    .section1__infocontainer .section1__animation {
-      width: 90%;
-      max-width: 380px; }
+  #dualdegrees {
+    min-height: 100vh;
+    height: auto; }
+  .partneringwithlinking__container {
+    padding: 20px 40px;
+    display: block;
+    width: auto;
+    text-align: left; }
+    .partneringwithlinking__container .partneringwithlinking__img {
+      margin-left: -1em;
+      min-width: 80px;
+      margin-bottom: 20px; }
+    .partneringwithlinking__container .partneringwithlinking__infocontainer {
+      display: block;
+      margin-left: 0;
+      width: auto; }
+  .lineavertical {
+    display: none; }
   .footer__Datos__Contacto {
     flex-direction: column;
     align-items: center;
@@ -952,6 +1276,8 @@ textarea,
       width: 100%; } }
 
 @media (max-width: 545px) {
+  .vl {
+    display: none; }
   /* Nav */
   #navegador .navegador .navegador__logo {
     width: 100%; }
@@ -977,8 +1303,49 @@ textarea,
         margin-left: 0; }
     #navegador .navegador .navegador__links li:hover ul {
       display: none; }
+  .section1__infocontainer {
+    padding-top: 180px; }
+    .section1__infocontainer .section1__animation {
+      width: 90%;
+      max-width: 450px; }
+  #dualdegrees {
+    padding: 40px 0; }
+  #whatarethey {
+    height: auto;
+    min-height: auto;
+    padding: 40px 0; }
   #Datos {
     height: auto; }
+  #whycreating {
+    height: auto;
+    min-height: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 0; }
+    #whycreating img:nth-child(1) {
+      width: 100%;
+      max-width: 450px;
+      display: inline-block; }
+    #whycreating img:nth-child(2) {
+      width: 100%;
+      max-width: 450px;
+      margin-left: 0;
+      display: inline-block; }
+    #whycreating img:nth-child(3) {
+      width: 100%;
+      max-width: 450px;
+      display: inline-block; }
+  .home__SeccionHowWeCreate__Grafico__Container {
+    width: auto; }
+    .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico {
+      width: 242px; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__Listado {
+        height: auto; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__02__Texto {
+        height: auto; }
+      .home__SeccionHowWeCreate__Grafico__Container .home__SeccionHowWeCreate__Grafico .home__SeccionHowWeCreate__Grafico__04__Listado {
+        height: auto; }
   .footer__Datos__Contacto {
     width: auto; }
   .footer__Formulario__Container {

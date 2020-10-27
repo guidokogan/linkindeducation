@@ -758,13 +758,30 @@ section {
     justify-content: center;
     padding-top: 110px;
     position: relative;
-    width: 1300px;
+    max-width: 1300px;
+    width: 100%;
     margin: auto;
-    img {
-        width: 110px;
+    margin-top: 40px;
+    .partneringwithlinking__img{
+        width: 15%;
+        max-width: 110px;
+        margin-top: -40px;
+        img {
+            width: 100%;
+        }
+        .lineavertical {
+            height: 100%;
+            min-height: 500px;
+            width: 4px;
+            margin: auto;
+            margin-top: 50px;
+            background: $color-naranja;
+            background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
+            border-radius: 50px;
+        }
     }
     .partneringwithlinking__infocontainer {
-        width: 1000px;
+        width: 80%;
         margin-left: 50px;
         p {
             font-size: 22px;
@@ -796,35 +813,25 @@ section {
         }
     }
 }
-.lineavertical {
-    position: absolute;
-    top: 192px;
-    left: 125px;
-    height: 290px;
-    width: 4px;
-    background: $color-naranja;
-    background: linear-gradient(to right, $color-naranja 0%, $color-amarillo 100%);
-    border-radius: 50px;
-}
+
 #partneringwithlinking-esp {
+    padding-top: 100px;
+    margin-bottom: -100px;
     .partneringwithlinking__container {
         padding-top: 50px;
     }
 }
 #partneringwithlinking-usa {
+    padding-top: 100px;
+    margin-bottom: -100px;
     .partneringwithlinking__container {
-        .lineavertical {
-            top: 152px;
-            height: 440px;
-        }
         padding-top: 0;
+
     }
 }
 #partneringwithlinking-student {
-    .lineavertical {
-        top: 150px;
-        height: 660px;
-    }
+    padding-top: 100px;
+    margin-bottom: -100px;
     .partneringwithlinking__container {
         padding-top: 0;
     }
@@ -1060,10 +1067,6 @@ textarea,
 }
 
 @media (max-width: 1635px) {
-    .lineavertical {
-        top: 200px;
-        left: 123px;
-    }
     .home__SeccionHowWeCreate__Grafico__Container {
         width: 1200px;
         .home__SeccionHowWeCreate__Grafico {
@@ -1218,10 +1221,6 @@ textarea,
 }
 
 @media (max-width: 1520px) {
-    .lineavertical {
-        top: 200px;
-        left: 74px;
-    }
     .section1__infocontainer {
         .section1__animation {
             width: 90%;
@@ -1282,31 +1281,6 @@ textarea,
             max-width: 250px;
         }
     }
-    .partneringwithlinking__container {
-        padding-top: 110px;
-        position: relative;
-        width: 90%;
-        max-width: 800px;
-        margin: auto;
-        img {
-            width: 110px;
-        }
-        .partneringwithlinking__infocontainer {
-            width: 90%;
-            max-width: 600px;
-            margin-left: 50px;
-            p {
-                font-size: 18px;
-                line-height: 22px;
-            }
-            ul {
-                li {
-                    font-size: 18px;
-                    line-height: 22px;
-                }
-            }
-        }
-    }
 }
 
 @media (max-width: 1220px) {
@@ -1345,24 +1319,7 @@ textarea,
         padding: 150px 0 50px 0;
         min-height: auto;
     }
-    .lineavertical {
-        top: 230px;
-        left: 123px;
-        height: 530px;
-    }
-    #partneringwithlinking-usa {
-        .partneringwithlinking__container {
-            .lineavertical {
-                top: 122px;
-                height: 720px;
-            }
-        }
-    }
     #partneringwithlinking-student {
-        .lineavertical {
-            top: 133px;
-            height: 1690px;
-        }
         .partneringwithlinking__container {
             padding-top: 0;
         }
@@ -1604,6 +1561,11 @@ textarea,
         display: block;
         width: auto;
         text-align: left;
+        .partneringwithlinking__img {
+            margin-left: -1em;
+            min-width: 80px;
+            margin-bottom: 20px;
+        }
         .partneringwithlinking__infocontainer {
             display: block;
             margin-left: 0;
