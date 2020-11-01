@@ -42,12 +42,16 @@ button[type="submit"] {
   font-family: proxima_nova, sans-serif;
   font-weight: 400; }
 
-a, .unique-textimg ul li, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Titulo, #fieldTitle, .wpcf7 input:not([type="submit"]):not([type="checkbox"]),
+a, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Titulo, #fieldTitle, .wpcf7 input:not([type="submit"]):not([type="checkbox"]),
 .wpcf7 textarea,
 .wpcf7 select {
   font-family: proxima_nova, sans-serif;
   font-weight: 700; }
 
+.unique-textimg ul li{
+  font-family: proxima_nova, sans-serif;
+  font-weight: normal;
+}
 h1, .titulo__top__white p, .titulo__top__normal p, .titulo__normal p {
   font-family: proxima_nova, sans-serif;
   font-weight: 400;
@@ -500,16 +504,6 @@ section {
   margin: auto;
   display: block; }
 
-.ibm__header, .ibm__managementbigdata {
-  padding-top: 40px;
-  padding-bottom: 20px;
-  max-width: 757px;
-  margin: auto;
-  display: block;
-  width: 100%; }
-  .ibm__header img, .ibm__managementbigdata img {
-    width: 100%; }
-
 .ibm__blueweek {
   padding-bottom: 80px;
   max-width: 757px;
@@ -557,7 +551,7 @@ section {
   flex-direction: row;
   justify-content: space-between; }
   .masterdegrees__containers .masterdegrees__containers__item {
-    width: 30%;
+    width: 31%;
     min-width: 250px;
     margin-bottom: 50px; }
     .masterdegrees__containers .masterdegrees__containers__item img {
@@ -571,14 +565,14 @@ section {
       margin-top: 20px; }
     .masterdegrees__containers .masterdegrees__containers__item p {
       margin-top: 10px;
-      font-size: 17px; }
+      font-size: 19px; }
     .masterdegrees__containers .masterdegrees__containers__item ul {
       list-style: none;
       letter-spacing: 0; }
       .masterdegrees__containers .masterdegrees__containers__item ul li {
         letter-spacing: 0;
         margin: 0 0 5px 25px;
-        font-size: 17px;
+        font-size: 19px;
         line-height: 25px;
         text-align: left; }
         .masterdegrees__containers .masterdegrees__containers__item ul li::before {
@@ -587,6 +581,13 @@ section {
           display: inline-block;
           width: 1em;
           margin-left: -24px; }
+
+.masterdegrees__containers__center{
+  align-items: center;
+}
+.masterdegrees__containers__item a {
+  color: black;
+}
 
 #facilities .masterdegrees__containers .masterdegrees__containers__item p {
   text-align: left; }
@@ -610,7 +611,7 @@ section {
     list-style: none; }
     .unique-textimg ul li {
       margin: 0 0 20px 0;
-      font-size: 17px;
+      font-size: 19px;
       line-height: 25px;
       text-align: left; }
       .unique-textimg ul li::before {
@@ -943,7 +944,7 @@ textarea,
       list-style: none; }
       .unique-textimg ul li {
         margin: 0 0 20px 0;
-        font-size: 17px;
+        font-size: 19px;
         line-height: 25px;
         text-align: center; }
         .unique-textimg ul li::before {
@@ -1109,7 +1110,7 @@ button[type="submit"] {
   font-family: proxima_nova, sans-serif;
   font-weight: 400; }
 
-a, .unique-textimg ul li, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Titulo, #fieldTitle, .wpcf7 input:not([type="submit"]):not([type="checkbox"]),
+a, .footer__Datos__Contacto .footer__Datos__Contacto__Paises .footer__Datos__Contacto__Titulo, #fieldTitle, .wpcf7 input:not([type="submit"]):not([type="checkbox"]),
 .wpcf7 textarea,
 .wpcf7 select {
   font-family: proxima_nova, sans-serif;
@@ -1567,16 +1568,31 @@ section {
   margin: auto;
   display: block; }
 
-.ibm__header, .ibm__managementbigdata {
-  padding-top: 40px;
-  padding-bottom: 20px;
-  max-width: 757px;
-  margin: auto;
-  display: block;
-  width: 100%; }
-  .ibm__header img, .ibm__managementbigdata img {
-    width: 100%; }
 
+  .ibm__header, .ibm__managementbigdata {
+    position: relative;
+    margin: 50px auto;
+    display: block;
+    width: 100%;
+    max-width: 757px;
+  }
+    .ibm__header img, .ibm__managementbigdata img {
+      width: 100%; }
+    .ibm__header__video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
+  .ibm__header__video{
+    position: relative;
+    margin: 50px auto;
+    display: block;
+    width: 100%;
+    max-width: 757px;
+    height: 391px;
+  }
 .ibm__blueweek {
   padding-bottom: 80px;
   max-width: 757px;
@@ -1599,13 +1615,13 @@ section {
   display: flex;
   max-width: 757px;
   margin: 30px auto;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: row; }
   .ibm-textimg img {
-    max-width: 200px; }
+    max-width: 270px; }
   .ibm-textimg p {
-    text-align: left;
+    text-align: center;
     margin: 0;
     margin-left: 20px; }
 
@@ -1638,14 +1654,14 @@ section {
       margin-top: 20px; }
     .masterdegrees__containers .masterdegrees__containers__item p {
       margin-top: 10px;
-      font-size: 17px; }
+      font-size: 19px; }
     .masterdegrees__containers .masterdegrees__containers__item ul {
       list-style: none;
       letter-spacing: 0; }
       .masterdegrees__containers .masterdegrees__containers__item ul li {
         letter-spacing: 0;
         margin: 0 0 5px 25px;
-        font-size: 17px;
+        font-size: 19px;
         line-height: 25px;
         text-align: left; }
         .masterdegrees__containers .masterdegrees__containers__item ul li::before {
@@ -1677,7 +1693,7 @@ section {
     list-style: none; }
     .unique-textimg ul li {
       margin: 0 0 20px 0;
-      font-size: 17px;
+      font-size: 19px;
       line-height: 25px;
       text-align: left; }
       .unique-textimg ul li::before {
@@ -2010,7 +2026,7 @@ textarea,
       list-style: none; }
       .unique-textimg ul li {
         margin: 0 0 20px 0;
-        font-size: 17px;
+        font-size: 19px;
         line-height: 25px;
         text-align: center; }
         .unique-textimg ul li::before {
