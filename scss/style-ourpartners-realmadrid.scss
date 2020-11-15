@@ -553,6 +553,12 @@ section {
     width: 90%;
     max-width: 1400px;
     margin: auto;
+    margin-top: 50px;
+}
+.imgfull{
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
 }
 .mainpic{
     display: block;
@@ -574,7 +580,22 @@ section {
     align-items: flex-start;
     max-width: 1000px;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 20px;
+    .realmadrid__video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
+    .realmadrid__video{
+      position: relative;
+      margin: 20px 0;
+      display: block;
+      width: 100%;
+      max-width: 480px;
+      height: 269px;
+    }
     img{
         width: 100%;
         max-width: 480px;
@@ -639,6 +660,46 @@ section {
 
     }
 }
+
+.masterdegrees__containers {
+  display: flex;
+  margin: 40px auto;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; }
+  .masterdegrees__containers .masterdegrees__containers__item {
+    width: 31%;
+    min-width: 250px;
+    margin-bottom: 50px; }
+    .masterdegrees__containers .masterdegrees__containers__item img {
+      width: 100%; }
+    .masterdegrees__containers .masterdegrees__containers__item hr {
+      background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
+      height: 3px;
+      width: 80px;
+      margin: auto;
+      border: none;
+      margin-top: 20px; }
+    .masterdegrees__containers .masterdegrees__containers__item p {
+      margin-top: 10px;
+      font-size: 19px; }
+    .masterdegrees__containers .masterdegrees__containers__item ul {
+      list-style: none;
+      letter-spacing: 0; }
+      .masterdegrees__containers .masterdegrees__containers__item ul li {
+        letter-spacing: 0;
+        margin: 0 0 5px 25px;
+        font-size: 19px;
+        line-height: 25px;
+        text-align: left; }
+        .masterdegrees__containers .masterdegrees__containers__item ul li::before {
+          content: "\2022";
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -24px; }
+
 .degrees{
     display: flex;
     flex-wrap: wrap;
@@ -727,10 +788,39 @@ section {
 #thewhiteweek {
     max-width: 1000px;
     margin: auto;
-    img{
+    .thewhiteweek__imgContainer{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: auto;
+      margin-top: 30px;
+      .thewhiteweek__video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        max-width: 1000px;
+        height: 100%;
+      }
+      .thewhiteweek__video{
+        position: relative;
         margin: 20px 0;
+        display: block;
+        width: 100%;
+        max-width: 430px;
+        height: 269px;
+      }
+      img{
+        width: 100%;
+        max-width: 450px;
+        margin: 20px 0;
+        object-fit: cover;
+        object-position: 60% 0%;
+        max-width: 430px;
+        height: 269px;
+      }
     }
     p{
         width: 100%;
@@ -764,18 +854,19 @@ section {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: flex-start;
         max-width: 1000px;
         margin: 50px auto;
         .pilars__img{
-            max-width: 300px;
+            max-width: 360px;
             width: 100%;
+            margin-right: 20px;
             img{
                 width: 100%;
             }
         }
         .pilars__text{
-            max-width: 680px;
+            max-width: 600px;
             width: 100%;
             .pilars__title{
                 @extend %textoLectura;
@@ -1187,7 +1278,7 @@ textarea,
                 width: 100%;
             }
             .pilars__text{
-                max-width: 500px;
+                max-width: 600px;
                 width: 100%;
             }
         }

@@ -566,11 +566,11 @@ section {
     .ceu__container{
         width: 30%;
         min-width: 275px;
-        max-width: 330px;
+        max-width: 370px;
         margin-bottom: 70px;
         .ceu__title{
             @extend %textoLectura;
-            font-size: 16px;
+            font-size: 18px;
             margin-bottom: 10px;
             font-weight: 700;
             margin-top: 40px;
@@ -584,14 +584,25 @@ section {
         }
         .ceu__description{
             @extend %textoLectura;
-            font-size: 16px;
+            font-size: 18px;
             min-height: 156px;
             text-align: left;
         }
-        img{
+        .ceu__logos{
+            width: 100%;
+            max-width: 280px;
+        }
+        .ceu__edificio{
             width: 100%;
         }
     }
+}
+#ceu__caracteristicas{
+  background: $color-grisClaro;
+  background: linear-gradient(to right, $color-blanco 0%, $color-grisClaro 100%);
+  background: url("https://linkingeducation.com/wp-content/uploads/2020/07/background-gris.png");
+  background-size: cover;
+  background-position: bottom;
 }
 #ceu__inFigures {
     background: $color-naranja;
@@ -645,7 +656,8 @@ section {
             @extend %textoLectura;
             color: $color-blanco;
             font-weight: 700;
-            font-size: 16px;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -666,7 +678,7 @@ section {
         }
         .international__title{
             @extend %textoLectura;
-            font-size: 15px;
+            font-size: 18px;
             margin-bottom: 10px;
             font-weight: 700;
             text-align: left;
@@ -680,7 +692,7 @@ section {
         }
         .international__description{
             @extend %textoLectura;
-            font-size: 15px;
+            font-size: 18px;
             text-align: left;
         }
         ul {
@@ -688,11 +700,11 @@ section {
             margin-bottom: 30px;
             li {
                 margin: 3px 0;
-                line-height: 25px;
+                line-height: 170%;
                 @extend %proximaNova_Regular;
                 color: $color-gris;
                 text-align: left;
-                font-size: 15px;
+                font-size: 18px;
                 &::before {
                     content: "\2022";
                     @extend %textoGradient;
@@ -720,7 +732,7 @@ section {
         }
         .degrees__title{
             @extend %textoLectura;
-            font-size: 15px;
+            font-size: 18px;
             margin: 10px auto;
             font-weight: 700;
         }
@@ -733,7 +745,7 @@ section {
         }
         .degrees__description{
             @extend %textoLectura;
-            font-size: 15px;
+            font-size: 16px;
             text-align: left;
         }
         ul {
@@ -741,11 +753,11 @@ section {
             margin-bottom: 30px;
             li {
                 margin: 3px 0;
-                line-height: 25px;
+                line-height: 170%;
                 @extend %proximaNova_Regular;
                 color: $color-gris;
                 text-align: left;
-                font-size: 15px;
+                font-size: 16px;
                 &::before {
                     content: "\2022";
                     @extend %textoGradient;

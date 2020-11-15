@@ -566,11 +566,11 @@ section {
     .universidadeuropea__container{
         width: 30%;
         min-width: 275px;
-        max-width: 330px;
+        max-width: 380px;
         margin-bottom: 70px;
         .universidadeuropea__title{
             @extend %textoLectura;
-            font-size: 16px;
+            font-size: 20px;
             margin-bottom: 10px;
             font-weight: 700;
             margin-top: 20px;
@@ -632,14 +632,14 @@ section {
             @extend %textoLectura;
             color: $color-blanco;
             font-weight: 700;
-            font-size: 16px;
+            font-size: 19px;
         }
         .ue__inFigures__description{
             @extend %textoLectura;
             margin-top: 30px;
             margin-bottom: 40px;
             color: $color-blanco;
-            font-size: 16px;
+            font-size: 18px;
             text-align: left;
         }
     }
@@ -669,14 +669,14 @@ section {
     max-width: 1200px;
     margin: 20px auto;
     .degrees__container{
-        max-width: 320px;
+        max-width: 370px;
         margin-top: 40px;
         img{
             width: 100%;
         }
         .degrees__title{
             @extend %textoLectura;
-            font-size: 15px;
+            font-size: 20px;
             margin: 10px auto;
             font-weight: 700;
         }
@@ -723,8 +723,10 @@ section {
     max-width: 1200px;
     margin: 20px auto;
     img{
-        max-width: 320px;
+        max-width: 370px;
         margin-top: 40px;
+        border-bottom: 8px solid;
+        @extend %bordeGradient;
     }
 }
 .connecting__textContainer{
@@ -732,7 +734,7 @@ section {
     margin: 20px auto;
     .connecting__text__description{
         @extend %textoLectura;
-        font-size: 15px;
+        font-size: 18px;
         text-align: left;
     }
     ul {
@@ -743,7 +745,7 @@ section {
             line-height: 25px;
             @extend %proximaNova_Regular;
             text-align: left;
-            font-size: 15px;
+            font-size: 18px;
             &::before {
                 content: "\2022";
                 @extend %textoGradient;
@@ -774,7 +776,7 @@ section {
     }
     .investing__description{
         @extend %textoLectura;
-        font-size: 18px;
+        font-size: 21px;
         text-align: center;
         font-weight: 700;
         margin: 20px auto;
