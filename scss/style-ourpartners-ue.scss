@@ -570,8 +570,8 @@ section {
         margin-bottom: 70px;
         .universidadeuropea__title{
             @extend %textoLectura;
-            font-size: 20px;
-            margin-bottom: 10px;
+            font-size: 22px;
+            line-height: 150%;
             font-weight: 700;
             margin-top: 20px;
         }
@@ -609,10 +609,10 @@ section {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 20px auto;
     .ue__inFigures__container{
-        width: 300px;
+        width: 400px;
         .ue__inFigures__number{
             -webkit-margin-bottom-collapse: 20px;
             @extend %textoLectura;
@@ -632,14 +632,16 @@ section {
             @extend %textoLectura;
             color: $color-blanco;
             font-weight: 700;
-            font-size: 19px;
+            font-size: 24px;
+            line-height: 150%;
         }
         .ue__inFigures__description{
             @extend %textoLectura;
             margin-top: 30px;
             margin-bottom: 40px;
             color: $color-blanco;
-            font-size: 18px;
+            font-size: 22px;
+            line-height: 150%;
             text-align: left;
         }
     }
@@ -666,17 +668,18 @@ section {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 20px auto;
     .degrees__container{
-        max-width: 370px;
+        max-width: 400px;
         margin-top: 40px;
         img{
             width: 100%;
         }
         .degrees__title{
             @extend %textoLectura;
-            font-size: 20px;
+            font-size: 22px;
+            line-height: 150%;
             margin: 10px auto;
             font-weight: 700;
         }
@@ -689,7 +692,8 @@ section {
         }
         .degrees__description{
             @extend %textoLectura;
-            font-size: 15px;
+            font-size: 22px;
+            line-height: 150%;
             text-align: left;
         }
         ul {
@@ -701,14 +705,15 @@ section {
                 @extend %proximaNova_Regular;
                 color: $color-gris;
                 text-align: left;
-                font-size: 15px;
+                font-size: 22px;
+                line-height: 150%;
                 &::before {
                     content: "\2022";
                     @extend %textoGradient;
                     font-weight: bold;
                     display: inline-block;
                     width: 1em;
-                    margin-left: -15px;
+                    margin-left: -20px;
                 }
             }
         }
@@ -720,21 +725,22 @@ section {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 20px auto;
     img{
-        max-width: 370px;
+        max-width: 400px;
         margin-top: 40px;
         border-bottom: 8px solid;
         @extend %bordeGradient;
     }
 }
 .connecting__textContainer{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 20px auto;
     .connecting__text__description{
         @extend %textoLectura;
-        font-size: 18px;
+        font-size: 22px;
+        line-height: 150%;
         text-align: left;
     }
     ul {
@@ -742,10 +748,10 @@ section {
         margin-bottom: 30px;
         li {
             margin: 15px 0;
-            line-height: 25px;
             @extend %proximaNova_Regular;
             text-align: left;
-            font-size: 18px;
+            font-size: 22px;
+            line-height: 150%;
             &::before {
                 content: "\2022";
                 @extend %textoGradient;
@@ -776,7 +782,8 @@ section {
     }
     .investing__description{
         @extend %textoLectura;
-        font-size: 21px;
+        font-size: 22px;
+        line-height: 150%;
         text-align: center;
         font-weight: 700;
         margin: 20px auto;

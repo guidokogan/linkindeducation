@@ -556,7 +556,6 @@ section {
     margin-top: 50px;
 }
 .imgfull{
-  max-width: 1000px;
   width: 100%;
   margin: auto;
 }
@@ -578,7 +577,7 @@ section {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1000px;
+    max-width: 1300px;
     margin: auto;
     margin-top: 20px;
     .realmadrid__video iframe {
@@ -593,35 +592,37 @@ section {
       margin: 20px 0;
       display: block;
       width: 100%;
-      max-width: 480px;
-      height: 269px;
+      max-width: 640px;
+      height: 359px;
     }
     img{
         width: 100%;
-        max-width: 480px;
+        max-width: 640px;
         margin: 20px 0;
     }
     .realmadrid__text{
         width: 100%;
-        max-width: 480px;
+        max-width: 640px;
         margin: 20px 0;
         @extend %textoLectura;
-        font-size: 16px;
+        font-size: 22px;
+        line-height: 150%;
         margin-bottom: 10px;
         margin-top: 20px;
         text-align: left;
     }
     .realmadrid__img{
         width: 100%;
-        max-width: 1000px;
+        max-width: 1300px;
         margin: 20px 0;
     }
     .realmadrid__text__full{
         width: 100%;
-        max-width: 1000px;
+        max-width: 1300px;
         margin: 20px 0;
         @extend %textoLectura;
-        font-size: 16px;
+        font-size: 22px;
+        line-height: 150%;
         margin-bottom: 10px;
         margin-top: 20px;
         text-align: left;
@@ -630,8 +631,9 @@ section {
 .rm__values__normalText{
     margin: 30px auto 20px auto;
     @extend %textoLectura;
-    font-size: 19px;
-    max-width: 1000px;
+    font-size: 22px;
+    line-height: 150%;
+    max-width: 1300px;
 }
 .rm__values__container{
     display: flex;
@@ -647,7 +649,8 @@ section {
         margin: 20px auto;
         p{
             @extend %textoLectura;
-            font-size: 19px;
+            font-size: 22px;
+            line-height: 150%;
             margin-top: 20px;
             color: $color-naranja;
             font-weight: 700;
@@ -664,7 +667,7 @@ section {
 .masterdegrees__containers {
   display: flex;
   margin: 40px auto;
-  max-width: 1000px;
+  max-width: 1300px;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between; }
@@ -683,15 +686,17 @@ section {
       margin-top: 20px; }
     .masterdegrees__containers .masterdegrees__containers__item p {
       margin-top: 10px;
-      font-size: 19px; }
+      font-size: 22px;
+      line-height: 150%;
+    }
     .masterdegrees__containers .masterdegrees__containers__item ul {
       list-style: none;
       letter-spacing: 0; }
       .masterdegrees__containers .masterdegrees__containers__item ul li {
         letter-spacing: 0;
         margin: 0 0 5px 25px;
-        font-size: 19px;
-        line-height: 25px;
+        font-size: 22px;
+        line-height: 150%;
         text-align: left; }
         .masterdegrees__containers .masterdegrees__containers__item ul li::before {
           content: "\2022";
@@ -706,18 +711,20 @@ section {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 20px auto;
     .degrees__title{
         @extend %textoLectura;
-        font-size: 17px;
+        font-size: 22px;
+        line-height: 150%;
         margin: 20px auto;
         font-weight: 700;
         width: 100%;
     }
     .degrees__description{
         @extend %textoLectura;
-        font-size: 15px;
+        font-size: 22px;
+        line-height: 150%;
         text-align: left;
     }
     .degrees__container{
@@ -728,7 +735,8 @@ section {
         }
         .degrees__title{
             @extend %textoLectura;
-            font-size: 15px;
+            font-size: 22px;
+            line-height: 150%;
             margin: 10px auto;
             font-weight: 700;
         }
@@ -741,7 +749,8 @@ section {
         }
         .degrees__description{
             @extend %textoLectura;
-            font-size: 15px;
+            font-size: 22px;
+            line-height: 150%;
             text-align: left;
         }
         ul {
@@ -753,14 +762,15 @@ section {
                 @extend %proximaNova_Regular;
                 color: $color-gris;
                 text-align: left;
-                font-size: 15px;
+                font-size: 22px;
+                line-height: 150%;
                 &::before {
                     content: "\2022";
                     @extend %textoGradient;
                     font-weight: bold;
                     display: inline-block;
                     width: 1em;
-                    margin-left: -15px;
+                    margin-left: -20px;
                 }
             }
         }
@@ -775,7 +785,8 @@ section {
     background-position: center;
     .rm__orange__text{
         @extend %textoLectura;
-        font-size: 18px;
+        font-size: 22px;
+        line-height: 150%;
         margin: 10px auto;
         font-weight: 700;
         color: $color-blanco;
@@ -786,7 +797,7 @@ section {
 }
 
 #thewhiteweek {
-    max-width: 1000px;
+    max-width: 1300px;
     margin: auto;
     .thewhiteweek__imgContainer{
       display: flex;
@@ -794,7 +805,7 @@ section {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
-      max-width: 1000px;
+      max-width: 1300px;
       margin: auto;
       margin-top: 30px;
       .thewhiteweek__video iframe {
@@ -809,25 +820,25 @@ section {
         margin: 20px 0;
         display: block;
         width: 100%;
-        max-width: 430px;
-        height: 269px;
+        max-width: 580px;
+        height: 314px;
       }
       img{
         width: 100%;
-        max-width: 450px;
+        max-width: 580px;
         margin: 20px 0;
         object-fit: cover;
         object-position: 60% 0%;
-        max-width: 430px;
-        height: 269px;
+        height: 314px;
       }
     }
     p{
         width: 100%;
-        max-width: 1000px;
+        max-width: 1300px;
         margin: 20px 0;
         @extend %textoLectura;
-        font-size: 16px;
+        font-size: 22px;
+        line-height: 150%;
         margin-bottom: 10px;
         margin-top: 20px;
         text-align: left;
@@ -855,10 +866,10 @@ section {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        max-width: 1000px;
+        max-width: 1300px;
         margin: 50px auto;
         .pilars__img{
-            max-width: 360px;
+            max-width: 630px;
             width: 100%;
             margin-right: 20px;
             img{
@@ -866,11 +877,12 @@ section {
             }
         }
         .pilars__text{
-            max-width: 600px;
+            max-width: 630px;
             width: 100%;
             .pilars__title{
                 @extend %textoLectura;
-                font-size: 17px;
+                font-size: 22px;
+                line-height: 150%;
                 margin: 20px auto;
                 font-weight: 700;
                 width: 100%;
@@ -878,7 +890,8 @@ section {
             }
             .pilars__description{
                 @extend %textoLectura;
-                font-size: 15px;
+                font-size: 22px;
+                line-height: 150%;
                 text-align: left;
             }
             ul {
@@ -888,7 +901,8 @@ section {
                     line-height: 25px;
                     @extend %proximaNova_Regular;
                     text-align: left;
-                    font-size: 15px;
+                    font-size: 22px;
+                    line-height: 150%;
                     &::before {
                         content: "\2022";
                         @extend %textoGradient;
@@ -906,14 +920,12 @@ section {
     color:#d98d28;
     font-weight: 700;
     font-size: 48px;
-    margin-left: 30%;
     margin-right: 20px;
 }
 .pilars__title__2{
     color:#d98d28;
     font-weight: 700;
     font-size: 48px;
-    margin-left: 20%;
     margin-right: 20px;
     
 }
@@ -921,7 +933,6 @@ section {
     color:#d98d28;
     font-weight: 700;
     font-size: 48px;
-    margin-left: 5%;
     margin-right: 20px;
 }
 #contactoDatos {

@@ -570,7 +570,7 @@ section {
         margin-bottom: 70px;
         .ceu__title{
             @extend %textoLectura;
-            font-size: 18px;
+            font-size: 24px;
             margin-bottom: 10px;
             font-weight: 700;
             margin-top: 40px;
@@ -584,7 +584,8 @@ section {
         }
         .ceu__description{
             @extend %textoLectura;
-            font-size: 18px;
+            font-size: 22px;
+            line-height: 150%;
             min-height: 156px;
             text-align: left;
         }
@@ -633,7 +634,7 @@ section {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 20px auto;
     .ceu__inFigures__container{
         min-width: 300px;
@@ -642,7 +643,8 @@ section {
             @extend %textoLectura;
             font-weight: 700;
             color: $color-blanco;
-            font-size: 45px;
+            margin-top: 20px;
+            font-size: 50px;
             line-height: 55px;
         }
         hr {
@@ -656,7 +658,8 @@ section {
             @extend %textoLectura;
             color: $color-blanco;
             font-weight: 700;
-            font-size: 18px;
+            font-size: 22px;
+            line-height: 150%;
             margin-bottom: 20px;
         }
     }
@@ -665,20 +668,24 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 20px auto;
     .international__container{
-        max-width: 400px;
-        width: 450px;
+        max-width: 620px;
+        width: 100%;
         margin-bottom: 40px;
+        text-align: left;
         img{
             width: 100%;
+            max-width: 400px;
+            margin: 0;
         }
         .international__title{
             @extend %textoLectura;
-            font-size: 18px;
+            font-size: 24px;
+            line-height: 150%;
             margin-bottom: 10px;
             font-weight: 700;
             text-align: left;
@@ -692,7 +699,8 @@ section {
         }
         .international__description{
             @extend %textoLectura;
-            font-size: 18px;
+            font-size: 22px;
+            line-height: 150%;
             text-align: left;
         }
         ul {
@@ -700,11 +708,11 @@ section {
             margin-bottom: 30px;
             li {
                 margin: 3px 0;
-                line-height: 170%;
                 @extend %proximaNova_Regular;
                 color: $color-gris;
                 text-align: left;
-                font-size: 18px;
+                font-size: 22px;
+                line-height: 150%;
                 &::before {
                     content: "\2022";
                     @extend %textoGradient;
@@ -720,19 +728,21 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 20px auto;
     .degrees__container{
-        max-width: 320px;
+        max-width: 380px;
+        width: 100%;
         margin-top: 40px;
         img{
             width: 100%;
         }
         .degrees__title{
             @extend %textoLectura;
-            font-size: 18px;
+            font-size: 24px;
+            line-height: 150%;
             margin: 10px auto;
             font-weight: 700;
         }
@@ -745,7 +755,8 @@ section {
         }
         .degrees__description{
             @extend %textoLectura;
-            font-size: 16px;
+            font-size: 20px;
+            line-height: 150%;
             text-align: left;
         }
         ul {
@@ -753,18 +764,18 @@ section {
             margin-bottom: 30px;
             li {
                 margin: 3px 0;
-                line-height: 170%;
                 @extend %proximaNova_Regular;
                 color: $color-gris;
                 text-align: left;
-                font-size: 16px;
+                font-size: 20px;
+                line-height: 150%;
                 &::before {
                     content: "\2022";
                     @extend %textoGradient;
                     font-weight: bold;
                     display: inline-block;
                     width: 1em;
-                    margin-left: -15px;
+                    margin-left: -20px;
                 }
             }
         }

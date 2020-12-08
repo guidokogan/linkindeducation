@@ -69,8 +69,8 @@ li,
 ul, .titulo__top__texto__normal p, .texto__lectura p, .masterdegrees__containers .masterdegrees__containers__item p {
   font-family: proxima_nova, sans-serif;
   font-weight: 400;
-  font-size: 23px;
-  line-height: 26px; }
+  font-size: 22px;
+  line-height: 150%; }
 
 /* Generales */
 * {
@@ -520,7 +520,8 @@ section {
   margin: 40px auto;
   max-width: 1200px; }
   .texto__lectura p {
-    font-size: 20px; }
+    font-size: 22px;
+    line-height: 150%; }
 
 .ibm-textimg {
   display: flex;
@@ -543,6 +544,15 @@ section {
   background-size: cover;
   background-position: bottom; }
 
+#masterdegrees{
+    .masterdegrees__containers{
+        .masterdegrees__containers__item{
+            p{
+                text-transform: uppercase;
+            }
+        }
+    }
+}
 .masterdegrees__containers {
   display: flex;
   margin: 40px auto;
@@ -551,8 +561,8 @@ section {
   flex-direction: row;
   justify-content: space-between; }
   .masterdegrees__containers .masterdegrees__containers__item {
-    width: 31%;
-    min-width: 250px;
+    max-width: 400px;
+    width: 100%;
     margin-bottom: 50px; }
     .masterdegrees__containers .masterdegrees__containers__item img {
       width: 100%; }
@@ -565,22 +575,23 @@ section {
       margin-top: 20px; }
     .masterdegrees__containers .masterdegrees__containers__item p {
       margin-top: 10px;
-      font-size: 19px; }
+      font-size: 22px;
+      line-height: 150%; }
     .masterdegrees__containers .masterdegrees__containers__item ul {
       list-style: none;
       letter-spacing: 0; }
       .masterdegrees__containers .masterdegrees__containers__item ul li {
         letter-spacing: 0;
         margin: 0 0 5px 25px;
-        font-size: 19px;
-        line-height: 25px;
+        font-size: 22px;
+        line-height: 150%;
         text-align: left; }
         .masterdegrees__containers .masterdegrees__containers__item ul li::before {
           content: "\2022";
           font-weight: bold;
           display: inline-block;
           width: 1em;
-          margin-left: -24px; }
+          margin-left: -30px; }
 
 .masterdegrees__containers__center{
   align-items: center;
@@ -611,15 +622,15 @@ section {
     list-style: none; }
     .unique-textimg ul li {
       margin: 0 0 20px 0;
-      font-size: 19px;
-      line-height: 25px;
+      font-size: 22px;
+      line-height: 150%;
       text-align: left; }
       .unique-textimg ul li::before {
         content: "\2022";
         font-weight: bold;
         display: inline-block;
         width: 1em;
-        margin-left: -24px; }
+        margin-left: -30px; }
 
 #contactoDatos {
   padding: 20px 0 50px 0;
@@ -944,8 +955,8 @@ textarea,
       list-style: none; }
       .unique-textimg ul li {
         margin: 0 0 20px 0;
-        font-size: 19px;
-        line-height: 25px;
+        font-size: 22px;
+        line-height: 150%;
         text-align: center; }
         .unique-textimg ul li::before {
           display: none; }
@@ -1133,8 +1144,8 @@ li,
 ul, .titulo__top__texto__normal p, .texto__lectura p, .masterdegrees__containers .masterdegrees__containers__item p {
   font-family: proxima_nova, sans-serif;
   font-weight: 400;
-  font-size: 23px;
-  line-height: 26px; }
+  font-size: 22px;
+  line-height: 150%; }
 
 /* Generales */
 * {
@@ -1609,7 +1620,7 @@ section {
   margin: 40px auto;
   max-width: 1200px; }
   .texto__lectura p {
-    font-size: 20px; }
+    font-size: 22px; }
 
 .ibm-textimg {
   display: flex;
@@ -1654,24 +1665,25 @@ section {
       margin-top: 20px; }
     .masterdegrees__containers .masterdegrees__containers__item p {
       margin-top: 10px;
-      font-size: 19px; }
+      font-size: 22px; }
     .masterdegrees__containers .masterdegrees__containers__item ul {
       list-style: none;
       letter-spacing: 0; }
       .masterdegrees__containers .masterdegrees__containers__item ul li {
         letter-spacing: 0;
         margin: 0 0 5px 25px;
-        font-size: 19px;
-        line-height: 25px;
+        font-size: 22px;
+        line-height: 150%;
         text-align: left; }
         .masterdegrees__containers .masterdegrees__containers__item ul li::before {
           content: "\2022";
           font-weight: bold;
           display: inline-block;
           width: 1em;
-          margin-left: -24px; }
+          margin-left: -30px; }
 
 #facilities .masterdegrees__containers .masterdegrees__containers__item p {
+    text-transform: capitalize;
   text-align: left; }
 
 .unique-textimg {
@@ -1693,15 +1705,15 @@ section {
     list-style: none; }
     .unique-textimg ul li {
       margin: 0 0 20px 0;
-      font-size: 19px;
-      line-height: 25px;
+      font-size: 22px;
+      line-height: 150%;
       text-align: left; }
       .unique-textimg ul li::before {
         content: "\2022";
         font-weight: bold;
         display: inline-block;
         width: 1em;
-        margin-left: -24px; }
+        margin-left: -30px; }
 
 #contactoDatos {
   padding: 20px 0 50px 0;
@@ -2026,8 +2038,8 @@ textarea,
       list-style: none; }
       .unique-textimg ul li {
         margin: 0 0 20px 0;
-        font-size: 19px;
-        line-height: 25px;
+        font-size: 22px;
+        line-height: 150%;
         text-align: center; }
         .unique-textimg ul li::before {
           display: none; }
