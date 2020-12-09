@@ -540,7 +540,7 @@ section {
 .titulo__top__texto__normal {
     position: relative;
     margin: auto;
-    width: 1300px;
+    width: 1250px;
     margin-top: 30px;
     p {
         @extend %textoLectura;
@@ -577,7 +577,7 @@ section {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1300px;
+    max-width: 1250px;
     margin: auto;
     margin-top: 20px;
     .realmadrid__video iframe {
@@ -592,17 +592,17 @@ section {
       margin: 20px 0;
       display: block;
       width: 100%;
-      max-width: 640px;
-      height: 359px;
+      max-width: 610px;
+      height: 342px;
     }
     img{
         width: 100%;
-        max-width: 640px;
+        max-width: 610px;
         margin: 20px 0;
     }
     .realmadrid__text{
         width: 100%;
-        max-width: 640px;
+        max-width: 610px;
         margin: 20px 0;
         @extend %textoLectura;
         font-size: 22px;
@@ -613,12 +613,12 @@ section {
     }
     .realmadrid__img{
         width: 100%;
-        max-width: 1300px;
+        max-width: 1250px;
         margin: 20px 0;
     }
     .realmadrid__text__full{
         width: 100%;
-        max-width: 1300px;
+        max-width: 1250px;
         margin: 20px 0;
         @extend %textoLectura;
         font-size: 22px;
@@ -633,7 +633,7 @@ section {
     @extend %textoLectura;
     font-size: 22px;
     line-height: 150%;
-    max-width: 1300px;
+    max-width: 1250px;
 }
 .rm__values__container{
     display: flex;
@@ -667,7 +667,7 @@ section {
 .masterdegrees__containers {
   display: flex;
   margin: 40px auto;
-  max-width: 1300px;
+  max-width: 1250px;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between; }
@@ -711,7 +711,7 @@ section {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1300px;
+    max-width: 1250px;
     margin: 20px auto;
     .degrees__title{
         @extend %textoLectura;
@@ -797,7 +797,7 @@ section {
 }
 
 #thewhiteweek {
-    max-width: 1300px;
+    max-width: 1250px;
     margin: auto;
     .thewhiteweek__imgContainer{
       display: flex;
@@ -805,7 +805,7 @@ section {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
-      max-width: 1300px;
+      max-width: 1250px;
       margin: auto;
       margin-top: 30px;
       .thewhiteweek__video iframe {
@@ -820,12 +820,12 @@ section {
         margin: 20px 0;
         display: block;
         width: 100%;
-        max-width: 580px;
+        max-width: 550px;
         height: 314px;
       }
       img{
         width: 100%;
-        max-width: 580px;
+        max-width: 550px;
         margin: 20px 0;
         object-fit: cover;
         object-position: 60% 0%;
@@ -834,7 +834,7 @@ section {
     }
     p{
         width: 100%;
-        max-width: 1300px;
+        max-width: 1250px;
         margin: 20px 0;
         @extend %textoLectura;
         font-size: 22px;
@@ -858,26 +858,30 @@ section {
         }
     }
 }
+#pilars{
+    padding: 0;
+}
 .pilars{
+    width: 100%;
+    margin: 0;
     margin-top: 40px;
     .pilars__container{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
-        max-width: 1300px;
-        margin: 50px auto;
+        margin: 50px 0;
         .pilars__img{
-            max-width: 630px;
+            max-width: 40%;
             width: 100%;
-            margin-right: 20px;
+            margin-right: 5%;
             img{
                 width: 100%;
             }
         }
         .pilars__text{
-            max-width: 630px;
+            max-width: 34%;
             width: 100%;
             .pilars__title{
                 @extend %textoLectura;

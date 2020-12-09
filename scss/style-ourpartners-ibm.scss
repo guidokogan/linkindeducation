@@ -447,9 +447,9 @@ a {
     transform: none; } }
 
 section {
-  padding: 50px;
+  padding: 40px 0;
   position: relative;
-  text-align: center; }
+  text-align: left; }
 
 #dualdegrees {
   min-height: 100vh;
@@ -478,6 +478,7 @@ section {
       width: 100%; }
 
 .titulo__top__normal p {
+    margin: 20px 0;
   color: #434041; }
 
 .titulo__top__normal hr {
@@ -491,7 +492,7 @@ section {
 .titulo__top__texto__normal {
   position: relative;
   margin: auto;
-  width: 1300px;
+  width: 1250px;
   margin-top: 30px; }
   .titulo__top__texto__normal p {
     color: #434041;
@@ -514,11 +515,10 @@ section {
     width: 100%; }
 
 .titulo__normal {
-  margin: 40px auto; }
+  margin: 40px 0; text-align: left; }
 
 .texto__lectura {
-  margin: 40px auto;
-  max-width: 1200px; }
+  max-width: 1250px; }
   .texto__lectura p {
     font-size: 22px;
     line-height: 150%; }
@@ -553,10 +553,13 @@ section {
         }
     }
 }
+#ibm, #internationaltrip{
+    margin: 40px auto;
+    max-width: 1250px;}
 .masterdegrees__containers {
   display: flex;
   margin: 40px auto;
-  max-width: 1300px;
+  max-width: 1250px;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between; }
@@ -606,19 +609,19 @@ section {
 .unique-textimg {
   display: flex;
   margin: 40px auto;
-  max-width: 1300px;
+  max-width: 1250px;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: flex-start; }
   .unique-textimg div {
-    max-width: 400px;
-    width: 50%; }
+    max-width: 500px;
+    width: 60%; }
     .unique-textimg div img {
-      max-width: 100%; }
+      width: 100%; }
   .unique-textimg ul {
     margin-left: 90px;
-    max-width: 600px;
-    width: 50%;
+    max-width: 500px;
+    width: 40%;
     list-style: none; }
     .unique-textimg ul li {
       margin: 0 0 20px 0;
@@ -895,6 +898,7 @@ textarea,
     .section1__infocontainer .section1__scroll img {
       width: 100%; }
   .titulo__top__normal p {
+    margin: 20px 0;
     color: #434041; }
   .titulo__top__texto__normal {
     width: 100%; }
@@ -939,15 +943,15 @@ textarea,
   .unique-textimg {
     display: flex;
     margin: 40px auto;
-    max-width: 1300px;
+    max-width: 1250px;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: flex-start; }
     .unique-textimg div {
-      max-width: 400px;
-      width: 50%; }
+      max-width: 500px;
+      width: 60%; }
       .unique-textimg div img {
-        max-width: 100%; }
+        width: 100%; }
     .unique-textimg ul {
       margin-left: 0;
       max-width: 600px;
@@ -1520,12 +1524,10 @@ a {
   100% {
     opacity: 1;
     transform: none; } }
-
-section {
-  padding: 50px;
-  position: relative;
-  text-align: center; }
-
+    section {
+        padding: 40px 0;
+        position: relative;
+        text-align: left; }
 #dualdegrees {
   min-height: 100vh;
   height: auto;
@@ -1553,7 +1555,10 @@ section {
       width: 100%; }
 
 .titulo__top__normal p {
-  color: #434041; }
+    
+    margin: 20px 0;
+  color: #434041;
+  text-align: center;}
 
 .titulo__top__normal hr {
   background: linear-gradient(to right, #cd4e37 0%, #d98d28 100%);
@@ -1566,7 +1571,7 @@ section {
 .titulo__top__texto__normal {
   position: relative;
   margin: auto;
-  width: 1300px;
+  width: 1250px;
   margin-top: 30px; }
   .titulo__top__texto__normal p {
     color: #434041;
@@ -1585,7 +1590,6 @@ section {
     margin: 50px auto;
     display: block;
     width: 100%;
-    max-width: 757px;
   }
     .ibm__header img, .ibm__managementbigdata img {
       width: 100%; }
@@ -1598,15 +1602,15 @@ section {
       }
   .ibm__header__video{
     position: relative;
-    margin: 50px auto;
+    margin: 50px 0;
     display: block;
     width: 100%;
-    max-width: 757px;
-    height: 391px;
+    max-width: 1250px;
+    height: 640px;
   }
 .ibm__blueweek {
   padding-bottom: 80px;
-  max-width: 757px;
+  max-width: 1250px;
   margin: auto;
   display: block;
   width: 100%; }
@@ -1614,27 +1618,28 @@ section {
     width: 100%; }
 
 .titulo__normal {
-  margin: 40px auto; }
+  margin: 40px 0; }
 
 .texto__lectura {
-  margin: 40px auto;
-  max-width: 1200px; }
+  max-width: 1250px; }
   .texto__lectura p {
     font-size: 22px; }
 
 .ibm-textimg {
   display: flex;
-  max-width: 757px;
+  max-width: 1250px;
   margin: 30px auto;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row; }
   .ibm-textimg img {
-    max-width: 270px; }
+    max-width: 350px; }
   .ibm-textimg p {
-    text-align: center;
+    text-align: left;
     margin: 0;
-    margin-left: 20px; }
+    margin-left: 70px;
+    font-size: 28px;
+}
 
 #masterdegrees, #facilities {
   background: #e6e7e8;
@@ -1646,7 +1651,8 @@ section {
 .masterdegrees__containers {
   display: flex;
   margin: 40px auto;
-  max-width: 1300px;
+  max-width: 1250px;
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between; }
@@ -1689,15 +1695,16 @@ section {
 .unique-textimg {
   display: flex;
   margin: 40px auto;
-  max-width: 1300px;
+  max-width: 1250px;
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: flex-start; }
   .unique-textimg div {
-    max-width: 400px;
-    width: 50%; }
+    max-width: 500px;
+    width: 60%; }
     .unique-textimg div img {
-      max-width: 100%; }
+      width: 100%; }
   .unique-textimg ul {
     margin-left: 90px;
     max-width: 600px;
@@ -1978,6 +1985,7 @@ textarea,
     .section1__infocontainer .section1__scroll img {
       width: 100%; }
   .titulo__top__normal p {
+      margin: 20px 0;
     color: #434041; }
   .titulo__top__texto__normal {
     width: 100%; }
@@ -2022,15 +2030,16 @@ textarea,
   .unique-textimg {
     display: flex;
     margin: 40px auto;
-    max-width: 1300px;
+    max-width: 1250px;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: flex-start; }
     .unique-textimg div {
-      max-width: 400px;
-      width: 50%; }
+      max-width: 500px;
+      width: 60%; }
       .unique-textimg div img {
-        max-width: 100%; }
+        width: 100%; }
     .unique-textimg ul {
       margin-left: 0;
       max-width: 600px;
