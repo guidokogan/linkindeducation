@@ -873,7 +873,7 @@ section {
         align-items: flex-start;
         margin: 50px 0;
         .pilars__img{
-            max-width: 40%;
+            max-width: 610px;
             width: 100%;
             margin-right: 5%;
             img{
@@ -881,7 +881,7 @@ section {
             }
         }
         .pilars__text{
-            max-width: 34%;
+            max-width: 44%;
             width: 100%;
             .pilars__title{
                 @extend %textoLectura;
@@ -1285,8 +1285,15 @@ textarea,
     section {
         padding: 80px 70px;
     }
+}
     
+@media (max-width: 1320px) {
+    #pilars{
+        padding: 60px 40px;
+    }
     .pilars{
+        max-width: 1250px;
+        margin: auto;
         .pilars__container{
             .pilars__img{
                 max-width: 300px;
