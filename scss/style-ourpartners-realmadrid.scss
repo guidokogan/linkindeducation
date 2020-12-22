@@ -799,6 +799,8 @@ section {
 #thewhiteweek {
     max-width: 1250px;
     margin: auto;
+    padding-left: 0;
+    padding-right: 0;
     .thewhiteweek__imgContainer{
       display: flex;
       flex-wrap: wrap;
@@ -820,16 +822,16 @@ section {
         margin: 20px 0;
         display: block;
         width: 100%;
-        max-width: 550px;
-        height: 314px;
+        max-width: 600px;
+        height: 333px;
       }
       img{
         width: 100%;
-        max-width: 550px;
+        max-width: 600px;
         margin: 20px 0;
         object-fit: cover;
         object-position: 60% 0%;
-        height: 314px;
+        height: 333px;
       }
     }
     p{
@@ -881,13 +883,13 @@ section {
             }
         }
         .pilars__text{
-            max-width: 44%;
+            max-width: 45%;
             width: 100%;
             .pilars__title{
                 @extend %textoLectura;
                 font-size: 22px;
                 line-height: 150%;
-                margin: 20px auto;
+                margin: 0 auto 20px auto;
                 font-weight: 700;
                 width: 100%;
                 text-align: left;

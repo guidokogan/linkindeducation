@@ -563,20 +563,22 @@ section {
     max-width: 1250px;
     margin: auto;
     margin-top: 70px;
-    .universidadeuropea__container{
+    a{
         width: 30%;
         min-width: 275px;
-        max-width: 380px;
+        max-width: 370px;
         margin-bottom: 70px;
-        .universidadeuropea__title{
-            @extend %textoLectura;
-            font-size: 22px;
-            line-height: 150%;
-            font-weight: 700;
-            margin-top: 20px;
-        }
-        img{
-            width: 100%;
+        .universidadeuropea__container{
+            .universidadeuropea__title{
+                @extend %textoLectura;
+                font-size: 22px;
+                line-height: 150%;
+                font-weight: 700;
+                margin-top: 20px;
+            }
+            img{
+                width: 100%;
+            }
         }
     }
 }
